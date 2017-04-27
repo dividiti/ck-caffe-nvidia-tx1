@@ -1,0 +1,1220 @@
+{
+  "cmd_key": "time_cpu", 
+  "tmp_dir": "", 
+  "features": {
+    "compiler_version": {
+      "raw": "", 
+      "list": [], 
+      "str": ""
+    }
+  }, 
+  "characteristics": {}, 
+  "choices": {
+    "cpu_freq": "max", 
+    "no_state_check": "yes", 
+    "target": "", 
+    "module_uoa": "b0ac08fe1d3c2615", 
+    "energy": "no", 
+    "device_cfg": {}, 
+    "skip_print_timers": "yes", 
+    "dataset_file": "", 
+    "cmd_key": "time_gpu", 
+    "data_uoa": "caffe", 
+    "compile_type": "dynamic", 
+    "target_os_bits": "64", 
+    "skip_calibration": "yes", 
+    "device_id": "", 
+    "host_os": "linux-64", 
+    "target_os": "linux-64", 
+    "gpu_freq": "max"
+  }, 
+  "state": {
+    "tmp_dir": "tmp", 
+    "cur_dir": "/home/anton/CK_REPOS/ck-caffe/script/explore-batch-size-libs-models"
+  }, 
+  "dependencies": {
+    "dataset-imagenet-lmdb": {
+      "sort": 20, 
+      "bat": ". /home/anton/CK_REPOS/local/env/f9c9c4a4663bfa98/env.sh\n", 
+      "cus": {
+        "force_ask_path": "yes", 
+        "features": {
+          "resize_height": "256", 
+          "resize_width": "256", 
+          "number_of_original_images": 100, 
+          "shuffle": ""
+        }, 
+        "install_env": {
+          "RESIZE_WIDTH": "256", 
+          "RESIZE_HEIGHT": "256", 
+          "SHUFFLE": ""
+        }, 
+        "soft_file": {
+          "linux": "data.mdb"
+        }, 
+        "package_extra_name": " (100 images)", 
+        "skip_path": "yes", 
+        "ck_features_file": "ck-features.json", 
+        "extra_suggested_path": "-resize-256-img100", 
+        "version": "2012", 
+        "full_path": "/home/anton/CK_TOOLS/dataset-imagenet-ilsvrc2012-val-lmdb-dataset.imagenet.val-2012-resize-256-img100/data/data.mdb", 
+        "first_images": 100, 
+        "version_split": [
+          2012
+        ], 
+        "limit_recursion_dir_search": {
+          "linux": 4
+        }, 
+        "check_that_exists": "yes", 
+        "no_ver_in_suggested_path": "yes", 
+        "ck_version": 10, 
+        "env_prefix": "CK_ENV_DATASET_IMAGENET_VAL_LMDB", 
+        "no_os_in_suggested_path": "yes"
+      }, 
+      "name": "ImageNet dataset (lmdb)", 
+      "tags": "dataset,imagenet,val-lmdb", 
+      "num_entries": 1, 
+      "choices": [
+        "f9c9c4a4663bfa98"
+      ], 
+      "uoa": "f9c9c4a4663bfa98", 
+      "dict": {
+        "data_name": "ImageNet dataset (validation, LMDB) (100 images)", 
+        "deps": {}, 
+        "tags": [
+          "64bits", 
+          "caffe", 
+          "dataset", 
+          "host-os-linux-64", 
+          "ilsvrc2012", 
+          "imagenet", 
+          "lmdb", 
+          "target-os-linux-64", 
+          "v2012", 
+          "val-lmdb"
+        ], 
+        "customize": {
+          "force_ask_path": "yes", 
+          "features": {
+            "resize_height": "256", 
+            "resize_width": "256", 
+            "number_of_original_images": 100, 
+            "shuffle": ""
+          }, 
+          "install_env": {
+            "RESIZE_WIDTH": "256", 
+            "RESIZE_HEIGHT": "256", 
+            "SHUFFLE": ""
+          }, 
+          "soft_file": {
+            "linux": "data.mdb"
+          }, 
+          "package_extra_name": " (100 images)", 
+          "skip_path": "yes", 
+          "ck_features_file": "ck-features.json", 
+          "extra_suggested_path": "-resize-256-img100", 
+          "version": "2012", 
+          "full_path": "/home/anton/CK_TOOLS/dataset-imagenet-ilsvrc2012-val-lmdb-dataset.imagenet.val-2012-resize-256-img100/data/data.mdb", 
+          "first_images": 100, 
+          "version_split": [
+            2012
+          ], 
+          "limit_recursion_dir_search": {
+            "linux": 4
+          }, 
+          "check_that_exists": "yes", 
+          "no_ver_in_suggested_path": "yes", 
+          "ck_version": 10, 
+          "env_prefix": "CK_ENV_DATASET_IMAGENET_VAL_LMDB", 
+          "no_os_in_suggested_path": "yes"
+        }, 
+        "setup": {
+          "version_split": [
+            2012
+          ], 
+          "target_os_bits": "64", 
+          "version": "2012", 
+          "host_os_uoa": "4258b5fe54828a50", 
+          "target_os_uoa": "4258b5fe54828a50"
+        }, 
+        "env_script": "env.sh", 
+        "package_uoa": "7629490488148033", 
+        "soft_uoa": "092da4cabb3b7f8c", 
+        "env": {
+          "CK_CAFFE_IMAGENET_VAL_LMDB": "/home/anton/CK_TOOLS/dataset-imagenet-ilsvrc2012-val-lmdb-dataset.imagenet.val-2012-resize-256-img100/data", 
+          "CK_ENV_DATASET_IMAGENET_VAL_LMDB": "/home/anton/CK_TOOLS/dataset-imagenet-ilsvrc2012-val-lmdb-dataset.imagenet.val-2012-resize-256-img100/data"
+        }, 
+        "soft_alias": "dataset.imagenet.val.lmdb"
+      }, 
+      "ver": "2012", 
+      "local": "yes"
+    }, 
+    "caffemodel": {
+      "sort": 40, 
+      "bat": ". /home/anton/CK_REPOS/local/env/cd6fe20db1445aba/env.sh\n", 
+      "ver": "trunk", 
+      "name": "Caffe model (net and weights)", 
+      "tags": "caffemodel", 
+      "num_entries": 1, 
+      "choices": [
+        "cd6fe20db1445aba"
+      ], 
+      "uoa": "cd6fe20db1445aba", 
+      "dict": {
+        "data_name": "Caffe model (net and weights) (bvlc, googlenet)", 
+        "deps": {}, 
+        "tags": [
+          "64bits", 
+          "bvlc", 
+          "caffe", 
+          "caffemodel", 
+          "googlenet", 
+          "host-os-linux-64", 
+          "net", 
+          "target-os-linux-64", 
+          "v0", 
+          "weights"
+        ], 
+        "customize": {
+          "force_ask_path": "yes", 
+          "soft_file": {
+            "linux": "deploy.prototxt"
+          }, 
+          "ck_params_file": "ck-params.json", 
+          "skip_path": "yes", 
+          "check_that_exists": "yes", 
+          "version_split": [
+            0
+          ], 
+          "version": "trunk", 
+          "params": {
+            "train": {
+              "template": "train_val.prototxt", 
+              "substitute": {
+                "train_batch_size": 32, 
+                "val_batch_size": 50
+              }
+            }, 
+            "val": {
+              "template": "train_val.prototxt", 
+              "substitute": {
+                "train_batch_size": 32, 
+                "val_batch_size": 50
+              }, 
+              "accuracy_layers": [
+                "loss1/loss1", 
+                "loss1/top-1", 
+                "loss1/top-5", 
+                "loss2/loss1", 
+                "loss2/top-1", 
+                "loss2/top-5", 
+                "loss3/loss3", 
+                "loss3/top-1", 
+                "loss3/top-5"
+              ]
+            }, 
+            "deploy": {
+              "template": "deploy.prototxt", 
+              "substitute": {
+                "batch_size": 10
+              }
+            }
+          }, 
+          "full_path": "/home/anton/CK_TOOLS/caffemodel-bvlc-googlenet/bvlc_googlenet.caffemodel", 
+          "file_with_weights": "bvlc_googlenet.caffemodel", 
+          "extra_dir": "", 
+          "skip_file_check": "yes", 
+          "limit_recursion_dir_search": {
+            "linux": 3
+          }, 
+          "install_env": {
+            "MODEL_HASH_CALCULATOR": "sha1sum", 
+            "MODEL_FILE": "bvlc_googlenet.caffemodel", 
+            "MODEL_URL": "http://dl.caffe.berkeleyvision.org/bvlc_googlenet.caffemodel", 
+            "MODEL_HASH_REF": "405fc5acd08a3bb12de8ee5e23a96bec22f08204"
+          }, 
+          "no_ver_in_suggested_path": "yes", 
+          "ck_version": 10, 
+          "env_prefix": "CK_ENV_MODEL_CAFFE", 
+          "no_os_in_suggested_path": "yes"
+        }, 
+        "setup": {
+          "version_split": [
+            0
+          ], 
+          "target_os_bits": "64", 
+          "version": "trunk", 
+          "host_os_uoa": "4258b5fe54828a50", 
+          "target_os_uoa": "4258b5fe54828a50"
+        }, 
+        "env_script": "env.sh", 
+        "package_uoa": "94ab0ab4f209a2fc", 
+        "soft_uoa": "e2400aabc11d6cd1", 
+        "env": {
+          "CK_ENV_MODEL_CAFFE_WEIGHTS_FILE": "bvlc_googlenet.caffemodel", 
+          "CK_ENV_MODEL_CAFFE_WEIGHTS": "/home/anton/CK_TOOLS/caffemodel-bvlc-googlenet/bvlc_googlenet.caffemodel", 
+          "CK_ENV_MODEL_CAFFE": "/home/anton/CK_TOOLS/caffemodel-bvlc-googlenet"
+        }, 
+        "soft_alias": "model.caffe"
+      }, 
+      "local": "yes"
+    }, 
+    "dataset-imagenet-aux": {
+      "sort": 10, 
+      "bat": ". /home/anton/CK_REPOS/local/env/daa27364bdea00b3/env.sh\n", 
+      "cus": {
+        "soft_file": {
+          "win": "imagenet_mean.binaryproto", 
+          "linux": "imagenet_mean.binaryproto"
+        }, 
+        "env_prefix": "CK_ENV_DATASET_IMAGENET_AUX", 
+        "skip_path": "yes", 
+        "ck_version": 10, 
+        "version": "2012", 
+        "path_bin": "/home/anton/CK_TOOLS/dataset-imagenet-ilsvrc2012-aux", 
+        "extra_dir": "", 
+        "version_split": [
+          2012
+        ], 
+        "limit_recursion_dir_search": {
+          "linux": 3
+        }, 
+        "install_env": {
+          "DOWNLOAD_FILE_MD5": "f963098ea0e785a968ca1eb634003a90", 
+          "DOWNLOAD_FILE": "caffe_ilsvrc12.tar.gz", 
+          "DOWNLOAD_URL": "http://dl.caffe.berkeleyvision.org/", 
+          "DOWNLOAD_NAME": "ILSVRC'12 aux dataset"
+        }, 
+        "no_ver_in_suggested_path": "yes", 
+        "check_that_exists": "yes", 
+        "full_path": "/home/anton/CK_TOOLS/dataset-imagenet-ilsvrc2012-aux/imagenet_mean.binaryproto", 
+        "no_os_in_suggested_path": "yes"
+      }, 
+      "name": "ImageNet dataset (aux)", 
+      "tags": "dataset,imagenet,aux", 
+      "num_entries": 1, 
+      "choices": [
+        "daa27364bdea00b3"
+      ], 
+      "uoa": "daa27364bdea00b3", 
+      "dict": {
+        "data_name": "ImageNet dataset (aux)", 
+        "deps": {}, 
+        "tags": [
+          "64bits", 
+          "aux", 
+          "caffe", 
+          "dataset", 
+          "host-os-linux-64", 
+          "ilsvrc2012", 
+          "imagenet", 
+          "target-os-linux-64", 
+          "v2012"
+        ], 
+        "customize": {
+          "soft_file": {
+            "win": "imagenet_mean.binaryproto", 
+            "linux": "imagenet_mean.binaryproto"
+          }, 
+          "env_prefix": "CK_ENV_DATASET_IMAGENET_AUX", 
+          "skip_path": "yes", 
+          "ck_version": 10, 
+          "version": "2012", 
+          "path_bin": "/home/anton/CK_TOOLS/dataset-imagenet-ilsvrc2012-aux", 
+          "extra_dir": "", 
+          "version_split": [
+            2012
+          ], 
+          "limit_recursion_dir_search": {
+            "linux": 3
+          }, 
+          "install_env": {
+            "DOWNLOAD_FILE_MD5": "f963098ea0e785a968ca1eb634003a90", 
+            "DOWNLOAD_FILE": "caffe_ilsvrc12.tar.gz", 
+            "DOWNLOAD_URL": "http://dl.caffe.berkeleyvision.org/", 
+            "DOWNLOAD_NAME": "ILSVRC'12 aux dataset"
+          }, 
+          "no_ver_in_suggested_path": "yes", 
+          "check_that_exists": "yes", 
+          "full_path": "/home/anton/CK_TOOLS/dataset-imagenet-ilsvrc2012-aux/imagenet_mean.binaryproto", 
+          "no_os_in_suggested_path": "yes"
+        }, 
+        "setup": {
+          "version_split": [
+            2012
+          ], 
+          "target_os_bits": "64", 
+          "version": "2012", 
+          "host_os_uoa": "4258b5fe54828a50", 
+          "target_os_uoa": "4258b5fe54828a50"
+        }, 
+        "env_script": "env.sh", 
+        "package_uoa": "4e3e9dd897f125bb", 
+        "soft_uoa": "167d823440e6a59a", 
+        "env": {
+          "CK_CAFFE_IMAGENET_VAL_TXT": "/home/anton/CK_TOOLS/dataset-imagenet-ilsvrc2012-aux/val.txt", 
+          "CK_CAFFE_IMAGENET_BET_BIN": "/home/anton/CK_TOOLS/dataset-imagenet-ilsvrc2012-aux/imagenet.bet.pickle", 
+          "CK_CAFFE_IMAGENET_VAL_TRAIN": "/home/anton/CK_TOOLS/dataset-imagenet-ilsvrc2012-aux/train.txt", 
+          "CK_ENV_DATASET_IMAGENET_AUX": "/home/anton/CK_TOOLS/dataset-imagenet-ilsvrc2012-aux", 
+          "CK_CAFFE_IMAGENET_MEAN_BIN": "/home/anton/CK_TOOLS/dataset-imagenet-ilsvrc2012-aux/imagenet_mean.binaryproto"
+        }, 
+        "soft_alias": "dataset.imagenet.aux"
+      }, 
+      "ver": "2012", 
+      "local": "yes"
+    }, 
+    "lib-caffe": {
+      "sort": 30, 
+      "bat": ". /home/anton/CK_REPOS/local/env/55a65fc08d806744/env.sh\n", 
+      "ver": "trunk-24d2f67", 
+      "name": "Caffe framework", 
+      "tags": "lib,caffe,bvlc", 
+      "num_entries": 1, 
+      "choices": [
+        "55a65fc08d806744"
+      ], 
+      "uoa": "55a65fc08d806744", 
+      "dict": {
+        "data_name": "BVLC Caffe framework (cpu)", 
+        "deps": {
+          "lib-blas": {
+            "sort": 30, 
+            "bat": ". /home/anton/CK_REPOS/local/env/b5534949993e4774/env.sh\n", 
+            "ver": "0.2.19-85636ff", 
+            "name": "BLAS library", 
+            "tags": "lib,blas,openblas", 
+            "uoa": "b5534949993e4774", 
+            "choices": [
+              "b5534949993e4774"
+            ], 
+            "num_entries": 1, 
+            "dict": {
+              "env_script": "env.sh", 
+              "deps": {
+                "c-compiler": {
+                  "detected_ver": "5.4.0", 
+                  "sort": 10, 
+                  "bat": ". /home/anton/CK_REPOS/local/env/43ceab80becb79de/env.sh\n", 
+                  "ver": "5.4.0", 
+                  "name": "C compiler", 
+                  "tags": "compiler,lang-c", 
+                  "build_dir_name": "gcc", 
+                  "uoa": "43ceab80becb79de", 
+                  "choices": [
+                    "ed8c44b5a8305a1f", 
+                    "43ceab80becb79de"
+                  ], 
+                  "num_entries": 1, 
+                  "add_to_path": "yes", 
+                  "dict": {
+                    "env_script": "env.sh", 
+                    "deps": {}, 
+                    "tags": [
+                      "64bits", 
+                      "compiler", 
+                      "gcc", 
+                      "host-os-linux-64", 
+                      "lang-c", 
+                      "lang-cpp", 
+                      "target-os-linux-64", 
+                      "v5", 
+                      "v5.4", 
+                      "v5.4.0"
+                    ], 
+                    "customize": {
+                      "can_strip_dynamic_lib": "yes", 
+                      "build_dir_name": "gcc", 
+                      "skip_path": "yes", 
+                      "tool_prefix_configured": "yes", 
+                      "tool_prefix": "", 
+                      "tool_postfix_configured": "yes", 
+                      "env_prefix": "CK_ENV_COMPILER_GCC", 
+                      "soft_version_cmd": {
+                        "win": " --version > $#filename#$ 2>&1", 
+                        "linux": "--version > $#filename#$ 2>&1"
+                      }, 
+                      "soft_path_example": {
+                        "win": "C:\\Program Files\\GCC-4.9.2-x64\\bin\\gcc.exe", 
+                        "linux": "/usr/bin/gcc"
+                      }, 
+                      "languages": [
+                        "C", 
+                        "CPP"
+                      ], 
+                      "version": "5.4.0", 
+                      "soft_file_from_host_os": "yes", 
+                      "tool_postfix": "-5", 
+                      "soft_file": {
+                        "win": "gcc.exe", 
+                        "linux": "gcc"
+                      }, 
+                      "retarget": "no", 
+                      "search_numeric_ext_on_linux": "yes", 
+                      "add_to_path": "yes", 
+                      "add_only_with_version": "yes", 
+                      "version_split": [
+                        5, 
+                        4, 
+                        0
+                      ], 
+                      "limit_recursion_dir_search": {
+                        "win": 4, 
+                        "linux": 3
+                      }, 
+                      "check_that_exists": "yes", 
+                      "ck_version": 10, 
+                      "only_for_target_os_tags": [
+                        "mingw", 
+                        "linux"
+                      ], 
+                      "full_path": "/usr/bin/gcc-5"
+                    }, 
+                    "setup": {
+                      "version_split": [
+                        5, 
+                        4, 
+                        0
+                      ], 
+                      "target_os_bits": "64", 
+                      "version": "5.4.0", 
+                      "host_os_uoa": "4258b5fe54828a50", 
+                      "target_os_uoa": "4258b5fe54828a50"
+                    }, 
+                    "data_name": "GNU C compiler", 
+                    "soft_uoa": "3a8a82fa40bf992d", 
+                    "env": {
+                      "CK_COMPILER_FLAGS_OBLIGATORY": "", 
+                      "CK_AR": "ar", 
+                      "CK_COMPILER_POSTFIX": "-5", 
+                      "CK_FLAGS_DLL_EXTRA": "", 
+                      "CK_LIB_EXT": ".a", 
+                      "CK_OPT_SIZE": "-Os", 
+                      "CK_OPT_SPEED": "-O3", 
+                      "CK_COMPILER_FLAG_PTHREAD_LIB": "-lpthread", 
+                      "CK_CC": "gcc-5", 
+                      "CK_EXE_EXT": ".out", 
+                      "CK_COMPILER_FLAG_GPROF": "-pg", 
+                      "CK_OPT_ALL_WARNINGS": "-Wall", 
+                      "CK_LB_OUTPUT": "-o ", 
+                      "CK_FLAGS_STATIC_LIB": "-fPIC", 
+                      "CK_FLAG_PREFIX_VAR": "-D", 
+                      "CK_EXTRA_LIB_M": "-lm", 
+                      "CK_FLAG_PREFIX_LIB_DIR": "-L", 
+                      "CK_FLAGS_CREATE_OBJ": "-c", 
+                      "CK_LINKER_FLAG_OPENMP": "-lgomp -lrt", 
+                      "CK_OBJ_EXT": ".o", 
+                      "CK_FLAGS_OUTPUT": "-o ", 
+                      "CK_LB": "ar rcs", 
+                      "CK_LD": "ld", 
+                      "CK_COMPILER_FLAG_CPP11": "-std=c++11", 
+                      "CK_COMPILER_FLAG_OPENMP": "-fopenmp", 
+                      "CK_PLUGIN_FLAG": "-fplugin=", 
+                      "CK_DLL_EXT": ".so", 
+                      "CK_CXX": "g++-5", 
+                      "CK_ASM_EXT": ".s", 
+                      "CK_FLAG_PREFIX_INCLUDE": "-I", 
+                      "CK_LD_FLAGS_EXTRA": "", 
+                      "CK_OBJDUMP": "objdump -d", 
+                      "CK_OPT_SPEED_SAFE": "-O2", 
+                      "CK_PROFILER": "gprof", 
+                      "CK_FLAGS_DLL": "-shared -fPIC", 
+                      "CK_FLAGS_STATIC_BIN": "-static -fPIC", 
+                      "CK_ENV_COMPILER_GCC": "/usr", 
+                      "CK_EXTRA_LIB_DL": "-ldl", 
+                      "CK_GPROF_OUT_FILE": "gmon.out", 
+                      "CK_MAKE": "make", 
+                      "CK_COMPILER_FLAG_CPP0X": "-std=c++0x", 
+                      "CK_COMPILER_FLAG_PLUGIN": "-fplugin=", 
+                      "CK_FLAGS_CREATE_ASM": "-S"
+                    }, 
+                    "soft_alias": "compiler.gcc"
+                  }, 
+                  "local": "yes"
+                }, 
+                "boost": {
+                  "sort": 5, 
+                  "bat": ". /home/anton/CK_REPOS/local/env/52618573a445e285/env.sh\n", 
+                  "ver": "1.58.0", 
+                  "name": "Boost C++ libraries", 
+                  "tags": "lib,boost", 
+                  "uoa": "52618573a445e285", 
+                  "choices": [
+                    "52618573a445e285"
+                  ], 
+                  "num_entries": 1, 
+                  "dict": {
+                    "env_script": "env.sh", 
+                    "deps": {}, 
+                    "tags": [
+                      "64bits", 
+                      "boost", 
+                      "host-os-linux-64", 
+                      "lib", 
+                      "target-os-linux-64", 
+                      "v1", 
+                      "v1.58", 
+                      "v1.58.0"
+                    ], 
+                    "customize": {
+                      "path_include": "/usr/include", 
+                      "skip_path": "yes", 
+                      "soft_file": {
+                        "win": "libboost_system.lib", 
+                        "linux": "libboost_system.so"
+                      }, 
+                      "version": "1.58.0", 
+                      "env_prefix": "CK_ENV_LIB_BOOST", 
+                      "version_split": [
+                        1, 
+                        58, 
+                        0
+                      ], 
+                      "limit_recursion_dir_search": {
+                        "win": 3, 
+                        "linux": 3
+                      }, 
+                      "check_that_exists": "yes", 
+                      "soft_path_example": {
+                        "win": "", 
+                        "linux": "/usr/lib/x86_64-linux-gnu/libboost_system.so"
+                      }, 
+                      "ck_version": 10, 
+                      "full_path": "/usr/lib/aarch64-linux-gnu/libboost_system.so", 
+                      "path_lib": "/usr/lib/aarch64-linux-gnu"
+                    }, 
+                    "setup": {
+                      "version_split": [
+                        1, 
+                        58, 
+                        0
+                      ], 
+                      "target_os_bits": "64", 
+                      "version": "1.58.0", 
+                      "host_os_uoa": "4258b5fe54828a50", 
+                      "target_os_uoa": "4258b5fe54828a50"
+                    }, 
+                    "data_name": "Boost library", 
+                    "soft_uoa": "23949f2a32490faf", 
+                    "env": {
+                      "CK_ENV_LIB_BOOST_LFLAG_SYSTEM": "-lboost_system", 
+                      "CK_ENV_LIB_BOOST": "/usr"
+                    }, 
+                    "soft_alias": "lib.boost"
+                  }, 
+                  "local": "yes"
+                }, 
+                "gfortran-compiler": {
+                  "detected_ver": "5.4.0", 
+                  "sort": 15, 
+                  "bat": ". /home/anton/CK_REPOS/local/env/2dc3294a25b08ece/env.sh\n", 
+                  "ver": "5.4.0", 
+                  "name": "GNU Fortran compiler", 
+                  "tags": "compiler,gfortran", 
+                  "build_dir_name": "gfortran", 
+                  "uoa": "2dc3294a25b08ece", 
+                  "choices": [
+                    "2dc3294a25b08ece"
+                  ], 
+                  "num_entries": 1, 
+                  "add_to_path": "yes", 
+                  "dict": {
+                    "env_script": "env.sh", 
+                    "deps": {}, 
+                    "tags": [
+                      "64bits", 
+                      "compiler", 
+                      "fortran", 
+                      "gfortran", 
+                      "host-os-linux-64", 
+                      "lang-f77", 
+                      "lang-f90", 
+                      "lang-f95", 
+                      "target-os-linux-64", 
+                      "v5", 
+                      "v5.4", 
+                      "v5.4.0"
+                    ], 
+                    "customize": {
+                      "can_strip_dynamic_lib": "yes", 
+                      "build_dir_name": "gfortran", 
+                      "skip_path": "yes", 
+                      "tool_prefix_configured": "yes", 
+                      "tool_prefix": "", 
+                      "tool_postfix_configured": "yes", 
+                      "env_prefix": "CK_ENV_COMPILER_GFORTRAN", 
+                      "soft_version_cmd": {
+                        "win": " --version > $#filename#$ 2>&1", 
+                        "linux": "--version > $#filename#$ 2>&1"
+                      }, 
+                      "soft_path_example": {
+                        "win": "C:\\Program Files\\GCC-4.9.2-x64\\bin\\gfortran.exe", 
+                        "linux": "/usr/bin/gfortran"
+                      }, 
+                      "languages": [
+                        "F77", 
+                        "F90", 
+                        "F95"
+                      ], 
+                      "version": "5.4.0", 
+                      "soft_file_from_host_os": "yes", 
+                      "tool_postfix": "-5", 
+                      "soft_file": {
+                        "win": "gfortran.exe", 
+                        "linux": "gfortran"
+                      }, 
+                      "retarget": "no", 
+                      "search_numeric_ext_on_linux": "yes", 
+                      "add_to_path": "yes", 
+                      "add_only_with_version": "yes", 
+                      "version_split": [
+                        5, 
+                        4, 
+                        0
+                      ], 
+                      "limit_recursion_dir_search": {
+                        "win": 4, 
+                        "linux": 3
+                      }, 
+                      "check_that_exists": "yes", 
+                      "ck_version": 10, 
+                      "only_for_target_os_tags": [
+                        "mingw", 
+                        "linux"
+                      ], 
+                      "full_path": "/usr/bin/gfortran-5"
+                    }, 
+                    "setup": {
+                      "version_split": [
+                        5, 
+                        4, 
+                        0
+                      ], 
+                      "target_os_bits": "64", 
+                      "version": "5.4.0", 
+                      "host_os_uoa": "4258b5fe54828a50", 
+                      "target_os_uoa": "4258b5fe54828a50"
+                    }, 
+                    "data_name": "GNU Fortran compiler", 
+                    "soft_uoa": "504d7e807c7b3146", 
+                    "env": {
+                      "CK_COMPILER_FLAGS_OBLIGATORY": "", 
+                      "CK_AR": "ar", 
+                      "CK_COMPILER_POSTFIX": "-5", 
+                      "CK_FLAGS_DLL_EXTRA": "", 
+                      "CK_LIB_EXT": ".a", 
+                      "CK_OPT_SIZE": "-Os", 
+                      "CK_OPT_SPEED": "-O3", 
+                      "CK_COMPILER_FLAG_PTHREAD_LIB": "-lpthread", 
+                      "CK_EXE_EXT": ".out", 
+                      "CK_COMPILER_FLAG_GPROF": "-pg", 
+                      "CK_OPT_ALL_WARNINGS": "-Wall", 
+                      "CK_LB_OUTPUT": "-o ", 
+                      "CK_FLAGS_STATIC_LIB": "-fPIC", 
+                      "CK_FLAG_PREFIX_VAR": "-D", 
+                      "CK_EXTRA_LIB_M": "-lm", 
+                      "CK_FLAG_PREFIX_LIB_DIR": "-L", 
+                      "CK_FLAGS_CREATE_OBJ": "-c", 
+                      "CK_LINKER_FLAG_OPENMP": "-lgomp -lrt", 
+                      "CK_FLAG_PREFIX_INCLUDE": "-I", 
+                      "CK_OBJ_EXT": ".o", 
+                      "CK_FLAGS_OUTPUT": "-o ", 
+                      "CK_LB": "ar rcs", 
+                      "CK_MAKE": "make", 
+                      "CK_COMPILER_FLAG_CPP11": "-std=c++11", 
+                      "CK_COMPILER_FLAG_OPENMP": "-fopenmp", 
+                      "CK_PLUGIN_FLAG": "-fplugin=", 
+                      "CK_OPT_SPEED_SAFE": "-O2", 
+                      "CK_DLL_EXT": ".so", 
+                      "CK_ASM_EXT": ".s", 
+                      "CK_FC": "gfortran-5", 
+                      "CK_LD_FLAGS_EXTRA": "", 
+                      "CK_OBJDUMP": "objdump -d", 
+                      "CK_F95": "gfortran-5", 
+                      "CK_F90": "gfortran-5", 
+                      "CK_PROFILER": "gprof", 
+                      "CK_ENV_COMPILER_GFORTRAN": "/usr", 
+                      "CK_FLAGS_DLL": "-shared -fPIC", 
+                      "CK_FLAGS_STATIC_BIN": "-static -fPIC", 
+                      "CK_EXTRA_LIB_DL": "-ldl", 
+                      "CK_GPROF_OUT_FILE": "gmon.out", 
+                      "CK_LD": "ld", 
+                      "CK_COMPILER_FLAG_CPP0X": "-std=c++0x", 
+                      "CK_COMPILER_FLAG_PLUGIN": "-fplugin=", 
+                      "CK_FLAGS_CREATE_ASM": "-S"
+                    }, 
+                    "soft_alias": "compiler.gfortran"
+                  }, 
+                  "local": "yes"
+                }
+              }, 
+              "tags": [
+                "64bits", 
+                "blas", 
+                "cblas", 
+                "host-os-linux-64", 
+                "lib", 
+                "openblas", 
+                "target-os-linux-64", 
+                "v0", 
+                "v0.2", 
+                "v0.2.19", 
+                "v0.2.19.0"
+              ], 
+              "customize": {
+                "git_src_dir": "src", 
+                "include_file": "cblas.h", 
+                "use_git_revision": "yes", 
+                "dynamic_lib": "libopenblas.so", 
+                "static_lib": "libopenblas.a", 
+                "git_info": {
+                  "revision": "85636ff", 
+                  "iso_datetime_cut": "20160831", 
+                  "iso_datetime_cut_revision": "20160831-85636ff", 
+                  "iso_datetime": "2016-08-31T23:58:42", 
+                  "datetime": "Wed Aug 31 23:58:42 2016 -0400"
+                }, 
+                "skip_path": "yes", 
+                "limit_recursion_dir_search": {
+                  "linux": 3
+                }, 
+                "soft_file": {
+                  "linux": "libopenblas.so"
+                }, 
+                "include_name": "cblas.h", 
+                "version": "0.2.19-85636ff", 
+                "check_that_exists": "yes", 
+                "env_prefix": "CK_ENV_LIB_OPENBLAS", 
+                "extra_dir": "", 
+                "version_split": [
+                  0, 
+                  2, 
+                  19, 
+                  0
+                ], 
+                "path_include": "/home/anton/CK_TOOLS/lib-openblas-0.2.19-compiler.gcc-5.4.0-compiler.gfortran-5.4.0-linux-64/include", 
+                "install_env": {
+                  "OPENBLAS_TAG": "v0.2.19", 
+                  "OPENBLAS_URL": "https://github.com/xianyi/OpenBLAS"
+                }, 
+                "soft_path_example": {
+                  "linux": "/usr/lib/libopenblas.so"
+                }, 
+                "ck_version": 10, 
+                "full_path": "/home/anton/CK_TOOLS/lib-openblas-0.2.19-compiler.gcc-5.4.0-compiler.gfortran-5.4.0-linux-64/lib/libopenblas.so", 
+                "path_lib": "/home/anton/CK_TOOLS/lib-openblas-0.2.19-compiler.gcc-5.4.0-compiler.gfortran-5.4.0-linux-64/lib"
+              }, 
+              "setup": {
+                "deps_c-compiler": "43ceab80becb79de", 
+                "deps_gfortran-compiler": "2dc3294a25b08ece", 
+                "deps_boost": "52618573a445e285", 
+                "version": "0.2.19-85636ff", 
+                "version_split": [
+                  0, 
+                  2, 
+                  19, 
+                  0
+                ], 
+                "target_os_bits": "64", 
+                "host_os_uoa": "4258b5fe54828a50", 
+                "target_os_uoa": "4258b5fe54828a50"
+              }, 
+              "data_name": "OpenBLAS library", 
+              "package_uoa": "74108930509ad8a9", 
+              "soft_uoa": "252d8364ec25497b", 
+              "env": {
+                "CK_ENV_LIB_OPENBLAS_INCLUDE_NAME": "cblas.h", 
+                "CK_ENV_LIB_OPENBLAS_STATIC_NAME": "libopenblas.a", 
+                "CK_ENV_LIB_OPENBLAS": "/home/anton/CK_TOOLS/lib-openblas-0.2.19-compiler.gcc-5.4.0-compiler.gfortran-5.4.0-linux-64", 
+                "CK_ENV_LIB_OPENBLAS_DYNAMIC_NAME": "libopenblas.so"
+              }, 
+              "soft_alias": "lib.openblas"
+            }, 
+            "add_to_path": "yes", 
+            "local": "yes"
+          }, 
+          "lib-hdf5": {
+            "sort": 25, 
+            "bat": ". /home/anton/CK_REPOS/local/env/e79443ba7c5cd22a/env.sh\n", 
+            "ver": "1.8.16", 
+            "name": "HDF5 library", 
+            "tags": "lib,hdf5", 
+            "uoa": "e79443ba7c5cd22a", 
+            "choices": [
+              "e79443ba7c5cd22a"
+            ], 
+            "num_entries": 1, 
+            "dict": {
+              "env_script": "env.sh", 
+              "deps": {}, 
+              "tags": [
+                "64bits", 
+                "hdf5", 
+                "host-os-linux-64", 
+                "lib", 
+                "target-os-linux-64", 
+                "v1", 
+                "v1.8", 
+                "v1.8.16"
+              ], 
+              "customize": {
+                "include_file": "hdf5.h", 
+                "dynamic_lib": "libhdf5.so", 
+                "static_lib": "libhdf5.a", 
+                "skip_path": "yes", 
+                "soft_file": {
+                  "linux": "libhdf5.so"
+                }, 
+                "include_name": "hdf5.h", 
+                "version": "1.8.16", 
+                "env_prefix": "CK_ENV_LIB_HDF5", 
+                "limit_recursion_dir_search": {
+                  "linux": 6
+                }, 
+                "version_split": [
+                  1, 
+                  8, 
+                  16
+                ], 
+                "path_include": "/usr/include/hdf5/serial", 
+                "check_that_exists": "yes", 
+                "soft_path_example": {
+                  "linux": "/usr/lib/x86_64-linux-gnu/hdf5/serial/libhdf5.so"
+                }, 
+                "ck_version": 10, 
+                "full_path": "/usr/lib/aarch64-linux-gnu/hdf5/serial/libhdf5.so", 
+                "path_lib": "/usr/lib/aarch64-linux-gnu/hdf5/serial"
+              }, 
+              "setup": {
+                "version_split": [
+                  1, 
+                  8, 
+                  16
+                ], 
+                "target_os_bits": "64", 
+                "version": "1.8.16", 
+                "host_os_uoa": "4258b5fe54828a50", 
+                "target_os_uoa": "4258b5fe54828a50"
+              }, 
+              "data_name": "HDF5 library", 
+              "soft_uoa": "6d0c245e881231e8", 
+              "env": {
+                "CK_ENV_LIB_HDF5_STATIC_NAME": "libhdf5.a", 
+                "CK_ENV_LIB_HDF5": "/usr/lib/aarch64-linux-gnu/hdf5/serial", 
+                "CK_ENV_LIB_HDF5_DYNAMIC_NAME": "libhdf5.so", 
+                "CK_ENV_LIB_HDF5_INCLUDE_NAME": "hdf5.h"
+              }, 
+              "soft_alias": "lib.hdf5"
+            }, 
+            "local": "yes"
+          }, 
+          "lib-opencv": {
+            "sort": 20, 
+            "bat": ". /home/anton/CK_REPOS/local/env/1fac40398b00e943/env.sh\n", 
+            "ver": "2.4.13", 
+            "name": "OpenCV library", 
+            "tags": "lib,opencv", 
+            "uoa": "1fac40398b00e943", 
+            "choices": [
+              "1fac40398b00e943"
+            ], 
+            "num_entries": 1, 
+            "dict": {
+              "env_script": "env.sh", 
+              "deps": {}, 
+              "tags": [
+                "64bits", 
+                "host-os-linux-64", 
+                "lib", 
+                "opencv", 
+                "target-os-linux-64", 
+                "v2", 
+                "v2.4", 
+                "v2.4.13"
+              ], 
+              "customize": {
+                "path_static_lib": "/usr/lib", 
+                "dynamic_lib": "libopencv_core.so", 
+                "env_prefix": "CK_ENV_LIB_OPENCV", 
+                "skip_path": "yes", 
+                "soft_file": {
+                  "win": "opencv_annotation.exe", 
+                  "linux": "libopencv_core.so"
+                }, 
+                "version": "2.4.13", 
+                "soft_path_example": {
+                  "linux": "/usr/lib/x86_64-linux-gnu/libopencv_core.so"
+                }, 
+                "path_lib": "/usr/lib", 
+                "version_split": [
+                  2, 
+                  4, 
+                  13
+                ], 
+                "limit_recursion_dir_search": {
+                  "win": 5, 
+                  "linux": 4
+                }, 
+                "check_that_exists": "yes", 
+                "path_dynamic_lib": "/usr/lib", 
+                "path_include": "/usr/include", 
+                "ck_version": 10, 
+                "full_path": "/usr/lib/libopencv_core.so", 
+                "extra_dynamic_libs": {
+                  "opencv_highgui": "libopencv_highgui.so", 
+                  "opencv_ocl": "libopencv_ocl.so", 
+                  "opencv_imgproc": "libopencv_imgproc.so"
+                }
+              }, 
+              "setup": {
+                "version_split": [
+                  2, 
+                  4, 
+                  13
+                ], 
+                "target_os_bits": "64", 
+                "version": "2.4.13", 
+                "host_os_uoa": "4258b5fe54828a50", 
+                "target_os_uoa": "4258b5fe54828a50"
+              }, 
+              "data_name": "OpenCV library", 
+              "soft_uoa": "18eb79fe079438fb", 
+              "env": {
+                "CK_ENV_LIB_OPENCV_DYNAMIC_LIB_PATH": "/usr/lib", 
+                "CK_ENV_LIB_OPENCV_STATIC_LIB_PATH": "/usr/lib", 
+                "CK_ENV_LIB_OPENCV_LFLAG_IMGPROC": "-lopencv_imgproc", 
+                "CK_ENV_LIB_OPENCV_LFLAG_HIGHGUI": "-lopencv_highgui", 
+                "CK_ENV_LIB_OPENCV_LFLAG_CORE": "-lopencv_core"
+              }, 
+              "soft_alias": "lib.opencv"
+            }, 
+            "local": "yes"
+          }, 
+          "compiler": {
+            "detected_ver": "5.4.0", 
+            "sort": 10, 
+            "bat": ". /home/anton/CK_REPOS/local/env/43ceab80becb79de/env.sh\n", 
+            "ver": "5.4.0", 
+            "name": "C++ compiler", 
+            "tags": "compiler,lang-cpp", 
+            "build_dir_name": "gcc", 
+            "uoa": "43ceab80becb79de", 
+            "choices": [
+              "ed8c44b5a8305a1f", 
+              "43ceab80becb79de"
+            ], 
+            "num_entries": 1, 
+            "dict": {
+              "env_script": "env.sh", 
+              "deps": {}, 
+              "tags": [
+                "64bits", 
+                "compiler", 
+                "gcc", 
+                "host-os-linux-64", 
+                "lang-c", 
+                "lang-cpp", 
+                "target-os-linux-64", 
+                "v5", 
+                "v5.4", 
+                "v5.4.0"
+              ], 
+              "customize": {
+                "can_strip_dynamic_lib": "yes", 
+                "build_dir_name": "gcc", 
+                "skip_path": "yes", 
+                "tool_prefix_configured": "yes", 
+                "tool_prefix": "", 
+                "tool_postfix_configured": "yes", 
+                "env_prefix": "CK_ENV_COMPILER_GCC", 
+                "soft_version_cmd": {
+                  "win": " --version > $#filename#$ 2>&1", 
+                  "linux": "--version > $#filename#$ 2>&1"
+                }, 
+                "soft_path_example": {
+                  "win": "C:\\Program Files\\GCC-4.9.2-x64\\bin\\gcc.exe", 
+                  "linux": "/usr/bin/gcc"
+                }, 
+                "languages": [
+                  "C", 
+                  "CPP"
+                ], 
+                "version": "5.4.0", 
+                "soft_file_from_host_os": "yes", 
+                "tool_postfix": "-5", 
+                "soft_file": {
+                  "win": "gcc.exe", 
+                  "linux": "gcc"
+                }, 
+                "retarget": "no", 
+                "search_numeric_ext_on_linux": "yes", 
+                "add_to_path": "yes", 
+                "add_only_with_version": "yes", 
+                "version_split": [
+                  5, 
+                  4, 
+                  0
+                ], 
+                "limit_recursion_dir_search": {
+                  "win": 4, 
+                  "linux": 3
+                }, 
+                "check_that_exists": "yes", 
+                "ck_version": 10, 
+                "only_for_target_os_tags": [
+                  "mingw", 
+                  "linux"
+                ], 
+                "full_path": "/usr/bin/gcc-5"
+              }, 
+              "setup": {
+                "version_split": [
+                  5, 
+                  4, 
+                  0
+                ], 
+                "target_os_bits": "64", 
+                "version": "5.4.0", 
+                "host_os_uoa": "4258b5fe54828a50", 
+                "target_os_uoa": "4258b5fe54828a50"
+              }, 
+              "data_name": "GNU C compiler", 
+              "soft_uoa": "3a8a82fa40bf992d", 
+              "env": {
+                "CK_COMPILER_FLAGS_OBLIGATORY": "", 
+                "CK_AR": "ar", 
+                "CK_COMPILER_POSTFIX": "-5", 
+                "CK_FLAGS_DLL_EXTRA": "", 
+                "CK_LIB_EXT": ".a", 
+                "CK_OPT_SIZE": "-Os", 
+                "CK_OPT_SPEED": "-O3", 
+                "CK_COMPILER_FLAG_PTHREAD_LIB": "-lpthread", 
+                "CK_CC": "gcc-5", 
+                "CK_EXE_EXT": ".out", 
+                "CK_COMPILER_FLAG_GPROF": "-pg", 
+                "CK_OPT_ALL_WARNINGS": "-Wall", 
+                "CK_LB_OUTPUT": "-o ", 
+                "CK_FLAGS_STATIC_LIB": "-fPIC", 
+                "CK_FLAG_PREFIX_VAR": "-D", 
+                "CK_EXTRA_LIB_M": "-lm", 
+                "CK_FLAG_PREFIX_LIB_DIR": "-L", 
+                "CK_FLAGS_CREATE_OBJ": "-c", 
+                "CK_LINKER_FLAG_OPENMP": "-lgomp -lrt", 
+                "CK_OBJ_EXT": ".o", 
+                "CK_FLAGS_OUTPUT": "-o ", 
+                "CK_LB": "ar rcs", 
+                "CK_LD": "ld", 
+                "CK_COMPILER_FLAG_CPP11": "-std=c++11", 
+                "CK_COMPILER_FLAG_OPENMP": "-fopenmp", 
+                "CK_PLUGIN_FLAG": "-fplugin=", 
+                "CK_DLL_EXT": ".so", 
+                "CK_CXX": "g++-5", 
+                "CK_ASM_EXT": ".s", 
+                "CK_FLAG_PREFIX_INCLUDE": "-I", 
+                "CK_LD_FLAGS_EXTRA": "", 
+                "CK_OBJDUMP": "objdump -d", 
+                "CK_OPT_SPEED_SAFE": "-O2", 
+                "CK_PROFILER": "gprof", 
+                "CK_FLAGS_DLL": "-shared -fPIC", 
+                "CK_FLAGS_STATIC_BIN": "-static -fPIC", 
+                "CK_ENV_COMPILER_GCC": "/usr", 
+                "CK_EXTRA_LIB_DL": "-ldl", 
+                "CK_GPROF_OUT_FILE": "gmon.out", 
+                "CK_MAKE": "make", 
+                "CK_COMPILER_FLAG_CPP0X": "-std=c++0x", 
+                "CK_COMPILER_FLAG_PLUGIN": "-fplugin=", 
+                "CK_FLAGS_CREATE_ASM": "-S"
+              }, 
+              "soft_alias": "compiler.gcc"
+            }, 
+            "local": "yes"
+          }
+        }, 
+        "tags": [
+          "64bits", 
+          "bvlc", 
+          "caffe", 
+          "host-os-linux-64", 
+          "lib", 
+          "target-os-linux-64", 
+          "v0", 
+          "v0.0", 
+          "vmaster"
+        ], 
+        "customize": {
+          "git_src_dir": "src", 
+          "use_git_revision": "yes", 
+          "dynamic_lib": "libcaffe.so", 
+          "skip_path": "yes", 
+          "env_prefix": "CK_ENV_LIB_CAFFE", 
+          "git_info": {
+            "revision": "24d2f67", 
+            "iso_datetime_cut": "20161127", 
+            "iso_datetime_cut_revision": "20161127-24d2f67", 
+            "iso_datetime": "2016-11-27T19:22:37", 
+            "datetime": "Sun Nov 27 19:22:37 2016 -0800"
+          }, 
+          "static_lib": "libcaffe.a", 
+          "check_that_exists": "yes", 
+          "path_include": "/home/anton/CK_TOOLS/lib-caffe-bvlc-master-trunk-gcc-5.4.0-lib.openblas-0.2.19-85636ff-linux-64/src/include", 
+          "version": "trunk-24d2f67", 
+          "params": {
+            "use_leveldb": 1, 
+            "use_lmdb": 1, 
+            "cpu_only": 1, 
+            "use_cuda": 0, 
+            "debug": 0, 
+            "use_opencv": 1
+          }, 
+          "path_bin": "/home/anton/CK_TOOLS/lib-caffe-bvlc-master-trunk-gcc-5.4.0-lib.openblas-0.2.19-85636ff-linux-64/src/build/tools", 
+          "extra_dir": "", 
+          "version_split": [
+            0, 
+            0
+          ], 
+          "limit_recursion_dir_search": {
+            "linux": 4
+          }, 
+          "install_env": {
+            "CAFFE_BRANCH": "master", 
+            "CAFFE_URL": "https://github.com/BVLC/caffe"
+          }, 
+          "soft_file": {
+            "linux": "caffe.bin"
+          }, 
+          "ck_version": 10, 
+          "full_path": "/home/anton/CK_TOOLS/lib-caffe-bvlc-master-trunk-gcc-5.4.0-lib.openblas-0.2.19-85636ff-linux-64/src/build/tools/caffe.bin", 
+          "path_lib": "/home/anton/CK_TOOLS/lib-caffe-bvlc-master-trunk-gcc-5.4.0-lib.openblas-0.2.19-85636ff-linux-64/src/.build_release/lib"
+        }, 
+        "setup": {
+          "deps_compiler": "43ceab80becb79de", 
+          "deps_lib-blas": "b5534949993e4774", 
+          "target_os_uoa": "4258b5fe54828a50", 
+          "version": "trunk-24d2f67", 
+          "version_split": [
+            0, 
+            0
+          ], 
+          "target_os_bits": "64", 
+          "host_os_uoa": "4258b5fe54828a50", 
+          "deps_lib-hdf5": "e79443ba7c5cd22a", 
+          "deps_lib-opencv": "1fac40398b00e943"
+        }, 
+        "env_script": "env.sh", 
+        "package_uoa": "14c56f748be92b38", 
+        "soft_uoa": "04ab08137582bd03", 
+        "env": {
+          "CK_ENV_LIB_CAFFE": "/home/anton/CK_TOOLS/lib-caffe-bvlc-master-trunk-gcc-5.4.0-lib.openblas-0.2.19-85636ff-linux-64/src", 
+          "CK_ENV_LIB_CAFFE_STATIC_NAME": "libcaffe.a", 
+          "CAFFE_INSTALL_DIR": "/home/anton/CK_TOOLS/lib-caffe-bvlc-master-trunk-gcc-5.4.0-lib.openblas-0.2.19-85636ff-linux-64/src", 
+          "CK_ENV_LIB_CAFFE_EXTRA_INCLUDE": "/home/anton/CK_TOOLS/lib-caffe-bvlc-master-trunk-gcc-5.4.0-lib.openblas-0.2.19-85636ff-linux-64/src/.build_release/src", 
+          "CK_ENV_LIB_CAFFE_DYNAMIC_NAME": "libcaffe.so"
+        }, 
+        "soft_alias": "lib.caffe"
+      }, 
+      "local": "yes"
+    }
+  }, 
+  "no_compiler_description": "yes", 
+  "choices_desc": {}, 
+  "speed": "yes"
+}
