@@ -1,0 +1,991 @@
+{
+  "characteristics_list": [
+    {
+      "run": {
+        "REAL_ENV_CK_CAFFE_MODEL": "/home/anton/CK_REPOS/ck-tensorrt/program/tensorrt-time/tmp/tmp-uK_319.prototxt", 
+        "execution_time": 0.01609015, 
+        "execution_time_with_module": 23.73211693763733, 
+        "memory_bytes": 0, 
+        "memory_kbytes": 0.0, 
+        "memory_mbytes": 0.0, 
+        "per_layer_info": [
+          {
+            "direction": "forward", 
+            "index": 0, 
+            "label": "00: data_zipper", 
+            "name": "data_zipper", 
+            "time_ms": 0.271579, 
+            "time_s": 0.00027157900000000004, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 1, 
+            "label": "01: conv1 + relu1", 
+            "name": "conv1 + relu1", 
+            "time_ms": 1.428578, 
+            "time_s": 0.001428578, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 2, 
+            "label": "02: norm1", 
+            "name": "norm1", 
+            "time_ms": 0.448948, 
+            "time_s": 0.000448948, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 3, 
+            "label": "03: pool1", 
+            "name": "pool1", 
+            "time_ms": 0.299473, 
+            "time_s": 0.00029947299999999997, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 4, 
+            "label": "04: conv2 + relu2", 
+            "name": "conv2 + relu2", 
+            "time_ms": 2.207578, 
+            "time_s": 0.002207578, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 5, 
+            "label": "05: norm2", 
+            "name": "norm2", 
+            "time_ms": 0.317158, 
+            "time_s": 0.000317158, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 6, 
+            "label": "06: pool2", 
+            "name": "pool2", 
+            "time_ms": 0.124842, 
+            "time_s": 0.000124842, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 7, 
+            "label": "07: conv3 + relu3", 
+            "name": "conv3 + relu3", 
+            "time_ms": 1.126525, 
+            "time_s": 0.001126525, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 8, 
+            "label": "08: conv4 + relu4", 
+            "name": "conv4 + relu4", 
+            "time_ms": 0.895895, 
+            "time_s": 0.0008958950000000001, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 9, 
+            "label": "09: conv5 + relu5", 
+            "name": "conv5 + relu5", 
+            "time_ms": 0.606157, 
+            "time_s": 0.000606157, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 10, 
+            "label": "10: pool5", 
+            "name": "pool5", 
+            "time_ms": 0.036632, 
+            "time_s": 3.6632e-05, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 11, 
+            "label": "11: fc6", 
+            "name": "fc6", 
+            "time_ms": 4.866629, 
+            "time_s": 0.004866629, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 12, 
+            "label": "12: relu6", 
+            "name": "relu6", 
+            "time_ms": 0.010474, 
+            "time_s": 1.0474000000000002e-05, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 13, 
+            "label": "13: fc7", 
+            "name": "fc7", 
+            "time_ms": 2.143577, 
+            "time_s": 0.0021435770000000002, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 14, 
+            "label": "14: relu7", 
+            "name": "relu7", 
+            "time_ms": 0.009474, 
+            "time_s": 9.474e-06, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 15, 
+            "label": "15: fc8", 
+            "name": "fc8", 
+            "time_ms": 0.533316, 
+            "time_s": 0.000533316, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 16, 
+            "label": "16: prob", 
+            "name": "prob", 
+            "time_ms": 0.760052, 
+            "time_s": 0.000760052, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 17, 
+            "label": "17: prob_unzipper", 
+            "name": "prob_unzipper", 
+            "time_ms": 0.003263, 
+            "time_s": 3.263e-06, 
+            "timestamp": "0101 00:00:00.000000"
+          }
+        ], 
+        "post_processed": "yes", 
+        "repeat": 1, 
+        "return_code": 0, 
+        "run_success": "yes", 
+        "run_success_bool": true, 
+        "time_bw_ms": 0.0, 
+        "time_bw_s": 0.0, 
+        "time_fw_ms": 16.09015, 
+        "time_fw_s": 0.01609015, 
+        "time_fwbw_ms": 16.09015, 
+        "time_fwbw_s": 0.01609015, 
+        "time_total_ms": 16.09015, 
+        "time_total_ms_kernel_0": 16.09015, 
+        "time_total_s": 0.01609015, 
+        "time_total_s_kernel_0": 0.01609015, 
+        "total_execution_time": 0.01609015
+      }
+    }, 
+    {
+      "run": {
+        "REAL_ENV_CK_CAFFE_MODEL": "/home/anton/CK_REPOS/ck-tensorrt/program/tensorrt-time/tmp/tmp-Az03ix.prototxt", 
+        "execution_time": 0.01595315, 
+        "execution_time_with_module": 5.345954179763794, 
+        "memory_bytes": 0, 
+        "memory_kbytes": 0.0, 
+        "memory_mbytes": 0.0, 
+        "per_layer_info": [
+          {
+            "direction": "forward", 
+            "index": 0, 
+            "label": "00: data_zipper", 
+            "name": "data_zipper", 
+            "time_ms": 0.257316, 
+            "time_s": 0.000257316, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 1, 
+            "label": "01: conv1 + relu1", 
+            "name": "conv1 + relu1", 
+            "time_ms": 1.43621, 
+            "time_s": 0.00143621, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 2, 
+            "label": "02: norm1", 
+            "name": "norm1", 
+            "time_ms": 0.44721, 
+            "time_s": 0.00044721, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 3, 
+            "label": "03: pool1", 
+            "name": "pool1", 
+            "time_ms": 0.285368, 
+            "time_s": 0.00028536800000000004, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 4, 
+            "label": "04: conv2 + relu2", 
+            "name": "conv2 + relu2", 
+            "time_ms": 2.212894, 
+            "time_s": 0.002212894, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 5, 
+            "label": "05: norm2", 
+            "name": "norm2", 
+            "time_ms": 0.316789, 
+            "time_s": 0.000316789, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 6, 
+            "label": "06: pool2", 
+            "name": "pool2", 
+            "time_ms": 0.123842, 
+            "time_s": 0.00012384199999999998, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 7, 
+            "label": "07: conv3 + relu3", 
+            "name": "conv3 + relu3", 
+            "time_ms": 1.116947, 
+            "time_s": 0.0011169469999999999, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 8, 
+            "label": "08: conv4 + relu4", 
+            "name": "conv4 + relu4", 
+            "time_ms": 0.883473, 
+            "time_s": 0.000883473, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 9, 
+            "label": "09: conv5 + relu5", 
+            "name": "conv5 + relu5", 
+            "time_ms": 0.600737, 
+            "time_s": 0.000600737, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 10, 
+            "label": "10: pool5", 
+            "name": "pool5", 
+            "time_ms": 0.036526, 
+            "time_s": 3.6526e-05, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 11, 
+            "label": "11: fc6", 
+            "name": "fc6", 
+            "time_ms": 4.803155, 
+            "time_s": 0.004803155000000001, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 12, 
+            "label": "12: relu6", 
+            "name": "relu6", 
+            "time_ms": 0.009895, 
+            "time_s": 9.895e-06, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 13, 
+            "label": "13: fc7", 
+            "name": "fc7", 
+            "time_ms": 2.096315, 
+            "time_s": 0.002096315, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 14, 
+            "label": "14: relu7", 
+            "name": "relu7", 
+            "time_ms": 0.008947, 
+            "time_s": 8.947000000000001e-06, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 15, 
+            "label": "15: fc8", 
+            "name": "fc8", 
+            "time_ms": 0.549368, 
+            "time_s": 0.000549368, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 16, 
+            "label": "16: prob", 
+            "name": "prob", 
+            "time_ms": 0.764316, 
+            "time_s": 0.000764316, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 17, 
+            "label": "17: prob_unzipper", 
+            "name": "prob_unzipper", 
+            "time_ms": 0.003842, 
+            "time_s": 3.842e-06, 
+            "timestamp": "0101 00:00:00.000000"
+          }
+        ], 
+        "post_processed": "yes", 
+        "repeat": 1, 
+        "return_code": 0, 
+        "run_success": "yes", 
+        "run_success_bool": true, 
+        "time_bw_ms": 0.0, 
+        "time_bw_s": 0.0, 
+        "time_fw_ms": 15.953149999999999, 
+        "time_fw_s": 0.01595315, 
+        "time_fwbw_ms": 15.953149999999999, 
+        "time_fwbw_s": 0.01595315, 
+        "time_total_ms": 15.953149999999999, 
+        "time_total_ms_kernel_0": 15.953149999999999, 
+        "time_total_s": 0.01595315, 
+        "time_total_s_kernel_0": 0.01595315, 
+        "total_execution_time": 0.01595315
+      }
+    }, 
+    {
+      "run": {
+        "REAL_ENV_CK_CAFFE_MODEL": "/home/anton/CK_REPOS/ck-tensorrt/program/tensorrt-time/tmp/tmp-BnKQMT.prototxt", 
+        "execution_time": 0.015990307, 
+        "execution_time_with_module": 5.320852994918823, 
+        "memory_bytes": 0, 
+        "memory_kbytes": 0.0, 
+        "memory_mbytes": 0.0, 
+        "per_layer_info": [
+          {
+            "direction": "forward", 
+            "index": 0, 
+            "label": "00: data_zipper", 
+            "name": "data_zipper", 
+            "time_ms": 0.249263, 
+            "time_s": 0.000249263, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 1, 
+            "label": "01: conv1 + relu1", 
+            "name": "conv1 + relu1", 
+            "time_ms": 1.439104, 
+            "time_s": 0.0014391039999999999, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 2, 
+            "label": "02: norm1", 
+            "name": "norm1", 
+            "time_ms": 0.448, 
+            "time_s": 0.000448, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 3, 
+            "label": "03: pool1", 
+            "name": "pool1", 
+            "time_ms": 0.291316, 
+            "time_s": 0.000291316, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 4, 
+            "label": "04: conv2 + relu2", 
+            "name": "conv2 + relu2", 
+            "time_ms": 2.213262, 
+            "time_s": 0.0022132619999999997, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 5, 
+            "label": "05: norm2", 
+            "name": "norm2", 
+            "time_ms": 0.309947, 
+            "time_s": 0.000309947, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 6, 
+            "label": "06: pool2", 
+            "name": "pool2", 
+            "time_ms": 0.122737, 
+            "time_s": 0.00012273700000000001, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 7, 
+            "label": "07: conv3 + relu3", 
+            "name": "conv3 + relu3", 
+            "time_ms": 1.131999, 
+            "time_s": 0.001131999, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 8, 
+            "label": "08: conv4 + relu4", 
+            "name": "conv4 + relu4", 
+            "time_ms": 0.90021, 
+            "time_s": 0.0009002099999999999, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 9, 
+            "label": "09: conv5 + relu5", 
+            "name": "conv5 + relu5", 
+            "time_ms": 0.611421, 
+            "time_s": 0.000611421, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 10, 
+            "label": "10: pool5", 
+            "name": "pool5", 
+            "time_ms": 0.035737, 
+            "time_s": 3.5737e-05, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 11, 
+            "label": "11: fc6", 
+            "name": "fc6", 
+            "time_ms": 4.785629, 
+            "time_s": 0.0047856290000000004, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 12, 
+            "label": "12: relu6", 
+            "name": "relu6", 
+            "time_ms": 0.009684, 
+            "time_s": 9.684e-06, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 13, 
+            "label": "13: fc7", 
+            "name": "fc7", 
+            "time_ms": 2.118578, 
+            "time_s": 0.002118578, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 14, 
+            "label": "14: relu7", 
+            "name": "relu7", 
+            "time_ms": 0.008947, 
+            "time_s": 8.947000000000001e-06, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 15, 
+            "label": "15: fc8", 
+            "name": "fc8", 
+            "time_ms": 0.548895, 
+            "time_s": 0.000548895, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 16, 
+            "label": "16: prob", 
+            "name": "prob", 
+            "time_ms": 0.761105, 
+            "time_s": 0.0007611050000000001, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 17, 
+            "label": "17: prob_unzipper", 
+            "name": "prob_unzipper", 
+            "time_ms": 0.004473, 
+            "time_s": 4.473e-06, 
+            "timestamp": "0101 00:00:00.000000"
+          }
+        ], 
+        "post_processed": "yes", 
+        "repeat": 1, 
+        "return_code": 0, 
+        "run_success": "yes", 
+        "run_success_bool": true, 
+        "time_bw_ms": 0.0, 
+        "time_bw_s": 0.0, 
+        "time_fw_ms": 15.990307, 
+        "time_fw_s": 0.015990307, 
+        "time_fwbw_ms": 15.990307, 
+        "time_fwbw_s": 0.015990307, 
+        "time_total_ms": 15.990307, 
+        "time_total_ms_kernel_0": 15.990307, 
+        "time_total_s": 0.015990307, 
+        "time_total_s_kernel_0": 0.015990307, 
+        "total_execution_time": 0.015990307
+      }
+    }
+  ], 
+  "choices": {
+    "cmd_key": "default", 
+    "compile_only_once": "yes", 
+    "compile_type": "dynamic", 
+    "compiler_flags": {}, 
+    "cpu_freq": "max", 
+    "data_uoa": "tensorrt-time", 
+    "dataset_file": "", 
+    "device_cfg": {}, 
+    "device_id": "", 
+    "energy": "no", 
+    "env": {
+      "CK_CAFFE_BATCH_SIZE": 4, 
+      "CK_CAFFE_ITERATIONS": "", 
+      "CK_CAFFE_MODEL": "/home/anton/CK_REPOS/ck-tensorrt/program/tensorrt-time/tmp/tmp-uK_319.prototxt", 
+      "CK_CAFFE_MODEL_FILE": "tmp-uK_319.prototxt", 
+      "CK_CAFFE_MODEL_WEIGHTS": "/home/anton/CK_TOOLS/caffemodel-bvlc-alexnet/bvlc_alexnet.caffemodel", 
+      "CK_CPU_FREQUENCY": "max", 
+      "CK_ENV_MODEL_CAFFE_WEIGHTS": "/home/anton/CK_TOOLS/caffemodel-bvlc-alexnet/bvlc_alexnet.caffemodel", 
+      "CK_GPU_FREQUENCY": "max", 
+      "CK_TENSORRT_CJSON_PATH": "profiler.json", 
+      "CK_TENSORRT_ENABLE_FP16": 1
+    }, 
+    "flags": "-O3", 
+    "gpu_freq": "max", 
+    "host_os": "linux-64", 
+    "module_uoa": "b0ac08fe1d3c2615", 
+    "no_state_check": "yes", 
+    "repeat": 1, 
+    "skip_calibration": "yes", 
+    "skip_print_timers": "yes", 
+    "target": "", 
+    "target_os": "linux-64", 
+    "target_os_bits": "64"
+  }, 
+  "choices_order": [
+    "##choices#env#CK_TENSORRT_ENABLE_FP16", 
+    "##choices#env#CK_CAFFE_BATCH_SIZE"
+  ], 
+  "features": {
+    "compiler_version": {
+      "list": [
+        5, 
+        4, 
+        0
+      ], 
+      "raw": [
+        "gcc-5 (Ubuntu/Linaro 5.4.0-6ubuntu1~16.04.4) 5.4.0 20160609", 
+        "Copyright (C) 2015 Free Software Foundation, Inc.", 
+        "This is free software; see the source for copying conditions.  There is NO", 
+        "warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.", 
+        "", 
+        ""
+      ], 
+      "str": "5.4.0"
+    }, 
+    "number_of_selected_compiler_flags": 0, 
+    "platform": {
+      "cpu": {
+        "all_freqs": {
+          "0": [
+            102000, 
+            204000, 
+            307200, 
+            403200, 
+            518400, 
+            614400, 
+            710400, 
+            825600, 
+            921600, 
+            1036800, 
+            1132800, 
+            1224000, 
+            1326000, 
+            1428000, 
+            1555500, 
+            1632000, 
+            1734000
+          ], 
+          "1": [
+            102000, 
+            204000, 
+            307200, 
+            403200, 
+            518400, 
+            614400, 
+            710400, 
+            825600, 
+            921600, 
+            1036800, 
+            1132800, 
+            1224000, 
+            1326000, 
+            1428000, 
+            1555500, 
+            1632000, 
+            1734000
+          ], 
+          "2": [
+            102000, 
+            204000, 
+            307200, 
+            403200, 
+            518400, 
+            614400, 
+            710400, 
+            825600, 
+            921600, 
+            1036800, 
+            1132800, 
+            1224000, 
+            1326000, 
+            1428000, 
+            1555500, 
+            1632000, 
+            1734000
+          ], 
+          "3": [
+            102000, 
+            204000, 
+            307200, 
+            403200, 
+            518400, 
+            614400, 
+            710400, 
+            825600, 
+            921600, 
+            1036800, 
+            1132800, 
+            1224000, 
+            1326000, 
+            1428000, 
+            1555500, 
+            1632000, 
+            1734000
+          ]
+        }, 
+        "cpu_abi": "", 
+        "cpu_features": "fp asimd aes pmull sha1 sha2 crc32", 
+        "current_freq": {
+          "0": 1734.0, 
+          "1": 1734.0, 
+          "2": 1734.0, 
+          "3": 1734.0
+        }, 
+        "max_freq": {
+          "0": 1734.0, 
+          "1": 1734.0, 
+          "2": 1734.0, 
+          "3": 1734.0
+        }, 
+        "name": "jetson_tx1", 
+        "num_proc": "4", 
+        "sub_name": "ARMv8 Processor rev 1 (v8l)", 
+        "workload_automation": {
+          "device_config": {
+            "core_clusters": [
+              0, 
+              0, 
+              0, 
+              1
+            ], 
+            "core_names": [
+              "ARMv8 Processor rev 1 (v8l)", 
+              "ARMv8 Processor rev 1 (v8l)", 
+              "ARMv8 Processor rev 1 (v8l)", 
+              "jetson_tx1"
+            ]
+          }
+        }
+      }, 
+      "cpu_misc": {
+        "0": {
+          "BogoMIPS": "38.40", 
+          "CPU architecture": "8", 
+          "CPU implementer": "0x41", 
+          "CPU part": "0xd07", 
+          "CPU revision": "1", 
+          "CPU variant": "0x1", 
+          "Features": "fp asimd aes pmull sha1 sha2 crc32", 
+          "all_freqs": [
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0"
+          ], 
+          "ck_cpu_name": "ARMv8 Processor rev 1 (v8l)", 
+          "ck_cpu_subname": "ARMv8 Processor rev 1 (v8l)", 
+          "cpu_features": "fp asimd aes pmull sha1 sha2 crc32", 
+          "cur_freq": 1734.0, 
+          "max_freq": 1734.0, 
+          "model name": "ARMv8 Processor rev 1 (v8l)", 
+          "processor": "0"
+        }, 
+        "1": {
+          "BogoMIPS": "38.40", 
+          "CPU architecture": "8", 
+          "CPU implementer": "0x41", 
+          "CPU part": "0xd07", 
+          "CPU revision": "1", 
+          "CPU variant": "0x1", 
+          "Features": "fp asimd aes pmull sha1 sha2 crc32", 
+          "all_freqs": [
+            "1", 
+            "1", 
+            "1", 
+            "1", 
+            "1", 
+            "1", 
+            "1", 
+            "1", 
+            "1", 
+            "1", 
+            "1", 
+            "1", 
+            "1", 
+            "1", 
+            "1", 
+            "1", 
+            "1"
+          ], 
+          "ck_cpu_name": "ARMv8 Processor rev 1 (v8l)", 
+          "ck_cpu_subname": "ARMv8 Processor rev 1 (v8l)", 
+          "cpu_features": "fp asimd aes pmull sha1 sha2 crc32", 
+          "cur_freq": 1734.0, 
+          "max_freq": 1734.0, 
+          "model name": "ARMv8 Processor rev 1 (v8l)", 
+          "processor": "1"
+        }, 
+        "2": {
+          "BogoMIPS": "38.40", 
+          "CPU architecture": "8", 
+          "CPU implementer": "0x41", 
+          "CPU part": "0xd07", 
+          "CPU revision": "1", 
+          "CPU variant": "0x1", 
+          "Features": "fp asimd aes pmull sha1 sha2 crc32", 
+          "all_freqs": [
+            "2", 
+            "2", 
+            "2", 
+            "2", 
+            "2", 
+            "2", 
+            "2", 
+            "2", 
+            "2", 
+            "2", 
+            "2", 
+            "2", 
+            "2", 
+            "2", 
+            "2", 
+            "2", 
+            "2"
+          ], 
+          "ck_cpu_name": "ARMv8 Processor rev 1 (v8l)", 
+          "ck_cpu_subname": "ARMv8 Processor rev 1 (v8l)", 
+          "cpu_features": "fp asimd aes pmull sha1 sha2 crc32", 
+          "cur_freq": 1734.0, 
+          "max_freq": 1734.0, 
+          "model name": "ARMv8 Processor rev 1 (v8l)", 
+          "processor": "2"
+        }, 
+        "3": {
+          "BogoMIPS": "38.40", 
+          "CPU architecture": "8", 
+          "CPU implementer": "0x41", 
+          "CPU part": "0xd07", 
+          "CPU revision": "1", 
+          "CPU variant": "0x1", 
+          "Features": "fp asimd aes pmull sha1 sha2 crc32", 
+          "Hardware": "jetson_tx1", 
+          "Revision": "0000", 
+          "Serial": "088403e800000000", 
+          "all_freqs": [
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3"
+          ], 
+          "ck_cpu_name": "jetson_tx1", 
+          "ck_cpu_subname": "ARMv8 Processor rev 1 (v8l)", 
+          "cpu_features": "fp asimd aes pmull sha1 sha2 crc32", 
+          "cur_freq": 1734.0, 
+          "max_freq": 1734.0, 
+          "model name": "ARMv8 Processor rev 1 (v8l)", 
+          "processor": "3"
+        }
+      }, 
+      "cpu_new_format": "", 
+      "cpu_unique": [
+        {
+          "BogoMIPS": "38.40", 
+          "CPU architecture": "8", 
+          "CPU implementer": "0x41", 
+          "CPU part": "0xd07", 
+          "CPU revision": "1", 
+          "CPU variant": "0x1", 
+          "Features": "fp asimd aes pmull sha1 sha2 crc32", 
+          "all_freqs": [
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0"
+          ], 
+          "ck_cpu_name": "ARMv8 Processor rev 1 (v8l)", 
+          "ck_cpu_subname": "ARMv8 Processor rev 1 (v8l)", 
+          "cpu_features": "fp asimd aes pmull sha1 sha2 crc32", 
+          "cur_freq": 1734.0, 
+          "max_freq": 1734.0, 
+          "model name": "ARMv8 Processor rev 1 (v8l)", 
+          "processor": "0"
+        }, 
+        {
+          "BogoMIPS": "38.40", 
+          "CPU architecture": "8", 
+          "CPU implementer": "0x41", 
+          "CPU part": "0xd07", 
+          "CPU revision": "1", 
+          "CPU variant": "0x1", 
+          "Features": "fp asimd aes pmull sha1 sha2 crc32", 
+          "Hardware": "jetson_tx1", 
+          "Revision": "0000", 
+          "Serial": "088403e800000000", 
+          "all_freqs": [
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3"
+          ], 
+          "ck_cpu_name": "jetson_tx1", 
+          "ck_cpu_subname": "ARMv8 Processor rev 1 (v8l)", 
+          "cpu_features": "fp asimd aes pmull sha1 sha2 crc32", 
+          "cur_freq": 1734.0, 
+          "max_freq": 1734.0, 
+          "model name": "ARMv8 Processor rev 1 (v8l)", 
+          "processor": "3"
+        }
+      ], 
+      "gpu": {
+        "name": "", 
+        "vendor": ""
+      }, 
+      "gpu_misc": {}, 
+      "os": {
+        "abi": "aarch64", 
+        "bits": "64", 
+        "ck_os_base_uoa": "", 
+        "ck_os_uoa": "linux-64", 
+        "name": "Ubuntu 16.04.1 LTS", 
+        "name_long": "Linux-3.10.96-tegra-aarch64-with-Ubuntu-16.04-xenial", 
+        "name_short": "Linux 3.10.96", 
+        "serial_number": ""
+      }, 
+      "os_misc": {}, 
+      "platform": {
+        "model": "jetson_tx1\u0000", 
+        "name": "jetson_tx1\u0000 (jetson_tx1\u0000)", 
+        "vendor": "jetson_tx1\u0000"
+      }, 
+      "platform_misc": {}
+    }, 
+    "statistical_repetitions": 3
+  }
+}

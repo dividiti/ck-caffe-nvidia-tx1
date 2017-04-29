@@ -1,0 +1,2530 @@
+{
+  "characteristics_list": [
+    {
+      "run": {
+        "REAL_ENV_CK_CAFFE_MODEL": "/home/anton/CK_REPOS/ck-tensorrt/program/tensorrt-time/tmp/tmp-hWeBC2.prototxt", 
+        "execution_time": 0.068209123, 
+        "execution_time_with_module": 31.874858140945435, 
+        "memory_bytes": 0, 
+        "memory_kbytes": 0.0, 
+        "memory_mbytes": 0.0, 
+        "per_layer_info": [
+          {
+            "direction": "forward", 
+            "index": 0, 
+            "label": "00: conv1/7x7_s2 + conv1/relu_7x7", 
+            "name": "conv1/7x7_s2 + conv1/relu_7x7", 
+            "time_ms": 4.491945, 
+            "time_s": 0.004491945000000001, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 1, 
+            "label": "01: pool1/3x3_s2", 
+            "name": "pool1/3x3_s2", 
+            "time_ms": 2.131157, 
+            "time_s": 0.002131157, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 2, 
+            "label": "02: pool1/norm1", 
+            "name": "pool1/norm1", 
+            "time_ms": 0.54621, 
+            "time_s": 0.00054621, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 3, 
+            "label": "03: conv2/3x3_reduce + conv2/relu_3x3_reduce", 
+            "name": "conv2/3x3_reduce + conv2/relu_3x3_reduce", 
+            "time_ms": 0.686632, 
+            "time_s": 0.0006866320000000001, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 4, 
+            "label": "04: conv2/3x3 + conv2/relu_3x3", 
+            "name": "conv2/3x3 + conv2/relu_3x3", 
+            "time_ms": 11.193994, 
+            "time_s": 0.011193994, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 5, 
+            "label": "05: conv2/norm2", 
+            "name": "conv2/norm2", 
+            "time_ms": 1.66221, 
+            "time_s": 0.00166221, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 6, 
+            "label": "06: pool2/3x3_s2", 
+            "name": "pool2/3x3_s2", 
+            "time_ms": 1.667946, 
+            "time_s": 0.001667946, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 7, 
+            "label": "07: inception_3a/1x1 + inception_3a/relu_1x1", 
+            "name": "inception_3a/1x1 + inception_3a/relu_1x1", 
+            "time_ms": 0.421684, 
+            "time_s": 0.000421684, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 8, 
+            "label": "08: inception_3a/pool", 
+            "name": "inception_3a/pool", 
+            "time_ms": 0.893263, 
+            "time_s": 0.000893263, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 9, 
+            "label": "09: inception_3a/3x3_reduce + inception_3a/relu_3x3_reduce||inception_3a/5x5_reduce + inception_3a/relu_5x5_reduce", 
+            "name": "inception_3a/3x3_reduce + inception_3a/relu_3x3_reduce||inception_3a/5x5_reduce + inception_3a/relu_5x5_reduce", 
+            "time_ms": 0.745315, 
+            "time_s": 0.000745315, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 10, 
+            "label": "10: inception_3a/pool_proj + inception_3a/relu_pool_proj", 
+            "name": "inception_3a/pool_proj + inception_3a/relu_pool_proj", 
+            "time_ms": 0.312263, 
+            "time_s": 0.000312263, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 11, 
+            "label": "11: inception_3a/3x3 + inception_3a/relu_3x3", 
+            "name": "inception_3a/3x3 + inception_3a/relu_3x3", 
+            "time_ms": 2.681525, 
+            "time_s": 0.002681525, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 12, 
+            "label": "12: inception_3a/5x5 + inception_3a/relu_5x5", 
+            "name": "inception_3a/5x5 + inception_3a/relu_5x5", 
+            "time_ms": 0.411105, 
+            "time_s": 0.000411105, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 13, 
+            "label": "13: inception_3a/output", 
+            "name": "inception_3a/output", 
+            "time_ms": 0.000632, 
+            "time_s": 6.319999999999999e-07, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 14, 
+            "label": "14: inception_3b/1x1 + inception_3b/relu_1x1", 
+            "name": "inception_3b/1x1 + inception_3b/relu_1x1", 
+            "time_ms": 0.972578, 
+            "time_s": 0.0009725780000000001, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 15, 
+            "label": "15: inception_3b/pool", 
+            "name": "inception_3b/pool", 
+            "time_ms": 1.201052, 
+            "time_s": 0.001201052, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 16, 
+            "label": "16: inception_3b/3x3_reduce + inception_3b/relu_3x3_reduce||inception_3b/5x5_reduce + inception_3b/relu_5x5_reduce", 
+            "name": "inception_3b/3x3_reduce + inception_3b/relu_3x3_reduce||inception_3b/5x5_reduce + inception_3b/relu_5x5_reduce", 
+            "time_ms": 1.568052, 
+            "time_s": 0.0015680520000000001, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 17, 
+            "label": "17: inception_3b/pool_proj + inception_3b/relu_pool_proj", 
+            "name": "inception_3b/pool_proj + inception_3b/relu_pool_proj", 
+            "time_ms": 0.550263, 
+            "time_s": 0.0005502629999999999, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 18, 
+            "label": "18: inception_3b/3x3 + inception_3b/relu_3x3", 
+            "name": "inception_3b/3x3 + inception_3b/relu_3x3", 
+            "time_ms": 5.079997, 
+            "time_s": 0.005079997, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 19, 
+            "label": "19: inception_3b/5x5 + inception_3b/relu_5x5", 
+            "name": "inception_3b/5x5 + inception_3b/relu_5x5", 
+            "time_ms": 2.302631, 
+            "time_s": 0.002302631, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 20, 
+            "label": "20: inception_3b/output", 
+            "name": "inception_3b/output", 
+            "time_ms": 0.000526, 
+            "time_s": 5.26e-07, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 21, 
+            "label": "21: pool3/3x3_s2", 
+            "name": "pool3/3x3_s2", 
+            "time_ms": 0.657631, 
+            "time_s": 0.000657631, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 22, 
+            "label": "22: inception_4a/1x1 + inception_4a/relu_1x1", 
+            "name": "inception_4a/1x1 + inception_4a/relu_1x1", 
+            "time_ms": 0.753316, 
+            "time_s": 0.000753316, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 23, 
+            "label": "23: inception_4a/pool", 
+            "name": "inception_4a/pool", 
+            "time_ms": 0.307526, 
+            "time_s": 0.000307526, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 24, 
+            "label": "24: inception_4a/3x3_reduce + inception_4a/relu_3x3_reduce||inception_4a/5x5_reduce + inception_4a/relu_5x5_reduce", 
+            "name": "inception_4a/3x3_reduce + inception_4a/relu_3x3_reduce||inception_4a/5x5_reduce + inception_4a/relu_5x5_reduce", 
+            "time_ms": 0.504684, 
+            "time_s": 0.000504684, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 25, 
+            "label": "25: inception_4a/pool_proj + inception_4a/relu_pool_proj", 
+            "name": "inception_4a/pool_proj + inception_4a/relu_pool_proj", 
+            "time_ms": 0.331789, 
+            "time_s": 0.00033178900000000003, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 26, 
+            "label": "26: inception_4a/3x3 + inception_4a/relu_3x3", 
+            "name": "inception_4a/3x3 + inception_4a/relu_3x3", 
+            "time_ms": 1.072052, 
+            "time_s": 0.001072052, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 27, 
+            "label": "27: inception_4a/5x5 + inception_4a/relu_5x5", 
+            "name": "inception_4a/5x5 + inception_4a/relu_5x5", 
+            "time_ms": 0.217053, 
+            "time_s": 0.000217053, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 28, 
+            "label": "28: inception_4a/output", 
+            "name": "inception_4a/output", 
+            "time_ms": 0.000473, 
+            "time_s": 4.73e-07, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 29, 
+            "label": "29: inception_4b/1x1 + inception_4b/relu_1x1", 
+            "name": "inception_4b/1x1 + inception_4b/relu_1x1", 
+            "time_ms": 0.787474, 
+            "time_s": 0.000787474, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 30, 
+            "label": "30: inception_4b/pool", 
+            "name": "inception_4b/pool", 
+            "time_ms": 0.322579, 
+            "time_s": 0.00032257900000000003, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 31, 
+            "label": "31: inception_4b/3x3_reduce + inception_4b/relu_3x3_reduce||inception_4b/5x5_reduce + inception_4b/relu_5x5_reduce", 
+            "name": "inception_4b/3x3_reduce + inception_4b/relu_3x3_reduce||inception_4b/5x5_reduce + inception_4b/relu_5x5_reduce", 
+            "time_ms": 0.806578, 
+            "time_s": 0.0008065780000000001, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 32, 
+            "label": "32: inception_4b/pool_proj + inception_4b/relu_pool_proj", 
+            "name": "inception_4b/pool_proj + inception_4b/relu_pool_proj", 
+            "time_ms": 0.340158, 
+            "time_s": 0.000340158, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 33, 
+            "label": "33: inception_4b/3x3 + inception_4b/relu_3x3", 
+            "name": "inception_4b/3x3 + inception_4b/relu_3x3", 
+            "time_ms": 1.214473, 
+            "time_s": 0.001214473, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 34, 
+            "label": "34: inception_4b/5x5 + inception_4b/relu_5x5", 
+            "name": "inception_4b/5x5 + inception_4b/relu_5x5", 
+            "time_ms": 0.339158, 
+            "time_s": 0.00033915800000000005, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 35, 
+            "label": "35: inception_4b/output", 
+            "name": "inception_4b/output", 
+            "time_ms": 0.000473, 
+            "time_s": 4.73e-07, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 36, 
+            "label": "36: inception_4c/1x1 + inception_4c/relu_1x1", 
+            "name": "inception_4c/1x1 + inception_4c/relu_1x1", 
+            "time_ms": 0.492526, 
+            "time_s": 0.0004925260000000001, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 37, 
+            "label": "37: inception_4c/pool", 
+            "name": "inception_4c/pool", 
+            "time_ms": 0.325526, 
+            "time_s": 0.000325526, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 38, 
+            "label": "38: inception_4c/3x3_reduce + inception_4c/relu_3x3_reduce||inception_4c/5x5_reduce + inception_4c/relu_5x5_reduce", 
+            "name": "inception_4c/3x3_reduce + inception_4c/relu_3x3_reduce||inception_4c/5x5_reduce + inception_4c/relu_5x5_reduce", 
+            "time_ms": 0.797263, 
+            "time_s": 0.0007972630000000001, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 39, 
+            "label": "39: inception_4c/pool_proj + inception_4c/relu_pool_proj", 
+            "name": "inception_4c/pool_proj + inception_4c/relu_pool_proj", 
+            "time_ms": 0.344895, 
+            "time_s": 0.000344895, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 40, 
+            "label": "40: inception_4c/3x3 + inception_4c/relu_3x3", 
+            "name": "inception_4c/3x3 + inception_4c/relu_3x3", 
+            "time_ms": 1.528367, 
+            "time_s": 0.001528367, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 41, 
+            "label": "41: inception_4c/5x5 + inception_4c/relu_5x5", 
+            "name": "inception_4c/5x5 + inception_4c/relu_5x5", 
+            "time_ms": 0.341842, 
+            "time_s": 0.00034184199999999997, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 42, 
+            "label": "42: inception_4c/output", 
+            "name": "inception_4c/output", 
+            "time_ms": 0.000474, 
+            "time_s": 4.74e-07, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 43, 
+            "label": "43: inception_4d/1x1 + inception_4d/relu_1x1", 
+            "name": "inception_4d/1x1 + inception_4d/relu_1x1", 
+            "time_ms": 0.483421, 
+            "time_s": 0.000483421, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 44, 
+            "label": "44: inception_4d/pool", 
+            "name": "inception_4d/pool", 
+            "time_ms": 0.319263, 
+            "time_s": 0.000319263, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 45, 
+            "label": "45: inception_4d/3x3_reduce + inception_4d/relu_3x3_reduce||inception_4d/5x5_reduce + inception_4d/relu_5x5_reduce", 
+            "name": "inception_4d/3x3_reduce + inception_4d/relu_3x3_reduce||inception_4d/5x5_reduce + inception_4d/relu_5x5_reduce", 
+            "time_ms": 0.795789, 
+            "time_s": 0.000795789, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 46, 
+            "label": "46: inception_4d/pool_proj + inception_4d/relu_pool_proj", 
+            "name": "inception_4d/pool_proj + inception_4d/relu_pool_proj", 
+            "time_ms": 0.348316, 
+            "time_s": 0.00034831600000000004, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 47, 
+            "label": "47: inception_4d/3x3 + inception_4d/relu_3x3", 
+            "name": "inception_4d/3x3 + inception_4d/relu_3x3", 
+            "time_ms": 1.908367, 
+            "time_s": 0.001908367, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 48, 
+            "label": "48: inception_4d/5x5 + inception_4d/relu_5x5", 
+            "name": "inception_4d/5x5 + inception_4d/relu_5x5", 
+            "time_ms": 0.452316, 
+            "time_s": 0.000452316, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 49, 
+            "label": "49: inception_4d/output", 
+            "name": "inception_4d/output", 
+            "time_ms": 0.000473, 
+            "time_s": 4.73e-07, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 50, 
+            "label": "50: inception_4e/1x1 + inception_4e/relu_1x1", 
+            "name": "inception_4e/1x1 + inception_4e/relu_1x1", 
+            "time_ms": 0.917263, 
+            "time_s": 0.0009172630000000001, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 51, 
+            "label": "51: inception_4e/pool", 
+            "name": "inception_4e/pool", 
+            "time_ms": 0.33, 
+            "time_s": 0.00033, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 52, 
+            "label": "52: inception_4e/3x3_reduce + inception_4e/relu_3x3_reduce||inception_4e/5x5_reduce + inception_4e/relu_5x5_reduce", 
+            "name": "inception_4e/3x3_reduce + inception_4e/relu_3x3_reduce||inception_4e/5x5_reduce + inception_4e/relu_5x5_reduce", 
+            "time_ms": 0.824157, 
+            "time_s": 0.0008241570000000001, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 53, 
+            "label": "53: inception_4e/pool_proj + inception_4e/relu_pool_proj", 
+            "name": "inception_4e/pool_proj + inception_4e/relu_pool_proj", 
+            "time_ms": 0.553631, 
+            "time_s": 0.000553631, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 54, 
+            "label": "54: inception_4e/3x3 + inception_4e/relu_3x3", 
+            "name": "inception_4e/3x3 + inception_4e/relu_3x3", 
+            "time_ms": 2.299999, 
+            "time_s": 0.002299999, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 55, 
+            "label": "55: inception_4e/5x5 + inception_4e/relu_5x5", 
+            "name": "inception_4e/5x5 + inception_4e/relu_5x5", 
+            "time_ms": 0.774842, 
+            "time_s": 0.0007748420000000001, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 56, 
+            "label": "56: inception_4e/output", 
+            "name": "inception_4e/output", 
+            "time_ms": 0.000526, 
+            "time_s": 5.26e-07, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 57, 
+            "label": "57: pool4/3x3_s2", 
+            "name": "pool4/3x3_s2", 
+            "time_ms": 0.242737, 
+            "time_s": 0.000242737, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 58, 
+            "label": "58: inception_5a/1x1 + inception_5a/relu_1x1", 
+            "name": "inception_5a/1x1 + inception_5a/relu_1x1", 
+            "time_ms": 0.558894, 
+            "time_s": 0.000558894, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 59, 
+            "label": "59: inception_5a/pool", 
+            "name": "inception_5a/pool", 
+            "time_ms": 0.109421, 
+            "time_s": 0.00010942100000000001, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 60, 
+            "label": "60: inception_5a/3x3_reduce + inception_5a/relu_3x3_reduce||inception_5a/5x5_reduce + inception_5a/relu_5x5_reduce", 
+            "name": "inception_5a/3x3_reduce + inception_5a/relu_3x3_reduce||inception_5a/5x5_reduce + inception_5a/relu_5x5_reduce", 
+            "time_ms": 0.514632, 
+            "time_s": 0.000514632, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 61, 
+            "label": "61: inception_5a/pool_proj + inception_5a/relu_pool_proj", 
+            "name": "inception_5a/pool_proj + inception_5a/relu_pool_proj", 
+            "time_ms": 0.281105, 
+            "time_s": 0.00028110499999999997, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 62, 
+            "label": "62: inception_5a/3x3 + inception_5a/relu_3x3", 
+            "name": "inception_5a/3x3 + inception_5a/relu_3x3", 
+            "time_ms": 1.090736, 
+            "time_s": 0.001090736, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 63, 
+            "label": "63: inception_5a/5x5 + inception_5a/relu_5x5", 
+            "name": "inception_5a/5x5 + inception_5a/relu_5x5", 
+            "time_ms": 0.266, 
+            "time_s": 0.000266, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 64, 
+            "label": "64: inception_5a/output", 
+            "name": "inception_5a/output", 
+            "time_ms": 0.000474, 
+            "time_s": 4.74e-07, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 65, 
+            "label": "65: inception_5b/1x1 + inception_5b/relu_1x1", 
+            "name": "inception_5b/1x1 + inception_5b/relu_1x1", 
+            "time_ms": 0.747631, 
+            "time_s": 0.000747631, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 66, 
+            "label": "66: inception_5b/pool", 
+            "name": "inception_5b/pool", 
+            "time_ms": 0.105789, 
+            "time_s": 0.000105789, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 67, 
+            "label": "67: inception_5b/3x3_reduce + inception_5b/relu_3x3_reduce||inception_5b/5x5_reduce + inception_5b/relu_5x5_reduce", 
+            "name": "inception_5b/3x3_reduce + inception_5b/relu_3x3_reduce||inception_5b/5x5_reduce + inception_5b/relu_5x5_reduce", 
+            "time_ms": 0.478369, 
+            "time_s": 0.000478369, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 68, 
+            "label": "68: inception_5b/pool_proj + inception_5b/relu_pool_proj", 
+            "name": "inception_5b/pool_proj + inception_5b/relu_pool_proj", 
+            "time_ms": 0.280578, 
+            "time_s": 0.000280578, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 69, 
+            "label": "69: inception_5b/3x3 + inception_5b/relu_3x3", 
+            "name": "inception_5b/3x3 + inception_5b/relu_3x3", 
+            "time_ms": 1.520368, 
+            "time_s": 0.001520368, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 70, 
+            "label": "70: inception_5b/5x5 + inception_5b/relu_5x5", 
+            "name": "inception_5b/5x5 + inception_5b/relu_5x5", 
+            "time_ms": 0.380737, 
+            "time_s": 0.000380737, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 71, 
+            "label": "71: inception_5b/output", 
+            "name": "inception_5b/output", 
+            "time_ms": 0.000631, 
+            "time_s": 6.310000000000001e-07, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 72, 
+            "label": "72: pool5/7x7_s1", 
+            "name": "pool5/7x7_s1", 
+            "time_ms": 0.266368, 
+            "time_s": 0.000266368, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 73, 
+            "label": "73: loss3/classifier", 
+            "name": "loss3/classifier", 
+            "time_ms": 0.335579, 
+            "time_s": 0.000335579, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 74, 
+            "label": "74: prob", 
+            "name": "prob", 
+            "time_ms": 0.013421, 
+            "time_s": 1.3421e-05, 
+            "timestamp": "0101 00:00:00.000000"
+          }
+        ], 
+        "post_processed": "yes", 
+        "repeat": 1, 
+        "return_code": 0, 
+        "run_success": "yes", 
+        "run_success_bool": true, 
+        "time_bw_ms": 0.0, 
+        "time_bw_s": 0.0, 
+        "time_fw_ms": 68.20912299999999, 
+        "time_fw_s": 0.068209123, 
+        "time_fwbw_ms": 68.20912299999999, 
+        "time_fwbw_s": 0.068209123, 
+        "time_total_ms": 68.20912299999999, 
+        "time_total_ms_kernel_0": 68.20912299999999, 
+        "time_total_s": 0.068209123, 
+        "time_total_s_kernel_0": 0.068209123, 
+        "total_execution_time": 0.068209123
+      }
+    }, 
+    {
+      "run": {
+        "REAL_ENV_CK_CAFFE_MODEL": "/home/anton/CK_REPOS/ck-tensorrt/program/tensorrt-time/tmp/tmp-jRmlBM.prototxt", 
+        "execution_time": 0.068337544, 
+        "execution_time_with_module": 2.4444169998168945, 
+        "memory_bytes": 0, 
+        "memory_kbytes": 0.0, 
+        "memory_mbytes": 0.0, 
+        "per_layer_info": [
+          {
+            "direction": "forward", 
+            "index": 0, 
+            "label": "00: conv1/7x7_s2 + conv1/relu_7x7", 
+            "name": "conv1/7x7_s2 + conv1/relu_7x7", 
+            "time_ms": 4.523156, 
+            "time_s": 0.004523156, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 1, 
+            "label": "01: pool1/3x3_s2", 
+            "name": "pool1/3x3_s2", 
+            "time_ms": 2.143841, 
+            "time_s": 0.002143841, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 2, 
+            "label": "02: pool1/norm1", 
+            "name": "pool1/norm1", 
+            "time_ms": 0.538947, 
+            "time_s": 0.000538947, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 3, 
+            "label": "03: conv2/3x3_reduce + conv2/relu_3x3_reduce", 
+            "name": "conv2/3x3_reduce + conv2/relu_3x3_reduce", 
+            "time_ms": 0.686631, 
+            "time_s": 0.000686631, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 4, 
+            "label": "04: conv2/3x3 + conv2/relu_3x3", 
+            "name": "conv2/3x3 + conv2/relu_3x3", 
+            "time_ms": 11.152099, 
+            "time_s": 0.011152099, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 5, 
+            "label": "05: conv2/norm2", 
+            "name": "conv2/norm2", 
+            "time_ms": 1.671157, 
+            "time_s": 0.001671157, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 6, 
+            "label": "06: pool2/3x3_s2", 
+            "name": "pool2/3x3_s2", 
+            "time_ms": 1.665789, 
+            "time_s": 0.001665789, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 7, 
+            "label": "07: inception_3a/1x1 + inception_3a/relu_1x1", 
+            "name": "inception_3a/1x1 + inception_3a/relu_1x1", 
+            "time_ms": 0.419263, 
+            "time_s": 0.000419263, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 8, 
+            "label": "08: inception_3a/pool", 
+            "name": "inception_3a/pool", 
+            "time_ms": 0.892052, 
+            "time_s": 0.000892052, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 9, 
+            "label": "09: inception_3a/3x3_reduce + inception_3a/relu_3x3_reduce||inception_3a/5x5_reduce + inception_3a/relu_5x5_reduce", 
+            "name": "inception_3a/3x3_reduce + inception_3a/relu_3x3_reduce||inception_3a/5x5_reduce + inception_3a/relu_5x5_reduce", 
+            "time_ms": 0.737737, 
+            "time_s": 0.000737737, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 10, 
+            "label": "10: inception_3a/pool_proj + inception_3a/relu_pool_proj", 
+            "name": "inception_3a/pool_proj + inception_3a/relu_pool_proj", 
+            "time_ms": 0.304947, 
+            "time_s": 0.000304947, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 11, 
+            "label": "11: inception_3a/3x3 + inception_3a/relu_3x3", 
+            "name": "inception_3a/3x3 + inception_3a/relu_3x3", 
+            "time_ms": 2.814209, 
+            "time_s": 0.002814209, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 12, 
+            "label": "12: inception_3a/5x5 + inception_3a/relu_5x5", 
+            "name": "inception_3a/5x5 + inception_3a/relu_5x5", 
+            "time_ms": 0.406368, 
+            "time_s": 0.000406368, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 13, 
+            "label": "13: inception_3a/output", 
+            "name": "inception_3a/output", 
+            "time_ms": 0.000474, 
+            "time_s": 4.74e-07, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 14, 
+            "label": "14: inception_3b/1x1 + inception_3b/relu_1x1", 
+            "name": "inception_3b/1x1 + inception_3b/relu_1x1", 
+            "time_ms": 0.943052, 
+            "time_s": 0.000943052, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 15, 
+            "label": "15: inception_3b/pool", 
+            "name": "inception_3b/pool", 
+            "time_ms": 1.19242, 
+            "time_s": 0.00119242, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 16, 
+            "label": "16: inception_3b/3x3_reduce + inception_3b/relu_3x3_reduce||inception_3b/5x5_reduce + inception_3b/relu_5x5_reduce", 
+            "name": "inception_3b/3x3_reduce + inception_3b/relu_3x3_reduce||inception_3b/5x5_reduce + inception_3b/relu_5x5_reduce", 
+            "time_ms": 1.587368, 
+            "time_s": 0.001587368, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 17, 
+            "label": "17: inception_3b/pool_proj + inception_3b/relu_pool_proj", 
+            "name": "inception_3b/pool_proj + inception_3b/relu_pool_proj", 
+            "time_ms": 0.542789, 
+            "time_s": 0.000542789, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 18, 
+            "label": "18: inception_3b/3x3 + inception_3b/relu_3x3", 
+            "name": "inception_3b/3x3 + inception_3b/relu_3x3", 
+            "time_ms": 5.09905, 
+            "time_s": 0.00509905, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 19, 
+            "label": "19: inception_3b/5x5 + inception_3b/relu_5x5", 
+            "name": "inception_3b/5x5 + inception_3b/relu_5x5", 
+            "time_ms": 2.285368, 
+            "time_s": 0.0022853680000000003, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 20, 
+            "label": "20: inception_3b/output", 
+            "name": "inception_3b/output", 
+            "time_ms": 0.000526, 
+            "time_s": 5.26e-07, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 21, 
+            "label": "21: pool3/3x3_s2", 
+            "name": "pool3/3x3_s2", 
+            "time_ms": 0.664105, 
+            "time_s": 0.000664105, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 22, 
+            "label": "22: inception_4a/1x1 + inception_4a/relu_1x1", 
+            "name": "inception_4a/1x1 + inception_4a/relu_1x1", 
+            "time_ms": 0.756947, 
+            "time_s": 0.000756947, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 23, 
+            "label": "23: inception_4a/pool", 
+            "name": "inception_4a/pool", 
+            "time_ms": 0.31121, 
+            "time_s": 0.00031120999999999997, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 24, 
+            "label": "24: inception_4a/3x3_reduce + inception_4a/relu_3x3_reduce||inception_4a/5x5_reduce + inception_4a/relu_5x5_reduce", 
+            "name": "inception_4a/3x3_reduce + inception_4a/relu_3x3_reduce||inception_4a/5x5_reduce + inception_4a/relu_5x5_reduce", 
+            "time_ms": 0.453105, 
+            "time_s": 0.000453105, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 25, 
+            "label": "25: inception_4a/pool_proj + inception_4a/relu_pool_proj", 
+            "name": "inception_4a/pool_proj + inception_4a/relu_pool_proj", 
+            "time_ms": 0.331, 
+            "time_s": 0.000331, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 26, 
+            "label": "26: inception_4a/3x3 + inception_4a/relu_3x3", 
+            "name": "inception_4a/3x3 + inception_4a/relu_3x3", 
+            "time_ms": 1.077421, 
+            "time_s": 0.001077421, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 27, 
+            "label": "27: inception_4a/5x5 + inception_4a/relu_5x5", 
+            "name": "inception_4a/5x5 + inception_4a/relu_5x5", 
+            "time_ms": 0.216578, 
+            "time_s": 0.00021657799999999999, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 28, 
+            "label": "28: inception_4a/output", 
+            "name": "inception_4a/output", 
+            "time_ms": 0.000527, 
+            "time_s": 5.27e-07, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 29, 
+            "label": "29: inception_4b/1x1 + inception_4b/relu_1x1", 
+            "name": "inception_4b/1x1 + inception_4b/relu_1x1", 
+            "time_ms": 0.775157, 
+            "time_s": 0.000775157, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 30, 
+            "label": "30: inception_4b/pool", 
+            "name": "inception_4b/pool", 
+            "time_ms": 0.322526, 
+            "time_s": 0.000322526, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 31, 
+            "label": "31: inception_4b/3x3_reduce + inception_4b/relu_3x3_reduce||inception_4b/5x5_reduce + inception_4b/relu_5x5_reduce", 
+            "name": "inception_4b/3x3_reduce + inception_4b/relu_3x3_reduce||inception_4b/5x5_reduce + inception_4b/relu_5x5_reduce", 
+            "time_ms": 0.792105, 
+            "time_s": 0.000792105, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 32, 
+            "label": "32: inception_4b/pool_proj + inception_4b/relu_pool_proj", 
+            "name": "inception_4b/pool_proj + inception_4b/relu_pool_proj", 
+            "time_ms": 0.338421, 
+            "time_s": 0.00033842100000000005, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 33, 
+            "label": "33: inception_4b/3x3 + inception_4b/relu_3x3", 
+            "name": "inception_4b/3x3 + inception_4b/relu_3x3", 
+            "time_ms": 1.222894, 
+            "time_s": 0.001222894, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 34, 
+            "label": "34: inception_4b/5x5 + inception_4b/relu_5x5", 
+            "name": "inception_4b/5x5 + inception_4b/relu_5x5", 
+            "time_ms": 0.344789, 
+            "time_s": 0.000344789, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 35, 
+            "label": "35: inception_4b/output", 
+            "name": "inception_4b/output", 
+            "time_ms": 0.000422, 
+            "time_s": 4.2200000000000005e-07, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 36, 
+            "label": "36: inception_4c/1x1 + inception_4c/relu_1x1", 
+            "name": "inception_4c/1x1 + inception_4c/relu_1x1", 
+            "time_ms": 0.491052, 
+            "time_s": 0.000491052, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 37, 
+            "label": "37: inception_4c/pool", 
+            "name": "inception_4c/pool", 
+            "time_ms": 0.323789, 
+            "time_s": 0.000323789, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 38, 
+            "label": "38: inception_4c/3x3_reduce + inception_4c/relu_3x3_reduce||inception_4c/5x5_reduce + inception_4c/relu_5x5_reduce", 
+            "name": "inception_4c/3x3_reduce + inception_4c/relu_3x3_reduce||inception_4c/5x5_reduce + inception_4c/relu_5x5_reduce", 
+            "time_ms": 0.789526, 
+            "time_s": 0.0007895259999999999, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 39, 
+            "label": "39: inception_4c/pool_proj + inception_4c/relu_pool_proj", 
+            "name": "inception_4c/pool_proj + inception_4c/relu_pool_proj", 
+            "time_ms": 0.356158, 
+            "time_s": 0.000356158, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 40, 
+            "label": "40: inception_4c/3x3 + inception_4c/relu_3x3", 
+            "name": "inception_4c/3x3 + inception_4c/relu_3x3", 
+            "time_ms": 1.541894, 
+            "time_s": 0.001541894, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 41, 
+            "label": "41: inception_4c/5x5 + inception_4c/relu_5x5", 
+            "name": "inception_4c/5x5 + inception_4c/relu_5x5", 
+            "time_ms": 0.34121, 
+            "time_s": 0.00034121, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 42, 
+            "label": "42: inception_4c/output", 
+            "name": "inception_4c/output", 
+            "time_ms": 0.000474, 
+            "time_s": 4.74e-07, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 43, 
+            "label": "43: inception_4d/1x1 + inception_4d/relu_1x1", 
+            "name": "inception_4d/1x1 + inception_4d/relu_1x1", 
+            "time_ms": 0.480052, 
+            "time_s": 0.00048005199999999996, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 44, 
+            "label": "44: inception_4d/pool", 
+            "name": "inception_4d/pool", 
+            "time_ms": 0.327211, 
+            "time_s": 0.000327211, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 45, 
+            "label": "45: inception_4d/3x3_reduce + inception_4d/relu_3x3_reduce||inception_4d/5x5_reduce + inception_4d/relu_5x5_reduce", 
+            "name": "inception_4d/3x3_reduce + inception_4d/relu_3x3_reduce||inception_4d/5x5_reduce + inception_4d/relu_5x5_reduce", 
+            "time_ms": 0.823631, 
+            "time_s": 0.000823631, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 46, 
+            "label": "46: inception_4d/pool_proj + inception_4d/relu_pool_proj", 
+            "name": "inception_4d/pool_proj + inception_4d/relu_pool_proj", 
+            "time_ms": 0.34, 
+            "time_s": 0.00034, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 47, 
+            "label": "47: inception_4d/3x3 + inception_4d/relu_3x3", 
+            "name": "inception_4d/3x3 + inception_4d/relu_3x3", 
+            "time_ms": 1.925314, 
+            "time_s": 0.001925314, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 48, 
+            "label": "48: inception_4d/5x5 + inception_4d/relu_5x5", 
+            "name": "inception_4d/5x5 + inception_4d/relu_5x5", 
+            "time_ms": 0.450526, 
+            "time_s": 0.000450526, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 49, 
+            "label": "49: inception_4d/output", 
+            "name": "inception_4d/output", 
+            "time_ms": 0.000474, 
+            "time_s": 4.74e-07, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 50, 
+            "label": "50: inception_4e/1x1 + inception_4e/relu_1x1", 
+            "name": "inception_4e/1x1 + inception_4e/relu_1x1", 
+            "time_ms": 0.911736, 
+            "time_s": 0.000911736, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 51, 
+            "label": "51: inception_4e/pool", 
+            "name": "inception_4e/pool", 
+            "time_ms": 0.336737, 
+            "time_s": 0.00033673700000000004, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 52, 
+            "label": "52: inception_4e/3x3_reduce + inception_4e/relu_3x3_reduce||inception_4e/5x5_reduce + inception_4e/relu_5x5_reduce", 
+            "name": "inception_4e/3x3_reduce + inception_4e/relu_3x3_reduce||inception_4e/5x5_reduce + inception_4e/relu_5x5_reduce", 
+            "time_ms": 0.835, 
+            "time_s": 0.000835, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 53, 
+            "label": "53: inception_4e/pool_proj + inception_4e/relu_pool_proj", 
+            "name": "inception_4e/pool_proj + inception_4e/relu_pool_proj", 
+            "time_ms": 0.497578, 
+            "time_s": 0.000497578, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 54, 
+            "label": "54: inception_4e/3x3 + inception_4e/relu_3x3", 
+            "name": "inception_4e/3x3 + inception_4e/relu_3x3", 
+            "time_ms": 2.304526, 
+            "time_s": 0.0023045260000000003, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 55, 
+            "label": "55: inception_4e/5x5 + inception_4e/relu_5x5", 
+            "name": "inception_4e/5x5 + inception_4e/relu_5x5", 
+            "time_ms": 0.775947, 
+            "time_s": 0.000775947, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 56, 
+            "label": "56: inception_4e/output", 
+            "name": "inception_4e/output", 
+            "time_ms": 0.000894, 
+            "time_s": 8.94e-07, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 57, 
+            "label": "57: pool4/3x3_s2", 
+            "name": "pool4/3x3_s2", 
+            "time_ms": 0.244895, 
+            "time_s": 0.000244895, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 58, 
+            "label": "58: inception_5a/1x1 + inception_5a/relu_1x1", 
+            "name": "inception_5a/1x1 + inception_5a/relu_1x1", 
+            "time_ms": 0.552, 
+            "time_s": 0.0005520000000000001, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 59, 
+            "label": "59: inception_5a/pool", 
+            "name": "inception_5a/pool", 
+            "time_ms": 0.106473, 
+            "time_s": 0.000106473, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 60, 
+            "label": "60: inception_5a/3x3_reduce + inception_5a/relu_3x3_reduce||inception_5a/5x5_reduce + inception_5a/relu_5x5_reduce", 
+            "name": "inception_5a/3x3_reduce + inception_5a/relu_3x3_reduce||inception_5a/5x5_reduce + inception_5a/relu_5x5_reduce", 
+            "time_ms": 0.523316, 
+            "time_s": 0.000523316, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 61, 
+            "label": "61: inception_5a/pool_proj + inception_5a/relu_pool_proj", 
+            "name": "inception_5a/pool_proj + inception_5a/relu_pool_proj", 
+            "time_ms": 0.276631, 
+            "time_s": 0.000276631, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 62, 
+            "label": "62: inception_5a/3x3 + inception_5a/relu_3x3", 
+            "name": "inception_5a/3x3 + inception_5a/relu_3x3", 
+            "time_ms": 1.103736, 
+            "time_s": 0.0011037360000000001, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 63, 
+            "label": "63: inception_5a/5x5 + inception_5a/relu_5x5", 
+            "name": "inception_5a/5x5 + inception_5a/relu_5x5", 
+            "time_ms": 0.266158, 
+            "time_s": 0.000266158, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 64, 
+            "label": "64: inception_5a/output", 
+            "name": "inception_5a/output", 
+            "time_ms": 0.000474, 
+            "time_s": 4.74e-07, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 65, 
+            "label": "65: inception_5b/1x1 + inception_5b/relu_1x1", 
+            "name": "inception_5b/1x1 + inception_5b/relu_1x1", 
+            "time_ms": 0.748368, 
+            "time_s": 0.000748368, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 66, 
+            "label": "66: inception_5b/pool", 
+            "name": "inception_5b/pool", 
+            "time_ms": 0.106053, 
+            "time_s": 0.000106053, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 67, 
+            "label": "67: inception_5b/3x3_reduce + inception_5b/relu_3x3_reduce||inception_5b/5x5_reduce + inception_5b/relu_5x5_reduce", 
+            "name": "inception_5b/3x3_reduce + inception_5b/relu_3x3_reduce||inception_5b/5x5_reduce + inception_5b/relu_5x5_reduce", 
+            "time_ms": 0.54721, 
+            "time_s": 0.00054721, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 68, 
+            "label": "68: inception_5b/pool_proj + inception_5b/relu_pool_proj", 
+            "name": "inception_5b/pool_proj + inception_5b/relu_pool_proj", 
+            "time_ms": 0.282263, 
+            "time_s": 0.000282263, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 69, 
+            "label": "69: inception_5b/3x3 + inception_5b/relu_3x3", 
+            "name": "inception_5b/3x3 + inception_5b/relu_3x3", 
+            "time_ms": 1.523999, 
+            "time_s": 0.001523999, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 70, 
+            "label": "70: inception_5b/5x5 + inception_5b/relu_5x5", 
+            "name": "inception_5b/5x5 + inception_5b/relu_5x5", 
+            "time_ms": 0.383316, 
+            "time_s": 0.000383316, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 71, 
+            "label": "71: inception_5b/output", 
+            "name": "inception_5b/output", 
+            "time_ms": 0.000473, 
+            "time_s": 4.73e-07, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 72, 
+            "label": "72: pool5/7x7_s1", 
+            "name": "pool5/7x7_s1", 
+            "time_ms": 0.267369, 
+            "time_s": 0.00026736900000000005, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 73, 
+            "label": "73: loss3/classifier", 
+            "name": "loss3/classifier", 
+            "time_ms": 0.323578, 
+            "time_s": 0.000323578, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 74, 
+            "label": "74: prob", 
+            "name": "prob", 
+            "time_ms": 0.013053, 
+            "time_s": 1.3053e-05, 
+            "timestamp": "0101 00:00:00.000000"
+          }
+        ], 
+        "post_processed": "yes", 
+        "repeat": 1, 
+        "return_code": 0, 
+        "run_success": "yes", 
+        "run_success_bool": true, 
+        "time_bw_ms": 0.0, 
+        "time_bw_s": 0.0, 
+        "time_fw_ms": 68.337544, 
+        "time_fw_s": 0.068337544, 
+        "time_fwbw_ms": 68.337544, 
+        "time_fwbw_s": 0.068337544, 
+        "time_total_ms": 68.337544, 
+        "time_total_ms_kernel_0": 68.337544, 
+        "time_total_s": 0.068337544, 
+        "time_total_s_kernel_0": 0.068337544, 
+        "total_execution_time": 0.068337544
+      }
+    }, 
+    {
+      "run": {
+        "REAL_ENV_CK_CAFFE_MODEL": "/home/anton/CK_REPOS/ck-tensorrt/program/tensorrt-time/tmp/tmp-ZZP3c1.prototxt", 
+        "execution_time": 0.06830885999999999, 
+        "execution_time_with_module": 2.4098339080810547, 
+        "memory_bytes": 0, 
+        "memory_kbytes": 0.0, 
+        "memory_mbytes": 0.0, 
+        "per_layer_info": [
+          {
+            "direction": "forward", 
+            "index": 0, 
+            "label": "00: conv1/7x7_s2 + conv1/relu_7x7", 
+            "name": "conv1/7x7_s2 + conv1/relu_7x7", 
+            "time_ms": 4.509787, 
+            "time_s": 0.004509787, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 1, 
+            "label": "01: pool1/3x3_s2", 
+            "name": "pool1/3x3_s2", 
+            "time_ms": 2.092999, 
+            "time_s": 0.002092999, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 2, 
+            "label": "02: pool1/norm1", 
+            "name": "pool1/norm1", 
+            "time_ms": 0.542105, 
+            "time_s": 0.000542105, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 3, 
+            "label": "03: conv2/3x3_reduce + conv2/relu_3x3_reduce", 
+            "name": "conv2/3x3_reduce + conv2/relu_3x3_reduce", 
+            "time_ms": 0.68621, 
+            "time_s": 0.00068621, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 4, 
+            "label": "04: conv2/3x3 + conv2/relu_3x3", 
+            "name": "conv2/3x3 + conv2/relu_3x3", 
+            "time_ms": 11.252153, 
+            "time_s": 0.011252153, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 5, 
+            "label": "05: conv2/norm2", 
+            "name": "conv2/norm2", 
+            "time_ms": 1.664209, 
+            "time_s": 0.001664209, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 6, 
+            "label": "06: pool2/3x3_s2", 
+            "name": "pool2/3x3_s2", 
+            "time_ms": 1.674473, 
+            "time_s": 0.001674473, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 7, 
+            "label": "07: inception_3a/1x1 + inception_3a/relu_1x1", 
+            "name": "inception_3a/1x1 + inception_3a/relu_1x1", 
+            "time_ms": 0.439895, 
+            "time_s": 0.000439895, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 8, 
+            "label": "08: inception_3a/pool", 
+            "name": "inception_3a/pool", 
+            "time_ms": 0.893631, 
+            "time_s": 0.000893631, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 9, 
+            "label": "09: inception_3a/3x3_reduce + inception_3a/relu_3x3_reduce||inception_3a/5x5_reduce + inception_3a/relu_5x5_reduce", 
+            "name": "inception_3a/3x3_reduce + inception_3a/relu_3x3_reduce||inception_3a/5x5_reduce + inception_3a/relu_5x5_reduce", 
+            "time_ms": 0.724526, 
+            "time_s": 0.000724526, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 10, 
+            "label": "10: inception_3a/pool_proj + inception_3a/relu_pool_proj", 
+            "name": "inception_3a/pool_proj + inception_3a/relu_pool_proj", 
+            "time_ms": 0.305894, 
+            "time_s": 0.000305894, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 11, 
+            "label": "11: inception_3a/3x3 + inception_3a/relu_3x3", 
+            "name": "inception_3a/3x3 + inception_3a/relu_3x3", 
+            "time_ms": 2.650367, 
+            "time_s": 0.0026503670000000003, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 12, 
+            "label": "12: inception_3a/5x5 + inception_3a/relu_5x5", 
+            "name": "inception_3a/5x5 + inception_3a/relu_5x5", 
+            "time_ms": 0.407, 
+            "time_s": 0.00040699999999999997, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 13, 
+            "label": "13: inception_3a/output", 
+            "name": "inception_3a/output", 
+            "time_ms": 0.000526, 
+            "time_s": 5.26e-07, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 14, 
+            "label": "14: inception_3b/1x1 + inception_3b/relu_1x1", 
+            "name": "inception_3b/1x1 + inception_3b/relu_1x1", 
+            "time_ms": 0.963631, 
+            "time_s": 0.0009636310000000001, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 15, 
+            "label": "15: inception_3b/pool", 
+            "name": "inception_3b/pool", 
+            "time_ms": 1.195421, 
+            "time_s": 0.0011954210000000001, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 16, 
+            "label": "16: inception_3b/3x3_reduce + inception_3b/relu_3x3_reduce||inception_3b/5x5_reduce + inception_3b/relu_5x5_reduce", 
+            "name": "inception_3b/3x3_reduce + inception_3b/relu_3x3_reduce||inception_3b/5x5_reduce + inception_3b/relu_5x5_reduce", 
+            "time_ms": 1.578946, 
+            "time_s": 0.001578946, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 17, 
+            "label": "17: inception_3b/pool_proj + inception_3b/relu_pool_proj", 
+            "name": "inception_3b/pool_proj + inception_3b/relu_pool_proj", 
+            "time_ms": 0.56679, 
+            "time_s": 0.0005667900000000001, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 18, 
+            "label": "18: inception_3b/3x3 + inception_3b/relu_3x3", 
+            "name": "inception_3b/3x3 + inception_3b/relu_3x3", 
+            "time_ms": 5.210576, 
+            "time_s": 0.005210576, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 19, 
+            "label": "19: inception_3b/5x5 + inception_3b/relu_5x5", 
+            "name": "inception_3b/5x5 + inception_3b/relu_5x5", 
+            "time_ms": 2.280946, 
+            "time_s": 0.0022809460000000003, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 20, 
+            "label": "20: inception_3b/output", 
+            "name": "inception_3b/output", 
+            "time_ms": 0.000526, 
+            "time_s": 5.26e-07, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 21, 
+            "label": "21: pool3/3x3_s2", 
+            "name": "pool3/3x3_s2", 
+            "time_ms": 0.659263, 
+            "time_s": 0.0006592630000000001, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 22, 
+            "label": "22: inception_4a/1x1 + inception_4a/relu_1x1", 
+            "name": "inception_4a/1x1 + inception_4a/relu_1x1", 
+            "time_ms": 0.758474, 
+            "time_s": 0.000758474, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 23, 
+            "label": "23: inception_4a/pool", 
+            "name": "inception_4a/pool", 
+            "time_ms": 0.30521, 
+            "time_s": 0.00030521, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 24, 
+            "label": "24: inception_4a/3x3_reduce + inception_4a/relu_3x3_reduce||inception_4a/5x5_reduce + inception_4a/relu_5x5_reduce", 
+            "name": "inception_4a/3x3_reduce + inception_4a/relu_3x3_reduce||inception_4a/5x5_reduce + inception_4a/relu_5x5_reduce", 
+            "time_ms": 0.465263, 
+            "time_s": 0.000465263, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 25, 
+            "label": "25: inception_4a/pool_proj + inception_4a/relu_pool_proj", 
+            "name": "inception_4a/pool_proj + inception_4a/relu_pool_proj", 
+            "time_ms": 0.331105, 
+            "time_s": 0.000331105, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 26, 
+            "label": "26: inception_4a/3x3 + inception_4a/relu_3x3", 
+            "name": "inception_4a/3x3 + inception_4a/relu_3x3", 
+            "time_ms": 1.06742, 
+            "time_s": 0.0010674200000000001, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 27, 
+            "label": "27: inception_4a/5x5 + inception_4a/relu_5x5", 
+            "name": "inception_4a/5x5 + inception_4a/relu_5x5", 
+            "time_ms": 0.218211, 
+            "time_s": 0.000218211, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 28, 
+            "label": "28: inception_4a/output", 
+            "name": "inception_4a/output", 
+            "time_ms": 0.000474, 
+            "time_s": 4.74e-07, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 29, 
+            "label": "29: inception_4b/1x1 + inception_4b/relu_1x1", 
+            "name": "inception_4b/1x1 + inception_4b/relu_1x1", 
+            "time_ms": 0.787262, 
+            "time_s": 0.000787262, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 30, 
+            "label": "30: inception_4b/pool", 
+            "name": "inception_4b/pool", 
+            "time_ms": 0.322105, 
+            "time_s": 0.000322105, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 31, 
+            "label": "31: inception_4b/3x3_reduce + inception_4b/relu_3x3_reduce||inception_4b/5x5_reduce + inception_4b/relu_5x5_reduce", 
+            "name": "inception_4b/3x3_reduce + inception_4b/relu_3x3_reduce||inception_4b/5x5_reduce + inception_4b/relu_5x5_reduce", 
+            "time_ms": 0.780421, 
+            "time_s": 0.000780421, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 32, 
+            "label": "32: inception_4b/pool_proj + inception_4b/relu_pool_proj", 
+            "name": "inception_4b/pool_proj + inception_4b/relu_pool_proj", 
+            "time_ms": 0.33721, 
+            "time_s": 0.00033721, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 33, 
+            "label": "33: inception_4b/3x3 + inception_4b/relu_3x3", 
+            "name": "inception_4b/3x3 + inception_4b/relu_3x3", 
+            "time_ms": 1.221316, 
+            "time_s": 0.001221316, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 34, 
+            "label": "34: inception_4b/5x5 + inception_4b/relu_5x5", 
+            "name": "inception_4b/5x5 + inception_4b/relu_5x5", 
+            "time_ms": 0.336105, 
+            "time_s": 0.000336105, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 35, 
+            "label": "35: inception_4b/output", 
+            "name": "inception_4b/output", 
+            "time_ms": 0.000473, 
+            "time_s": 4.73e-07, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 36, 
+            "label": "36: inception_4c/1x1 + inception_4c/relu_1x1", 
+            "name": "inception_4c/1x1 + inception_4c/relu_1x1", 
+            "time_ms": 0.529526, 
+            "time_s": 0.0005295260000000001, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 37, 
+            "label": "37: inception_4c/pool", 
+            "name": "inception_4c/pool", 
+            "time_ms": 0.32479, 
+            "time_s": 0.00032479000000000004, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 38, 
+            "label": "38: inception_4c/3x3_reduce + inception_4c/relu_3x3_reduce||inception_4c/5x5_reduce + inception_4c/relu_5x5_reduce", 
+            "name": "inception_4c/3x3_reduce + inception_4c/relu_3x3_reduce||inception_4c/5x5_reduce + inception_4c/relu_5x5_reduce", 
+            "time_ms": 0.794789, 
+            "time_s": 0.000794789, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 39, 
+            "label": "39: inception_4c/pool_proj + inception_4c/relu_pool_proj", 
+            "name": "inception_4c/pool_proj + inception_4c/relu_pool_proj", 
+            "time_ms": 0.345631, 
+            "time_s": 0.00034563100000000005, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 40, 
+            "label": "40: inception_4c/3x3 + inception_4c/relu_3x3", 
+            "name": "inception_4c/3x3 + inception_4c/relu_3x3", 
+            "time_ms": 1.535263, 
+            "time_s": 0.001535263, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 41, 
+            "label": "41: inception_4c/5x5 + inception_4c/relu_5x5", 
+            "name": "inception_4c/5x5 + inception_4c/relu_5x5", 
+            "time_ms": 0.346052, 
+            "time_s": 0.000346052, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 42, 
+            "label": "42: inception_4c/output", 
+            "name": "inception_4c/output", 
+            "time_ms": 0.000684, 
+            "time_s": 6.84e-07, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 43, 
+            "label": "43: inception_4d/1x1 + inception_4d/relu_1x1", 
+            "name": "inception_4d/1x1 + inception_4d/relu_1x1", 
+            "time_ms": 0.478842, 
+            "time_s": 0.000478842, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 44, 
+            "label": "44: inception_4d/pool", 
+            "name": "inception_4d/pool", 
+            "time_ms": 0.320263, 
+            "time_s": 0.00032026300000000005, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 45, 
+            "label": "45: inception_4d/3x3_reduce + inception_4d/relu_3x3_reduce||inception_4d/5x5_reduce + inception_4d/relu_5x5_reduce", 
+            "name": "inception_4d/3x3_reduce + inception_4d/relu_3x3_reduce||inception_4d/5x5_reduce + inception_4d/relu_5x5_reduce", 
+            "time_ms": 0.809, 
+            "time_s": 0.000809, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 46, 
+            "label": "46: inception_4d/pool_proj + inception_4d/relu_pool_proj", 
+            "name": "inception_4d/pool_proj + inception_4d/relu_pool_proj", 
+            "time_ms": 0.352631, 
+            "time_s": 0.000352631, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 47, 
+            "label": "47: inception_4d/3x3 + inception_4d/relu_3x3", 
+            "name": "inception_4d/3x3 + inception_4d/relu_3x3", 
+            "time_ms": 1.931683, 
+            "time_s": 0.001931683, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 48, 
+            "label": "48: inception_4d/5x5 + inception_4d/relu_5x5", 
+            "name": "inception_4d/5x5 + inception_4d/relu_5x5", 
+            "time_ms": 0.468316, 
+            "time_s": 0.00046831600000000003, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 49, 
+            "label": "49: inception_4d/output", 
+            "name": "inception_4d/output", 
+            "time_ms": 0.000474, 
+            "time_s": 4.74e-07, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 50, 
+            "label": "50: inception_4e/1x1 + inception_4e/relu_1x1", 
+            "name": "inception_4e/1x1 + inception_4e/relu_1x1", 
+            "time_ms": 0.919262, 
+            "time_s": 0.000919262, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 51, 
+            "label": "51: inception_4e/pool", 
+            "name": "inception_4e/pool", 
+            "time_ms": 0.337474, 
+            "time_s": 0.000337474, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 52, 
+            "label": "52: inception_4e/3x3_reduce + inception_4e/relu_3x3_reduce||inception_4e/5x5_reduce + inception_4e/relu_5x5_reduce", 
+            "name": "inception_4e/3x3_reduce + inception_4e/relu_3x3_reduce||inception_4e/5x5_reduce + inception_4e/relu_5x5_reduce", 
+            "time_ms": 0.849736, 
+            "time_s": 0.000849736, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 53, 
+            "label": "53: inception_4e/pool_proj + inception_4e/relu_pool_proj", 
+            "name": "inception_4e/pool_proj + inception_4e/relu_pool_proj", 
+            "time_ms": 0.54521, 
+            "time_s": 0.00054521, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 54, 
+            "label": "54: inception_4e/3x3 + inception_4e/relu_3x3", 
+            "name": "inception_4e/3x3 + inception_4e/relu_3x3", 
+            "time_ms": 2.306736, 
+            "time_s": 0.0023067359999999998, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 55, 
+            "label": "55: inception_4e/5x5 + inception_4e/relu_5x5", 
+            "name": "inception_4e/5x5 + inception_4e/relu_5x5", 
+            "time_ms": 0.700947, 
+            "time_s": 0.000700947, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 56, 
+            "label": "56: inception_4e/output", 
+            "name": "inception_4e/output", 
+            "time_ms": 0.000895, 
+            "time_s": 8.95e-07, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 57, 
+            "label": "57: pool4/3x3_s2", 
+            "name": "pool4/3x3_s2", 
+            "time_ms": 0.245579, 
+            "time_s": 0.000245579, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 58, 
+            "label": "58: inception_5a/1x1 + inception_5a/relu_1x1", 
+            "name": "inception_5a/1x1 + inception_5a/relu_1x1", 
+            "time_ms": 0.492315, 
+            "time_s": 0.000492315, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 59, 
+            "label": "59: inception_5a/pool", 
+            "name": "inception_5a/pool", 
+            "time_ms": 0.10779, 
+            "time_s": 0.00010779, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 60, 
+            "label": "60: inception_5a/3x3_reduce + inception_5a/relu_3x3_reduce||inception_5a/5x5_reduce + inception_5a/relu_5x5_reduce", 
+            "name": "inception_5a/3x3_reduce + inception_5a/relu_3x3_reduce||inception_5a/5x5_reduce + inception_5a/relu_5x5_reduce", 
+            "time_ms": 0.522052, 
+            "time_s": 0.000522052, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 61, 
+            "label": "61: inception_5a/pool_proj + inception_5a/relu_pool_proj", 
+            "name": "inception_5a/pool_proj + inception_5a/relu_pool_proj", 
+            "time_ms": 0.276579, 
+            "time_s": 0.00027657900000000005, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 62, 
+            "label": "62: inception_5a/3x3 + inception_5a/relu_3x3", 
+            "name": "inception_5a/3x3 + inception_5a/relu_3x3", 
+            "time_ms": 1.100052, 
+            "time_s": 0.001100052, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 63, 
+            "label": "63: inception_5a/5x5 + inception_5a/relu_5x5", 
+            "name": "inception_5a/5x5 + inception_5a/relu_5x5", 
+            "time_ms": 0.260789, 
+            "time_s": 0.000260789, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 64, 
+            "label": "64: inception_5a/output", 
+            "name": "inception_5a/output", 
+            "time_ms": 0.000474, 
+            "time_s": 4.74e-07, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 65, 
+            "label": "65: inception_5b/1x1 + inception_5b/relu_1x1", 
+            "name": "inception_5b/1x1 + inception_5b/relu_1x1", 
+            "time_ms": 0.748894, 
+            "time_s": 0.000748894, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 66, 
+            "label": "66: inception_5b/pool", 
+            "name": "inception_5b/pool", 
+            "time_ms": 0.107105, 
+            "time_s": 0.00010710500000000001, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 67, 
+            "label": "67: inception_5b/3x3_reduce + inception_5b/relu_3x3_reduce||inception_5b/5x5_reduce + inception_5b/relu_5x5_reduce", 
+            "name": "inception_5b/3x3_reduce + inception_5b/relu_3x3_reduce||inception_5b/5x5_reduce + inception_5b/relu_5x5_reduce", 
+            "time_ms": 0.490158, 
+            "time_s": 0.000490158, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 68, 
+            "label": "68: inception_5b/pool_proj + inception_5b/relu_pool_proj", 
+            "name": "inception_5b/pool_proj + inception_5b/relu_pool_proj", 
+            "time_ms": 0.292895, 
+            "time_s": 0.00029289500000000005, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 69, 
+            "label": "69: inception_5b/3x3 + inception_5b/relu_3x3", 
+            "name": "inception_5b/3x3 + inception_5b/relu_3x3", 
+            "time_ms": 1.533525, 
+            "time_s": 0.001533525, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 70, 
+            "label": "70: inception_5b/5x5 + inception_5b/relu_5x5", 
+            "name": "inception_5b/5x5 + inception_5b/relu_5x5", 
+            "time_ms": 0.38721, 
+            "time_s": 0.00038721000000000003, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 71, 
+            "label": "71: inception_5b/output", 
+            "name": "inception_5b/output", 
+            "time_ms": 0.000474, 
+            "time_s": 4.74e-07, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 72, 
+            "label": "72: pool5/7x7_s1", 
+            "name": "pool5/7x7_s1", 
+            "time_ms": 0.266947, 
+            "time_s": 0.000266947, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 73, 
+            "label": "73: loss3/classifier", 
+            "name": "loss3/classifier", 
+            "time_ms": 0.334421, 
+            "time_s": 0.00033442100000000006, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 74, 
+            "label": "74: prob", 
+            "name": "prob", 
+            "time_ms": 0.012474, 
+            "time_s": 1.2474000000000001e-05, 
+            "timestamp": "0101 00:00:00.000000"
+          }
+        ], 
+        "post_processed": "yes", 
+        "repeat": 1, 
+        "return_code": 0, 
+        "run_success": "yes", 
+        "run_success_bool": true, 
+        "time_bw_ms": 0.0, 
+        "time_bw_s": 0.0, 
+        "time_fw_ms": 68.30885999999998, 
+        "time_fw_s": 0.06830885999999999, 
+        "time_fwbw_ms": 68.30885999999998, 
+        "time_fwbw_s": 0.06830885999999999, 
+        "time_total_ms": 68.30885999999998, 
+        "time_total_ms_kernel_0": 68.30885999999998, 
+        "time_total_s": 0.06830885999999999, 
+        "time_total_s_kernel_0": 0.06830885999999999, 
+        "total_execution_time": 0.06830885999999999
+      }
+    }
+  ], 
+  "choices": {
+    "cmd_key": "default", 
+    "compile_only_once": "yes", 
+    "compile_type": "dynamic", 
+    "compiler_flags": {}, 
+    "cpu_freq": "max", 
+    "data_uoa": "tensorrt-time", 
+    "dataset_file": "", 
+    "device_cfg": {}, 
+    "device_id": "", 
+    "energy": "no", 
+    "env": {
+      "CK_CAFFE_BATCH_SIZE": 6, 
+      "CK_CAFFE_ITERATIONS": "", 
+      "CK_CAFFE_MODEL": "/home/anton/CK_REPOS/ck-tensorrt/program/tensorrt-time/tmp/tmp-hWeBC2.prototxt", 
+      "CK_CAFFE_MODEL_FILE": "tmp-hWeBC2.prototxt", 
+      "CK_CAFFE_MODEL_WEIGHTS": "/home/anton/CK_TOOLS/caffemodel-bvlc-googlenet/bvlc_googlenet.caffemodel", 
+      "CK_CPU_FREQUENCY": "max", 
+      "CK_ENV_MODEL_CAFFE_WEIGHTS": "/home/anton/CK_TOOLS/caffemodel-bvlc-googlenet/bvlc_googlenet.caffemodel", 
+      "CK_GPU_FREQUENCY": "max", 
+      "CK_TENSORRT_CJSON_PATH": "profiler.json", 
+      "CK_TENSORRT_ENABLE_FP16": 0
+    }, 
+    "flags": "-O3", 
+    "gpu_freq": "max", 
+    "host_os": "linux-64", 
+    "module_uoa": "b0ac08fe1d3c2615", 
+    "no_state_check": "yes", 
+    "repeat": 1, 
+    "skip_calibration": "yes", 
+    "skip_print_timers": "yes", 
+    "target": "", 
+    "target_os": "linux-64", 
+    "target_os_bits": "64"
+  }, 
+  "choices_order": [
+    "##choices#env#CK_TENSORRT_ENABLE_FP16", 
+    "##choices#env#CK_CAFFE_BATCH_SIZE"
+  ], 
+  "features": {
+    "compiler_version": {
+      "list": [
+        5, 
+        4, 
+        0
+      ], 
+      "raw": [
+        "gcc-5 (Ubuntu/Linaro 5.4.0-6ubuntu1~16.04.4) 5.4.0 20160609", 
+        "Copyright (C) 2015 Free Software Foundation, Inc.", 
+        "This is free software; see the source for copying conditions.  There is NO", 
+        "warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.", 
+        "", 
+        ""
+      ], 
+      "str": "5.4.0"
+    }, 
+    "number_of_selected_compiler_flags": 0, 
+    "platform": {
+      "cpu": {
+        "all_freqs": {
+          "0": [
+            102000, 
+            204000, 
+            307200, 
+            403200, 
+            518400, 
+            614400, 
+            710400, 
+            825600, 
+            921600, 
+            1036800, 
+            1132800, 
+            1224000, 
+            1326000, 
+            1428000, 
+            1555500, 
+            1632000, 
+            1734000
+          ], 
+          "1": [
+            102000, 
+            204000, 
+            307200, 
+            403200, 
+            518400, 
+            614400, 
+            710400, 
+            825600, 
+            921600, 
+            1036800, 
+            1132800, 
+            1224000, 
+            1326000, 
+            1428000, 
+            1555500, 
+            1632000, 
+            1734000
+          ], 
+          "2": [
+            102000, 
+            204000, 
+            307200, 
+            403200, 
+            518400, 
+            614400, 
+            710400, 
+            825600, 
+            921600, 
+            1036800, 
+            1132800, 
+            1224000, 
+            1326000, 
+            1428000, 
+            1555500, 
+            1632000, 
+            1734000
+          ], 
+          "3": [
+            102000, 
+            204000, 
+            307200, 
+            403200, 
+            518400, 
+            614400, 
+            710400, 
+            825600, 
+            921600, 
+            1036800, 
+            1132800, 
+            1224000, 
+            1326000, 
+            1428000, 
+            1555500, 
+            1632000, 
+            1734000
+          ]
+        }, 
+        "cpu_abi": "", 
+        "cpu_features": "fp asimd aes pmull sha1 sha2 crc32", 
+        "current_freq": {
+          "0": 1734.0, 
+          "1": 1734.0, 
+          "2": 1734.0, 
+          "3": 1734.0
+        }, 
+        "max_freq": {
+          "0": 1734.0, 
+          "1": 1734.0, 
+          "2": 1734.0, 
+          "3": 1734.0
+        }, 
+        "name": "jetson_tx1", 
+        "num_proc": "4", 
+        "sub_name": "ARMv8 Processor rev 1 (v8l)", 
+        "workload_automation": {
+          "device_config": {
+            "core_clusters": [
+              0, 
+              0, 
+              0, 
+              1
+            ], 
+            "core_names": [
+              "ARMv8 Processor rev 1 (v8l)", 
+              "ARMv8 Processor rev 1 (v8l)", 
+              "ARMv8 Processor rev 1 (v8l)", 
+              "jetson_tx1"
+            ]
+          }
+        }
+      }, 
+      "cpu_misc": {
+        "0": {
+          "BogoMIPS": "38.40", 
+          "CPU architecture": "8", 
+          "CPU implementer": "0x41", 
+          "CPU part": "0xd07", 
+          "CPU revision": "1", 
+          "CPU variant": "0x1", 
+          "Features": "fp asimd aes pmull sha1 sha2 crc32", 
+          "all_freqs": [
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0"
+          ], 
+          "ck_cpu_name": "ARMv8 Processor rev 1 (v8l)", 
+          "ck_cpu_subname": "ARMv8 Processor rev 1 (v8l)", 
+          "cpu_features": "fp asimd aes pmull sha1 sha2 crc32", 
+          "cur_freq": 1734.0, 
+          "max_freq": 1734.0, 
+          "model name": "ARMv8 Processor rev 1 (v8l)", 
+          "processor": "0"
+        }, 
+        "1": {
+          "BogoMIPS": "38.40", 
+          "CPU architecture": "8", 
+          "CPU implementer": "0x41", 
+          "CPU part": "0xd07", 
+          "CPU revision": "1", 
+          "CPU variant": "0x1", 
+          "Features": "fp asimd aes pmull sha1 sha2 crc32", 
+          "all_freqs": [
+            "1", 
+            "1", 
+            "1", 
+            "1", 
+            "1", 
+            "1", 
+            "1", 
+            "1", 
+            "1", 
+            "1", 
+            "1", 
+            "1", 
+            "1", 
+            "1", 
+            "1", 
+            "1", 
+            "1"
+          ], 
+          "ck_cpu_name": "ARMv8 Processor rev 1 (v8l)", 
+          "ck_cpu_subname": "ARMv8 Processor rev 1 (v8l)", 
+          "cpu_features": "fp asimd aes pmull sha1 sha2 crc32", 
+          "cur_freq": 1734.0, 
+          "max_freq": 1734.0, 
+          "model name": "ARMv8 Processor rev 1 (v8l)", 
+          "processor": "1"
+        }, 
+        "2": {
+          "BogoMIPS": "38.40", 
+          "CPU architecture": "8", 
+          "CPU implementer": "0x41", 
+          "CPU part": "0xd07", 
+          "CPU revision": "1", 
+          "CPU variant": "0x1", 
+          "Features": "fp asimd aes pmull sha1 sha2 crc32", 
+          "all_freqs": [
+            "2", 
+            "2", 
+            "2", 
+            "2", 
+            "2", 
+            "2", 
+            "2", 
+            "2", 
+            "2", 
+            "2", 
+            "2", 
+            "2", 
+            "2", 
+            "2", 
+            "2", 
+            "2", 
+            "2"
+          ], 
+          "ck_cpu_name": "ARMv8 Processor rev 1 (v8l)", 
+          "ck_cpu_subname": "ARMv8 Processor rev 1 (v8l)", 
+          "cpu_features": "fp asimd aes pmull sha1 sha2 crc32", 
+          "cur_freq": 1734.0, 
+          "max_freq": 1734.0, 
+          "model name": "ARMv8 Processor rev 1 (v8l)", 
+          "processor": "2"
+        }, 
+        "3": {
+          "BogoMIPS": "38.40", 
+          "CPU architecture": "8", 
+          "CPU implementer": "0x41", 
+          "CPU part": "0xd07", 
+          "CPU revision": "1", 
+          "CPU variant": "0x1", 
+          "Features": "fp asimd aes pmull sha1 sha2 crc32", 
+          "Hardware": "jetson_tx1", 
+          "Revision": "0000", 
+          "Serial": "088403e800000000", 
+          "all_freqs": [
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3"
+          ], 
+          "ck_cpu_name": "jetson_tx1", 
+          "ck_cpu_subname": "ARMv8 Processor rev 1 (v8l)", 
+          "cpu_features": "fp asimd aes pmull sha1 sha2 crc32", 
+          "cur_freq": 1734.0, 
+          "max_freq": 1734.0, 
+          "model name": "ARMv8 Processor rev 1 (v8l)", 
+          "processor": "3"
+        }
+      }, 
+      "cpu_new_format": "", 
+      "cpu_unique": [
+        {
+          "BogoMIPS": "38.40", 
+          "CPU architecture": "8", 
+          "CPU implementer": "0x41", 
+          "CPU part": "0xd07", 
+          "CPU revision": "1", 
+          "CPU variant": "0x1", 
+          "Features": "fp asimd aes pmull sha1 sha2 crc32", 
+          "all_freqs": [
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0"
+          ], 
+          "ck_cpu_name": "ARMv8 Processor rev 1 (v8l)", 
+          "ck_cpu_subname": "ARMv8 Processor rev 1 (v8l)", 
+          "cpu_features": "fp asimd aes pmull sha1 sha2 crc32", 
+          "cur_freq": 1734.0, 
+          "max_freq": 1734.0, 
+          "model name": "ARMv8 Processor rev 1 (v8l)", 
+          "processor": "0"
+        }, 
+        {
+          "BogoMIPS": "38.40", 
+          "CPU architecture": "8", 
+          "CPU implementer": "0x41", 
+          "CPU part": "0xd07", 
+          "CPU revision": "1", 
+          "CPU variant": "0x1", 
+          "Features": "fp asimd aes pmull sha1 sha2 crc32", 
+          "Hardware": "jetson_tx1", 
+          "Revision": "0000", 
+          "Serial": "088403e800000000", 
+          "all_freqs": [
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3"
+          ], 
+          "ck_cpu_name": "jetson_tx1", 
+          "ck_cpu_subname": "ARMv8 Processor rev 1 (v8l)", 
+          "cpu_features": "fp asimd aes pmull sha1 sha2 crc32", 
+          "cur_freq": 1734.0, 
+          "max_freq": 1734.0, 
+          "model name": "ARMv8 Processor rev 1 (v8l)", 
+          "processor": "3"
+        }
+      ], 
+      "gpu": {
+        "name": "", 
+        "vendor": ""
+      }, 
+      "gpu_misc": {}, 
+      "os": {
+        "abi": "aarch64", 
+        "bits": "64", 
+        "ck_os_base_uoa": "", 
+        "ck_os_uoa": "linux-64", 
+        "name": "Ubuntu 16.04.1 LTS", 
+        "name_long": "Linux-3.10.96-tegra-aarch64-with-Ubuntu-16.04-xenial", 
+        "name_short": "Linux 3.10.96", 
+        "serial_number": ""
+      }, 
+      "os_misc": {}, 
+      "platform": {
+        "model": "jetson_tx1\u0000", 
+        "name": "jetson_tx1\u0000 (jetson_tx1\u0000)", 
+        "vendor": "jetson_tx1\u0000"
+      }, 
+      "platform_misc": {}
+    }, 
+    "statistical_repetitions": 3
+  }
+}

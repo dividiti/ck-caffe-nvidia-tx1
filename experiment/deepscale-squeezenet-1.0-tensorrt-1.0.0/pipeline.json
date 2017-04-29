@@ -1,0 +1,1298 @@
+{
+  "tmp_dir": "", 
+  "features": {
+    "compiler_version": {
+      "raw": [
+        "gcc-5 (Ubuntu/Linaro 5.4.0-6ubuntu1~16.04.4) 5.4.0 20160609", 
+        "Copyright (C) 2015 Free Software Foundation, Inc.", 
+        "This is free software; see the source for copying conditions.  There is NO", 
+        "warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.", 
+        "", 
+        ""
+      ], 
+      "list": [
+        5, 
+        4, 
+        0
+      ], 
+      "str": "5.4.0"
+    }
+  }, 
+  "characteristics": {}, 
+  "choices": {
+    "cpu_freq": "max", 
+    "no_state_check": "yes", 
+    "target": "", 
+    "module_uoa": "b0ac08fe1d3c2615", 
+    "energy": "no", 
+    "device_cfg": {}, 
+    "compile_only_once": "yes", 
+    "skip_print_timers": "yes", 
+    "dataset_file": "", 
+    "device_id": "", 
+    "cmd_key": "default", 
+    "skip_calibration": "yes", 
+    "compile_type": "dynamic", 
+    "flags": "-O3", 
+    "data_uoa": "tensorrt-time", 
+    "target_os_bits": "64", 
+    "host_os": "linux-64", 
+    "target_os": "linux-64", 
+    "gpu_freq": "max"
+  }, 
+  "state": {
+    "tmp_dir": "tmp", 
+    "cur_dir": "/home/anton/CK_REPOS/ck-tensorrt/script/explore-batch-size-libs-models"
+  }, 
+  "dependencies": {
+    "lib-xopenme": {
+      "sort": 40, 
+      "bat": ". /home/anton/CK_REPOS/local/env/e4c4c966cb1bd53f/env.sh\n", 
+      "cus": {
+        "dynamic_lib": "librtlxopenme.so", 
+        "static_lib": "librtlxopenme.a", 
+        "skip_path": "yes", 
+        "path_include": "/home/anton/CK_TOOLS/lib-rtl-xopenme-0.3-gcc-5.4.0-linux-64/include", 
+        "include_name": "xopenme.h", 
+        "version": "0.3", 
+        "env_prefix": "CK_ENV_LIB_RTL_XOPENME", 
+        "extra_dir": "", 
+        "version_split": [
+          0, 
+          3
+        ], 
+        "full_path": "/home/anton/CK_TOOLS/lib-rtl-xopenme-0.3-gcc-5.4.0-linux-64/lib/librtlxopenme.a", 
+        "path_lib": "/home/anton/CK_TOOLS/lib-rtl-xopenme-0.3-gcc-5.4.0-linux-64/lib"
+      }, 
+      "name": "xOpenME library", 
+      "tags": "lib,xopenme", 
+      "num_entries": 1, 
+      "choices": [
+        "e4c4c966cb1bd53f"
+      ], 
+      "uoa": "e4c4c966cb1bd53f", 
+      "dict": {
+        "data_name": "xOpenME run-time library", 
+        "deps": {
+          "compiler": {
+            "detected_ver": "5.4.0", 
+            "bat": ". /home/anton/CK_REPOS/local/env/43ceab80becb79de/env.sh\n", 
+            "cus": {
+              "can_strip_dynamic_lib": "yes", 
+              "build_dir_name": "gcc", 
+              "skip_path": "yes", 
+              "tool_prefix_configured": "yes", 
+              "tool_prefix": "", 
+              "tool_postfix_configured": "yes", 
+              "env_prefix": "CK_ENV_COMPILER_GCC", 
+              "soft_version_cmd": {
+                "win": " --version > $#filename#$ 2>&1", 
+                "linux": "--version > $#filename#$ 2>&1"
+              }, 
+              "soft_path_example": {
+                "win": "C:\\Program Files\\GCC-4.9.2-x64\\bin\\gcc.exe", 
+                "linux": "/usr/bin/gcc"
+              }, 
+              "languages": [
+                "C", 
+                "CPP"
+              ], 
+              "version": "5.4.0", 
+              "soft_file_from_host_os": "yes", 
+              "tool_postfix": "-5", 
+              "soft_file": {
+                "win": "gcc.exe", 
+                "linux": "gcc"
+              }, 
+              "retarget": "no", 
+              "search_numeric_ext_on_linux": "yes", 
+              "add_to_path": "yes", 
+              "add_only_with_version": "yes", 
+              "version_split": [
+                5, 
+                4, 
+                0
+              ], 
+              "limit_recursion_dir_search": {
+                "win": 4, 
+                "linux": 3
+              }, 
+              "check_that_exists": "yes", 
+              "ck_version": 10, 
+              "only_for_target_os_tags": [
+                "mingw", 
+                "linux"
+              ], 
+              "full_path": "/usr/bin/gcc-5"
+            }, 
+            "name": "C compiler", 
+            "tags": "compiler,lang-c", 
+            "build_dir_name": "gcc", 
+            "uoa": "43ceab80becb79de", 
+            "choices": [
+              "ed8c44b5a8305a1f", 
+              "43ceab80becb79de"
+            ], 
+            "num_entries": 1, 
+            "dict": {
+              "env_script": "env.sh", 
+              "deps": {}, 
+              "tags": [
+                "64bits", 
+                "compiler", 
+                "gcc", 
+                "host-os-linux-64", 
+                "lang-c", 
+                "lang-cpp", 
+                "target-os-linux-64", 
+                "v5", 
+                "v5.4", 
+                "v5.4.0"
+              ], 
+              "customize": {
+                "can_strip_dynamic_lib": "yes", 
+                "build_dir_name": "gcc", 
+                "skip_path": "yes", 
+                "tool_prefix_configured": "yes", 
+                "tool_prefix": "", 
+                "tool_postfix_configured": "yes", 
+                "env_prefix": "CK_ENV_COMPILER_GCC", 
+                "soft_version_cmd": {
+                  "win": " --version > $#filename#$ 2>&1", 
+                  "linux": "--version > $#filename#$ 2>&1"
+                }, 
+                "soft_path_example": {
+                  "win": "C:\\Program Files\\GCC-4.9.2-x64\\bin\\gcc.exe", 
+                  "linux": "/usr/bin/gcc"
+                }, 
+                "languages": [
+                  "C", 
+                  "CPP"
+                ], 
+                "version": "5.4.0", 
+                "soft_file_from_host_os": "yes", 
+                "tool_postfix": "-5", 
+                "soft_file": {
+                  "win": "gcc.exe", 
+                  "linux": "gcc"
+                }, 
+                "retarget": "no", 
+                "search_numeric_ext_on_linux": "yes", 
+                "add_to_path": "yes", 
+                "add_only_with_version": "yes", 
+                "version_split": [
+                  5, 
+                  4, 
+                  0
+                ], 
+                "limit_recursion_dir_search": {
+                  "win": 4, 
+                  "linux": 3
+                }, 
+                "check_that_exists": "yes", 
+                "ck_version": 10, 
+                "only_for_target_os_tags": [
+                  "mingw", 
+                  "linux"
+                ], 
+                "full_path": "/usr/bin/gcc-5"
+              }, 
+              "setup": {
+                "version_split": [
+                  5, 
+                  4, 
+                  0
+                ], 
+                "target_os_bits": "64", 
+                "version": "5.4.0", 
+                "host_os_uoa": "4258b5fe54828a50", 
+                "target_os_uoa": "4258b5fe54828a50"
+              }, 
+              "data_name": "GNU C compiler", 
+              "soft_uoa": "3a8a82fa40bf992d", 
+              "env": {
+                "CK_COMPILER_FLAGS_OBLIGATORY": "", 
+                "CK_AR": "ar", 
+                "CK_COMPILER_POSTFIX": "-5", 
+                "CK_FLAGS_DLL_EXTRA": "", 
+                "CK_LIB_EXT": ".a", 
+                "CK_OPT_SIZE": "-Os", 
+                "CK_OPT_SPEED": "-O3", 
+                "CK_COMPILER_FLAG_PTHREAD_LIB": "-lpthread", 
+                "CK_CC": "gcc-5", 
+                "CK_COMPILER_FLAG_GPROF": "-pg", 
+                "CK_OPT_ALL_WARNINGS": "-Wall", 
+                "CK_LB_OUTPUT": "-o ", 
+                "CK_FLAGS_STATIC_LIB": "-fPIC", 
+                "CK_FLAG_PREFIX_VAR": "-D", 
+                "CK_EXTRA_LIB_M": "-lm", 
+                "CK_FLAG_PREFIX_LIB_DIR": "-L", 
+                "CK_FLAGS_CREATE_OBJ": "-c", 
+                "CK_LINKER_FLAG_OPENMP": "-lgomp -lrt", 
+                "CK_OBJ_EXT": ".o", 
+                "CK_FLAGS_OUTPUT": "-o ", 
+                "CK_LB": "ar rcs", 
+                "CK_LD": "ld", 
+                "CK_COMPILER_FLAG_CPP11": "-std=c++11", 
+                "CK_COMPILER_FLAG_OPENMP": "-fopenmp", 
+                "CK_PLUGIN_FLAG": "-fplugin=", 
+                "CK_OPT_SPEED_SAFE": "-O2", 
+                "CK_DLL_EXT": ".so", 
+                "CK_CXX": "g++-5", 
+                "CK_ASM_EXT": ".s", 
+                "CK_FLAG_PREFIX_INCLUDE": "-I", 
+                "CK_LD_FLAGS_EXTRA": "", 
+                "CK_OBJDUMP": "objdump -d", 
+                "CK_EXE_EXT": ".out", 
+                "CK_PROFILER": "gprof", 
+                "CK_FLAGS_DLL": "-shared -fPIC", 
+                "CK_FLAGS_STATIC_BIN": "-static -fPIC", 
+                "CK_ENV_COMPILER_GCC": "/usr", 
+                "CK_EXTRA_LIB_DL": "-ldl", 
+                "CK_GPROF_OUT_FILE": "gmon.out", 
+                "CK_MAKE": "make", 
+                "CK_COMPILER_FLAG_CPP0X": "-std=c++0x", 
+                "CK_COMPILER_FLAG_PLUGIN": "-fplugin=", 
+                "CK_FLAGS_CREATE_ASM": "-S"
+              }, 
+              "soft_alias": "compiler.gcc"
+            }, 
+            "ver": "5.4.0", 
+            "local": "yes"
+          }
+        }, 
+        "tags": [
+          "64bits", 
+          "host-os-linux-64", 
+          "lang-c", 
+          "lang-cpp", 
+          "lang-f77", 
+          "lang-f90", 
+          "lang-f95", 
+          "lib", 
+          "rtl", 
+          "target-os-linux-64", 
+          "v0", 
+          "v0.3", 
+          "xopenme"
+        ], 
+        "customize": {
+          "dynamic_lib": "librtlxopenme.so", 
+          "static_lib": "librtlxopenme.a", 
+          "skip_path": "yes", 
+          "path_include": "/home/anton/CK_TOOLS/lib-rtl-xopenme-0.3-gcc-5.4.0-linux-64/include", 
+          "include_name": "xopenme.h", 
+          "version": "0.3", 
+          "env_prefix": "CK_ENV_LIB_RTL_XOPENME", 
+          "extra_dir": "", 
+          "version_split": [
+            0, 
+            3
+          ], 
+          "full_path": "/home/anton/CK_TOOLS/lib-rtl-xopenme-0.3-gcc-5.4.0-linux-64/lib/librtlxopenme.a", 
+          "path_lib": "/home/anton/CK_TOOLS/lib-rtl-xopenme-0.3-gcc-5.4.0-linux-64/lib"
+        }, 
+        "setup": {
+          "deps_compiler": "43ceab80becb79de", 
+          "version": "0.3", 
+          "version_split": [
+            0, 
+            3
+          ], 
+          "target_os_bits": "64", 
+          "host_os_uoa": "4258b5fe54828a50", 
+          "target_os_uoa": "4258b5fe54828a50"
+        }, 
+        "env_script": "env.sh", 
+        "package_uoa": "0573487b8121d094", 
+        "soft_uoa": "673507878d649b4a", 
+        "env": {
+          "CK_ENV_LIB_RTL_XOPENME_INCLUDE_NAME": "xopenme.h", 
+          "CK_ENV_LIB_RTL_XOPENME_DYNAMIC_NAME": "librtlxopenme.so", 
+          "CK_ENV_LIB_RTL_XOPENME": "/home/anton/CK_TOOLS/lib-rtl-xopenme-0.3-gcc-5.4.0-linux-64", 
+          "CK_ENV_LIB_RTL_XOPENME_STATIC_NAME": "librtlxopenme.a"
+        }, 
+        "soft_alias": "lib.rtl.xopenme"
+      }, 
+      "ver": "0.3", 
+      "local": "yes"
+    }, 
+    "cuda-compiler": {
+      "sort": 20, 
+      "detected_ver": "8.0.33", 
+      "bat": ". /home/anton/CK_REPOS/local/env/cc72441d1a60d725/env.sh\n", 
+      "cus": {
+        "soft_version_cmd": {
+          "win": "--version > $#filename#$ 2>&1", 
+          "linux": "--version > $#filename#$ 2>&1"
+        }, 
+        "can_strip_dynamic_lib": "yes", 
+        "build_dir_name": "nvcc", 
+        "full_path": "/usr/local/cuda-8.0/bin/nvcc", 
+        "skip_path": "yes", 
+        "only_for_target_os_tags": [
+          "linux", 
+          "windows"
+        ], 
+        "languages": [
+          "C", 
+          "CPP"
+        ], 
+        "soft_file": {
+          "win": "nvcc.exe", 
+          "linux": "nvcc"
+        }, 
+        "version": "8.0.33", 
+        "soft_file_from_host_os": "yes", 
+        "add_only_with_version": "yes", 
+        "version_split": [
+          8, 
+          0, 
+          33
+        ], 
+        "limit_recursion_dir_search": {
+          "win": 4, 
+          "linux": 3
+        }, 
+        "check_that_exists": "yes", 
+        "soft_path_example": {
+          "win": "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v6.5\\bin\\nvcc.exe", 
+          "linux": "/usr/local/cuda-7.5/bin/nvcc"
+        }, 
+        "ck_version": 10, 
+        "env_prefix": "CK_ENV_COMPILER_CUDA", 
+        "input_path_example": "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v5.5"
+      }, 
+      "name": "CUDA compiler", 
+      "tags": "compiler,lang-c-cuda", 
+      "build_dir_name": "nvcc", 
+      "num_entries": 1, 
+      "choices": [
+        "cc72441d1a60d725"
+      ], 
+      "uoa": "cc72441d1a60d725", 
+      "dict": {
+        "data_name": "Nvidia CUDA Compiler", 
+        "deps": {
+          "gcc": {
+            "detected_ver": "5.4.0", 
+            "bat": ". /home/anton/CK_REPOS/local/env/43ceab80becb79de/env.sh\n", 
+            "ver": "5.4.0", 
+            "name": "GCC", 
+            "tags": "compiler,gcc", 
+            "build_dir_name": "gcc", 
+            "uoa": "43ceab80becb79de", 
+            "only_for_target_os_tags": [
+              "linux"
+            ], 
+            "choices": [
+              "43ceab80becb79de"
+            ], 
+            "num_entries": 1, 
+            "dict": {
+              "env_script": "env.sh", 
+              "deps": {}, 
+              "tags": [
+                "64bits", 
+                "compiler", 
+                "gcc", 
+                "host-os-linux-64", 
+                "lang-c", 
+                "lang-cpp", 
+                "target-os-linux-64", 
+                "v5", 
+                "v5.4", 
+                "v5.4.0"
+              ], 
+              "customize": {
+                "can_strip_dynamic_lib": "yes", 
+                "build_dir_name": "gcc", 
+                "skip_path": "yes", 
+                "tool_prefix_configured": "yes", 
+                "tool_prefix": "", 
+                "tool_postfix_configured": "yes", 
+                "env_prefix": "CK_ENV_COMPILER_GCC", 
+                "soft_version_cmd": {
+                  "win": " --version > $#filename#$ 2>&1", 
+                  "linux": "--version > $#filename#$ 2>&1"
+                }, 
+                "soft_path_example": {
+                  "win": "C:\\Program Files\\GCC-4.9.2-x64\\bin\\gcc.exe", 
+                  "linux": "/usr/bin/gcc"
+                }, 
+                "languages": [
+                  "C", 
+                  "CPP"
+                ], 
+                "version": "5.4.0", 
+                "soft_file_from_host_os": "yes", 
+                "tool_postfix": "-5", 
+                "soft_file": {
+                  "win": "gcc.exe", 
+                  "linux": "gcc"
+                }, 
+                "retarget": "no", 
+                "search_numeric_ext_on_linux": "yes", 
+                "add_to_path": "yes", 
+                "add_only_with_version": "yes", 
+                "version_split": [
+                  5, 
+                  4, 
+                  0
+                ], 
+                "limit_recursion_dir_search": {
+                  "win": 4, 
+                  "linux": 3
+                }, 
+                "check_that_exists": "yes", 
+                "ck_version": 10, 
+                "only_for_target_os_tags": [
+                  "mingw", 
+                  "linux"
+                ], 
+                "full_path": "/usr/bin/gcc-5"
+              }, 
+              "setup": {
+                "version_split": [
+                  5, 
+                  4, 
+                  0
+                ], 
+                "target_os_bits": "64", 
+                "version": "5.4.0", 
+                "host_os_uoa": "4258b5fe54828a50", 
+                "target_os_uoa": "4258b5fe54828a50"
+              }, 
+              "data_name": "GNU C compiler", 
+              "soft_uoa": "3a8a82fa40bf992d", 
+              "env": {
+                "CK_COMPILER_FLAGS_OBLIGATORY": "", 
+                "CK_AR": "ar", 
+                "CK_COMPILER_POSTFIX": "-5", 
+                "CK_FLAGS_DLL_EXTRA": "", 
+                "CK_LIB_EXT": ".a", 
+                "CK_OPT_SIZE": "-Os", 
+                "CK_OPT_SPEED": "-O3", 
+                "CK_COMPILER_FLAG_PTHREAD_LIB": "-lpthread", 
+                "CK_CC": "gcc-5", 
+                "CK_COMPILER_FLAG_GPROF": "-pg", 
+                "CK_OPT_ALL_WARNINGS": "-Wall", 
+                "CK_LB_OUTPUT": "-o ", 
+                "CK_FLAGS_STATIC_LIB": "-fPIC", 
+                "CK_FLAG_PREFIX_VAR": "-D", 
+                "CK_EXTRA_LIB_M": "-lm", 
+                "CK_FLAG_PREFIX_LIB_DIR": "-L", 
+                "CK_FLAGS_CREATE_OBJ": "-c", 
+                "CK_LINKER_FLAG_OPENMP": "-lgomp -lrt", 
+                "CK_OBJ_EXT": ".o", 
+                "CK_FLAGS_OUTPUT": "-o ", 
+                "CK_LB": "ar rcs", 
+                "CK_LD": "ld", 
+                "CK_COMPILER_FLAG_CPP11": "-std=c++11", 
+                "CK_COMPILER_FLAG_OPENMP": "-fopenmp", 
+                "CK_PLUGIN_FLAG": "-fplugin=", 
+                "CK_OPT_SPEED_SAFE": "-O2", 
+                "CK_DLL_EXT": ".so", 
+                "CK_CXX": "g++-5", 
+                "CK_ASM_EXT": ".s", 
+                "CK_FLAG_PREFIX_INCLUDE": "-I", 
+                "CK_LD_FLAGS_EXTRA": "", 
+                "CK_OBJDUMP": "objdump -d", 
+                "CK_EXE_EXT": ".out", 
+                "CK_PROFILER": "gprof", 
+                "CK_FLAGS_DLL": "-shared -fPIC", 
+                "CK_FLAGS_STATIC_BIN": "-static -fPIC", 
+                "CK_ENV_COMPILER_GCC": "/usr", 
+                "CK_EXTRA_LIB_DL": "-ldl", 
+                "CK_GPROF_OUT_FILE": "gmon.out", 
+                "CK_MAKE": "make", 
+                "CK_COMPILER_FLAG_CPP0X": "-std=c++0x", 
+                "CK_COMPILER_FLAG_PLUGIN": "-fplugin=", 
+                "CK_FLAGS_CREATE_ASM": "-S"
+              }, 
+              "soft_alias": "compiler.gcc"
+            }, 
+            "local": "yes"
+          }, 
+          "mvsc": {
+            "local": "yes", 
+            "name": "microsoft C compiler", 
+            "only_for_target_os_tags": [
+              "windows"
+            ], 
+            "tags": "microsoft,compiler"
+          }
+        }, 
+        "tags": [
+          "64bits", 
+          "compiler", 
+          "cuda", 
+          "host-os-linux-64", 
+          "lang-c-cuda", 
+          "lang-cpp-cuda", 
+          "target-os-linux-64", 
+          "v8", 
+          "v8.0", 
+          "v8.0.33"
+        ], 
+        "customize": {
+          "soft_version_cmd": {
+            "win": "--version > $#filename#$ 2>&1", 
+            "linux": "--version > $#filename#$ 2>&1"
+          }, 
+          "can_strip_dynamic_lib": "yes", 
+          "build_dir_name": "nvcc", 
+          "full_path": "/usr/local/cuda-8.0/bin/nvcc", 
+          "skip_path": "yes", 
+          "only_for_target_os_tags": [
+            "linux", 
+            "windows"
+          ], 
+          "languages": [
+            "C", 
+            "CPP"
+          ], 
+          "soft_file": {
+            "win": "nvcc.exe", 
+            "linux": "nvcc"
+          }, 
+          "version": "8.0.33", 
+          "soft_file_from_host_os": "yes", 
+          "add_only_with_version": "yes", 
+          "version_split": [
+            8, 
+            0, 
+            33
+          ], 
+          "limit_recursion_dir_search": {
+            "win": 4, 
+            "linux": 3
+          }, 
+          "check_that_exists": "yes", 
+          "soft_path_example": {
+            "win": "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v6.5\\bin\\nvcc.exe", 
+            "linux": "/usr/local/cuda-7.5/bin/nvcc"
+          }, 
+          "ck_version": 10, 
+          "env_prefix": "CK_ENV_COMPILER_CUDA", 
+          "input_path_example": "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v5.5"
+        }, 
+        "setup": {
+          "deps_gcc": "43ceab80becb79de", 
+          "version": "8.0.33", 
+          "version_split": [
+            8, 
+            0, 
+            33
+          ], 
+          "target_os_bits": "64", 
+          "host_os_uoa": "4258b5fe54828a50", 
+          "target_os_uoa": "4258b5fe54828a50"
+        }, 
+        "env_script": "env.sh", 
+        "soft_uoa": "89dc19f635b409c9", 
+        "env": {
+          "CK_ENV_COMPILER_CUDA_BIN": "/usr/local/cuda-8.0/bin", 
+          "CK_OPT_RELAXED_CONSTEXPR": "--expt-relaxed-constexpr", 
+          "CK_COMPILER_FLAGS_OBLIGATORY": "", 
+          "CK_AR": "ar", 
+          "CK_FLAGS_DYNAMIC_BIN": "", 
+          "CK_NVCXX": "nvcc -ccbin /usr/bin/g++-5", 
+          "CK_FLAGS_DLL_EXTRA": "", 
+          "CK_LIB_EXT": ".a", 
+          "CK_FLAGS_CREATE_OBJ": "-c", 
+          "CK_NVCC_GPU_ARCH": "--gpu-architecture=", 
+          "CUDA_INSTALL_DIR": "/usr/local/cuda-8.0", 
+          "CK_LB_OUTPUT": "-o ", 
+          "CK_OPT_FAST_MATH": "--use_fast_math", 
+          "CK_FLAGS_STATIC_LIB": "-fPIC", 
+          "CK_FLAG_PREFIX_VAR": "-D", 
+          "CK_EXTRA_LIB_CUBLAS": "-lcublas", 
+          "CK_EXTRA_LIB_M": "-lm", 
+          "CK_NVCC_GEN_CODE": "--generate-code=", 
+          "CK_FLAG_PREFIX_LIB_DIR": "-L", 
+          "CK_OPT_SPEED": "-O3", 
+          "CK_FLAG_PREFIX_INCLUDE": "-I", 
+          "CUDA_HOME": "/usr/local/cuda-8.0", 
+          "CK_ENV_COMPILER_CUDA": "/usr/local/cuda-8.0", 
+          "CK_OBJ_EXT": ".o", 
+          "CK_FLAGS_OUTPUT": "-o ", 
+          "CK_LB": "ar rcs", 
+          "CK_MAKE": "make.exe", 
+          "CK_COMPILER_FLAG_CPP11": "--std=c++11", 
+          "CK_PLUGIN_FLAG": "-fplugin=", 
+          "CK_NVCC": "nvcc -ccbin /usr/bin/gcc-5", 
+          "CK_DLL_EXT": ".so", 
+          "CK_ASM_EXT": ".s", 
+          "CK_ENV_COMPILER_CUDA_INCLUDE": "/usr/local/cuda-8.0/include", 
+          "CK_LD_FLAGS_EXTRA": "", 
+          "CUDA_PATH": "/usr/local/cuda-8.0", 
+          "CK_EXE_EXT": ".out", 
+          "CK_ENV_COMPILER_CUDA_LIB": "/usr/local/cuda-8.0/lib64", 
+          "CK_PROFILER": "gprof", 
+          "CK_FLAGS_DLL": "-shared -fPIC", 
+          "CK_OBJDUMP": "cuobjdump --dump-sass", 
+          "CK_FLAGS_STATIC_BIN": "-static -fPIC", 
+          "CK_EXTRA_LIB_DL": "-ldl", 
+          "CK_NVCC_GPU_CODE": "--gpu-code=", 
+          "CK_FLAGS_CREATE_ASM": "-S"
+        }, 
+        "soft_alias": "compiler.cuda"
+      }, 
+      "ver": "8.0.33", 
+      "local": "yes"
+    }, 
+    "lib-cjson": {
+      "sort": 30, 
+      "bat": ". /home/anton/CK_REPOS/local/env/201e745f49378f90/env.sh\n", 
+      "cus": {
+        "dynamic_lib": "libcjson.so", 
+        "static_lib": "libcjson.a", 
+        "skip_path": "yes", 
+        "path_include": "/home/anton/CK_TOOLS/lib-cjson-2013-llvm-3.8.0-2ubuntu4-linux-64/include", 
+        "include_name": "cJSON.h", 
+        "version": "2013", 
+        "env_prefix": "CK_ENV_LIB_CJSON", 
+        "extra_dir": "", 
+        "version_split": [
+          2013
+        ], 
+        "full_path": "/home/anton/CK_TOOLS/lib-cjson-2013-llvm-3.8.0-2ubuntu4-linux-64/lib/libcjson.a", 
+        "path_lib": "/home/anton/CK_TOOLS/lib-cjson-2013-llvm-3.8.0-2ubuntu4-linux-64/lib"
+      }, 
+      "name": "cJSON library", 
+      "tags": "lib,cjson", 
+      "num_entries": 1, 
+      "choices": [
+        "201e745f49378f90"
+      ], 
+      "uoa": "201e745f49378f90", 
+      "dict": {
+        "data_name": "cJSON library", 
+        "deps": {
+          "compiler": {
+            "detected_ver": "3.8.0-2ubuntu4", 
+            "sort": 10, 
+            "bat": ". /home/anton/CK_REPOS/local/env/ed8c44b5a8305a1f/env.sh\n", 
+            "cus": {
+              "can_strip_dynamic_lib": "yes", 
+              "build_dir_name": "llvm", 
+              "skip_path": "yes", 
+              "tool_prefix_configured": "yes", 
+              "tool_prefix": "", 
+              "tool_postfix_configured": "yes", 
+              "env_prefix": "CK_ENV_COMPILER_LLVM", 
+              "soft_version_cmd": {
+                "win": " --version > $#filename#$ 2>&1", 
+                "linux": "--version > $#filename#$ 2>&1"
+              }, 
+              "soft_path_example": {
+                "win": "C:\\Program Files (x86)\\llvm\\bin\\clang.exe", 
+                "linux": "/usr/bin/clang"
+              }, 
+              "languages": [
+                "C", 
+                "CPP"
+              ], 
+              "version": "3.8.0-2ubuntu4", 
+              "soft_file_from_host_os": "yes", 
+              "path_lib": "/usr/lib", 
+              "tool_postfix": "-3.8", 
+              "soft_file": {
+                "win": "clang.exe", 
+                "linux": "clang"
+              }, 
+              "retarget": "no", 
+              "search_numeric_ext_on_linux": "yes", 
+              "add_to_path": "yes", 
+              "add_only_with_version": "yes", 
+              "version_split": [
+                3, 
+                8, 
+                0, 
+                0
+              ], 
+              "limit_recursion_dir_search": {
+                "win": 4, 
+                "linux": 3
+              }, 
+              "check_that_exists": "yes", 
+              "ck_version": 10, 
+              "path_include": "/usr/include", 
+              "only_for_target_os_tags": [
+                "android", 
+                "windows", 
+                "linux"
+              ], 
+              "full_path": "/usr/bin/clang-3.8"
+            }, 
+            "name": "C++ compiler", 
+            "tags": "compiler,lang-cpp", 
+            "build_dir_name": "llvm", 
+            "uoa": "ed8c44b5a8305a1f", 
+            "choices": [
+              "ed8c44b5a8305a1f", 
+              "43ceab80becb79de"
+            ], 
+            "num_entries": 1, 
+            "dict": {
+              "env_script": "env.sh", 
+              "deps": {
+                "ndk-gcc": {
+                  "local": "yes", 
+                  "name": "Android NDK GCC", 
+                  "only_for_target_os_tags": [
+                    "android"
+                  ], 
+                  "tags": "compiler,gcc,ndk"
+                }, 
+                "mvsc": {
+                  "local": "yes", 
+                  "name": "microsoft C compiler", 
+                  "only_for_target_os_tags": [
+                    "windows"
+                  ], 
+                  "tags": "microsoft,compiler"
+                }
+              }, 
+              "tags": [
+                "64bits", 
+                "compiler", 
+                "host-os-linux-64", 
+                "lang-c", 
+                "lang-cpp", 
+                "llvm", 
+                "target-os-linux-64", 
+                "v3", 
+                "v3.8", 
+                "v3.8.0", 
+                "v3.8.0.0"
+              ], 
+              "customize": {
+                "can_strip_dynamic_lib": "yes", 
+                "build_dir_name": "llvm", 
+                "skip_path": "yes", 
+                "tool_prefix_configured": "yes", 
+                "tool_prefix": "", 
+                "tool_postfix_configured": "yes", 
+                "env_prefix": "CK_ENV_COMPILER_LLVM", 
+                "soft_version_cmd": {
+                  "win": " --version > $#filename#$ 2>&1", 
+                  "linux": "--version > $#filename#$ 2>&1"
+                }, 
+                "soft_path_example": {
+                  "win": "C:\\Program Files (x86)\\llvm\\bin\\clang.exe", 
+                  "linux": "/usr/bin/clang"
+                }, 
+                "languages": [
+                  "C", 
+                  "CPP"
+                ], 
+                "version": "3.8.0-2ubuntu4", 
+                "soft_file_from_host_os": "yes", 
+                "path_lib": "/usr/lib", 
+                "tool_postfix": "-3.8", 
+                "soft_file": {
+                  "win": "clang.exe", 
+                  "linux": "clang"
+                }, 
+                "retarget": "no", 
+                "search_numeric_ext_on_linux": "yes", 
+                "add_to_path": "yes", 
+                "add_only_with_version": "yes", 
+                "version_split": [
+                  3, 
+                  8, 
+                  0, 
+                  0
+                ], 
+                "limit_recursion_dir_search": {
+                  "win": 4, 
+                  "linux": 3
+                }, 
+                "check_that_exists": "yes", 
+                "ck_version": 10, 
+                "path_include": "/usr/include", 
+                "only_for_target_os_tags": [
+                  "android", 
+                  "windows", 
+                  "linux"
+                ], 
+                "full_path": "/usr/bin/clang-3.8"
+              }, 
+              "setup": {
+                "version_split": [
+                  3, 
+                  8, 
+                  0, 
+                  0
+                ], 
+                "target_os_bits": "64", 
+                "version": "3.8.0-2ubuntu4", 
+                "host_os_uoa": "4258b5fe54828a50", 
+                "target_os_uoa": "4258b5fe54828a50"
+              }, 
+              "data_name": "LLVM compiler", 
+              "soft_uoa": "1c2eb494b8ae3bc4", 
+              "env": {
+                "CK_COMPILER_FLAGS_OBLIGATORY": "", 
+                "CK_AR": "ar", 
+                "CK_COMPILER_POSTFIX": "-3.8", 
+                "CK_FLAGS_DLL_EXTRA": "", 
+                "CK_LIB_EXT": ".a", 
+                "CK_OPT_SIZE": "-Os", 
+                "CK_OPT_SPEED": "-O3", 
+                "CK_COMPILER_FLAG_PTHREAD_LIB": "-lpthread", 
+                "CK_CC": "clang-3.8", 
+                "CK_COMPILER_FLAG_GPROF": "-pg", 
+                "CK_LB_OUTPUT": "-o ", 
+                "CK_COMPILER_ENABLE_EXCEPTIONS": "-fcxx-exceptions", 
+                "CK_ENV_COMPILER_LLVM": "/usr", 
+                "CK_FLAG_PREFIX_VAR": "-D", 
+                "CK_FLAGS_STATIC_LIB": "-fPIC", 
+                "CK_EXTRA_LIB_M": "-lm", 
+                "CK_FLAG_PREFIX_LIB_DIR": "-L", 
+                "CK_FLAGS_CREATE_OBJ": "-c", 
+                "CK_LINKER_FLAG_OPENMP": "-fopenmp", 
+                "CK_ENV_COMPILER_LLVM_BIN": "/usr/bin", 
+                "CK_OBJ_EXT": ".o", 
+                "CK_FLAGS_OUTPUT": "-o ", 
+                "CK_LB": "ar rcs", 
+                "CK_MAKE": "make", 
+                "CK_COMPILER_FLAG_CPP11": "-std=c++11", 
+                "CK_COMPILER_FLAG_OPENMP": "-fopenmp", 
+                "CK_PLUGIN_FLAG": "-fplugin=", 
+                "CK_OPT_SPEED_SAFE": "-O2", 
+                "CK_DLL_EXT": ".so", 
+                "CK_CXX": "clang++-3.8", 
+                "CK_ASM_EXT": ".s", 
+                "CK_FLAG_PREFIX_INCLUDE": "-I", 
+                "CK_LD_FLAGS_EXTRA": "", 
+                "CK_OBJDUMP": "objdump -d", 
+                "CK_EXE_EXT": ".out", 
+                "CK_PROFILER": "gprof", 
+                "CK_FLAGS_DLL": "-shared -fPIC", 
+                "CK_FLAGS_STATIC_BIN": "-static -fPIC", 
+                "CK_EXTRA_LIB_DL": "-ldl", 
+                "CK_GPROF_OUT_FILE": "gmon.out", 
+                "CK_COMPILER_FLAG_CPP0X": "-std=c++0x", 
+                "CK_COMPILER_FLAG_PLUGIN": "-fplugin=", 
+                "CK_FLAGS_CREATE_ASM": "-S", 
+                "CK_COMPILER_PREFIX": ""
+              }, 
+              "soft_alias": "compiler.llvm"
+            }, 
+            "ver": "3.8.0-2ubuntu4", 
+            "local": "yes"
+          }
+        }, 
+        "tags": [
+          "64bits", 
+          "cjson", 
+          "host-os-linux-64", 
+          "lib", 
+          "target-os-linux-64", 
+          "v2013"
+        ], 
+        "customize": {
+          "dynamic_lib": "libcjson.so", 
+          "static_lib": "libcjson.a", 
+          "skip_path": "yes", 
+          "path_include": "/home/anton/CK_TOOLS/lib-cjson-2013-llvm-3.8.0-2ubuntu4-linux-64/include", 
+          "include_name": "cJSON.h", 
+          "version": "2013", 
+          "env_prefix": "CK_ENV_LIB_CJSON", 
+          "extra_dir": "", 
+          "version_split": [
+            2013
+          ], 
+          "full_path": "/home/anton/CK_TOOLS/lib-cjson-2013-llvm-3.8.0-2ubuntu4-linux-64/lib/libcjson.a", 
+          "path_lib": "/home/anton/CK_TOOLS/lib-cjson-2013-llvm-3.8.0-2ubuntu4-linux-64/lib"
+        }, 
+        "setup": {
+          "deps_compiler": "ed8c44b5a8305a1f", 
+          "version": "2013", 
+          "version_split": [
+            2013
+          ], 
+          "target_os_bits": "64", 
+          "host_os_uoa": "4258b5fe54828a50", 
+          "target_os_uoa": "4258b5fe54828a50"
+        }, 
+        "env_script": "env.sh", 
+        "package_uoa": "a8b63434956b0c16", 
+        "soft_uoa": "59c52485faf01e9a", 
+        "env": {
+          "CK_ENV_LIB_CJSON": "/home/anton/CK_TOOLS/lib-cjson-2013-llvm-3.8.0-2ubuntu4-linux-64", 
+          "CK_ENV_LIB_CJSON_STATIC_NAME": "libcjson.a", 
+          "CK_ENV_LIB_CJSON_INCLUDE_NAME": "cJSON.h", 
+          "CK_ENV_LIB_CJSON_DYNAMIC_NAME": "libcjson.so"
+        }, 
+        "soft_alias": "lib.cjson"
+      }, 
+      "ver": "2013", 
+      "local": "yes"
+    }, 
+    "caffemodel": {
+      "sort": 40, 
+      "for_run_time": "yes", 
+      "bat": ". /home/anton/CK_REPOS/local/env/1d940f4bdf937ef4/env.sh\n", 
+      "ver": "1.0", 
+      "name": "Caffe model (net and weights)", 
+      "tags": "caffemodel", 
+      "num_entries": 1, 
+      "choices": [
+        "1d940f4bdf937ef4"
+      ], 
+      "uoa": "1d940f4bdf937ef4", 
+      "dict": {
+        "data_name": "Caffe model (net and weights) (deepscale, squeezenet, 1.0)", 
+        "deps": {}, 
+        "tags": [
+          "64bits", 
+          "bvlc", 
+          "caffe", 
+          "caffemodel", 
+          "deepscale", 
+          "explicit-window-global-pooling", 
+          "host-os-linux-64", 
+          "net", 
+          "squeezenet", 
+          "target-os-linux-64", 
+          "v1", 
+          "v1.0", 
+          "weights"
+        ], 
+        "customize": {
+          "force_ask_path": "yes", 
+          "soft_file": {
+            "linux": "deploy.prototxt"
+          }, 
+          "ck_params_file": "ck-params.json", 
+          "skip_path": "yes", 
+          "check_that_exists": "yes", 
+          "version_split": [
+            1, 
+            0
+          ], 
+          "version": "1.0", 
+          "params": {
+            "train": {
+              "template": "train_val.prototxt", 
+              "substitute": {
+                "train_batch_size": 32, 
+                "val_batch_size": 25
+              }
+            }, 
+            "val": {
+              "template": "train_val.prototxt", 
+              "substitute": {
+                "train_batch_size": 32, 
+                "val_batch_size": 25
+              }, 
+              "accuracy_layers": [
+                "accuracy", 
+                "accuracy_top5"
+              ]
+            }, 
+            "deploy": {
+              "template": "deploy.prototxt", 
+              "substitute": {
+                "batch_size": 10
+              }
+            }
+          }, 
+          "full_path": "/home/anton/CK_TOOLS/caffemodel-deepscale-squeezenet-1.0/squeezenet_v1.0.caffemodel", 
+          "file_with_weights": "squeezenet_v1.0.caffemodel", 
+          "extra_dir": "", 
+          "skip_file_check": "yes", 
+          "limit_recursion_dir_search": {
+            "linux": 3
+          }, 
+          "install_env": {
+            "MODEL_HASH_CALCULATOR": "sha1sum", 
+            "MODEL_FILE": "squeezenet_v1.0.caffemodel", 
+            "MODEL_URL": "https://github.com/DeepScale/SqueezeNet/raw/master/SqueezeNet_v1.0/squeezenet_v1.0.caffemodel", 
+            "MODEL_HASH_REF": "579d0beb658e43c45937bf8bb5e4034fea4e1f69"
+          }, 
+          "no_ver_in_suggested_path": "yes", 
+          "ck_version": 10, 
+          "env_prefix": "CK_ENV_MODEL_CAFFE", 
+          "no_os_in_suggested_path": "yes"
+        }, 
+        "setup": {
+          "version_split": [
+            1, 
+            0
+          ], 
+          "target_os_bits": "64", 
+          "version": "1.0", 
+          "host_os_uoa": "4258b5fe54828a50", 
+          "target_os_uoa": "4258b5fe54828a50"
+        }, 
+        "env_script": "env.sh", 
+        "package_uoa": "a41361f20a5741f3", 
+        "soft_uoa": "e2400aabc11d6cd1", 
+        "env": {
+          "CK_ENV_MODEL_CAFFE_WEIGHTS_FILE": "squeezenet_v1.0.caffemodel", 
+          "CK_ENV_MODEL_CAFFE_WEIGHTS": "/home/anton/CK_TOOLS/caffemodel-deepscale-squeezenet-1.0/squeezenet_v1.0.caffemodel", 
+          "CK_ENV_MODEL_CAFFE": "/home/anton/CK_TOOLS/caffemodel-deepscale-squeezenet-1.0"
+        }, 
+        "soft_alias": "model.caffe"
+      }, 
+      "local": "yes", 
+      "force_target_as_host": "yes"
+    }, 
+    "compiler": {
+      "sort": 10, 
+      "detected_ver": "5.4.0", 
+      "bat": ". /home/anton/CK_REPOS/local/env/43ceab80becb79de/env.sh\n", 
+      "cus": {
+        "can_strip_dynamic_lib": "yes", 
+        "build_dir_name": "gcc", 
+        "skip_path": "yes", 
+        "tool_prefix_configured": "yes", 
+        "tool_prefix": "", 
+        "tool_postfix_configured": "yes", 
+        "env_prefix": "CK_ENV_COMPILER_GCC", 
+        "soft_version_cmd": {
+          "win": " --version > $#filename#$ 2>&1", 
+          "linux": "--version > $#filename#$ 2>&1"
+        }, 
+        "soft_path_example": {
+          "win": "C:\\Program Files\\GCC-4.9.2-x64\\bin\\gcc.exe", 
+          "linux": "/usr/bin/gcc"
+        }, 
+        "languages": [
+          "C", 
+          "CPP"
+        ], 
+        "version": "5.4.0", 
+        "soft_file_from_host_os": "yes", 
+        "tool_postfix": "-5", 
+        "soft_file": {
+          "win": "gcc.exe", 
+          "linux": "gcc"
+        }, 
+        "retarget": "no", 
+        "search_numeric_ext_on_linux": "yes", 
+        "add_to_path": "yes", 
+        "add_only_with_version": "yes", 
+        "version_split": [
+          5, 
+          4, 
+          0
+        ], 
+        "limit_recursion_dir_search": {
+          "win": 4, 
+          "linux": 3
+        }, 
+        "check_that_exists": "yes", 
+        "ck_version": 10, 
+        "only_for_target_os_tags": [
+          "mingw", 
+          "linux"
+        ], 
+        "full_path": "/usr/bin/gcc-5"
+      }, 
+      "name": "C++ compiler", 
+      "tags": "compiler,lang-cpp", 
+      "build_dir_name": "gcc", 
+      "num_entries": 2, 
+      "choices": [
+        "ed8c44b5a8305a1f", 
+        "43ceab80becb79de"
+      ], 
+      "uoa": "43ceab80becb79de", 
+      "dict": {
+        "data_name": "GNU C compiler", 
+        "deps": {}, 
+        "tags": [
+          "64bits", 
+          "compiler", 
+          "gcc", 
+          "host-os-linux-64", 
+          "lang-c", 
+          "lang-cpp", 
+          "target-os-linux-64", 
+          "v5", 
+          "v5.4", 
+          "v5.4.0"
+        ], 
+        "customize": {
+          "can_strip_dynamic_lib": "yes", 
+          "build_dir_name": "gcc", 
+          "skip_path": "yes", 
+          "tool_prefix_configured": "yes", 
+          "tool_prefix": "", 
+          "tool_postfix_configured": "yes", 
+          "env_prefix": "CK_ENV_COMPILER_GCC", 
+          "soft_version_cmd": {
+            "win": " --version > $#filename#$ 2>&1", 
+            "linux": "--version > $#filename#$ 2>&1"
+          }, 
+          "soft_path_example": {
+            "win": "C:\\Program Files\\GCC-4.9.2-x64\\bin\\gcc.exe", 
+            "linux": "/usr/bin/gcc"
+          }, 
+          "languages": [
+            "C", 
+            "CPP"
+          ], 
+          "version": "5.4.0", 
+          "soft_file_from_host_os": "yes", 
+          "tool_postfix": "-5", 
+          "soft_file": {
+            "win": "gcc.exe", 
+            "linux": "gcc"
+          }, 
+          "retarget": "no", 
+          "search_numeric_ext_on_linux": "yes", 
+          "add_to_path": "yes", 
+          "add_only_with_version": "yes", 
+          "version_split": [
+            5, 
+            4, 
+            0
+          ], 
+          "limit_recursion_dir_search": {
+            "win": 4, 
+            "linux": 3
+          }, 
+          "check_that_exists": "yes", 
+          "ck_version": 10, 
+          "only_for_target_os_tags": [
+            "mingw", 
+            "linux"
+          ], 
+          "full_path": "/usr/bin/gcc-5"
+        }, 
+        "setup": {
+          "version_split": [
+            5, 
+            4, 
+            0
+          ], 
+          "target_os_bits": "64", 
+          "version": "5.4.0", 
+          "host_os_uoa": "4258b5fe54828a50", 
+          "target_os_uoa": "4258b5fe54828a50"
+        }, 
+        "env_script": "env.sh", 
+        "soft_uoa": "3a8a82fa40bf992d", 
+        "env": {
+          "CK_COMPILER_FLAGS_OBLIGATORY": "", 
+          "CK_AR": "ar", 
+          "CK_COMPILER_POSTFIX": "-5", 
+          "CK_FLAGS_DLL_EXTRA": "", 
+          "CK_LIB_EXT": ".a", 
+          "CK_OPT_SIZE": "-Os", 
+          "CK_OPT_SPEED": "-O3", 
+          "CK_COMPILER_FLAG_PTHREAD_LIB": "-lpthread", 
+          "CK_CC": "gcc-5", 
+          "CK_COMPILER_FLAG_GPROF": "-pg", 
+          "CK_OPT_ALL_WARNINGS": "-Wall", 
+          "CK_LB_OUTPUT": "-o ", 
+          "CK_FLAGS_STATIC_LIB": "-fPIC", 
+          "CK_FLAG_PREFIX_VAR": "-D", 
+          "CK_EXTRA_LIB_M": "-lm", 
+          "CK_FLAG_PREFIX_LIB_DIR": "-L", 
+          "CK_FLAGS_CREATE_OBJ": "-c", 
+          "CK_LINKER_FLAG_OPENMP": "-lgomp -lrt", 
+          "CK_OBJ_EXT": ".o", 
+          "CK_FLAGS_OUTPUT": "-o ", 
+          "CK_LB": "ar rcs", 
+          "CK_LD": "ld", 
+          "CK_COMPILER_FLAG_CPP11": "-std=c++11", 
+          "CK_COMPILER_FLAG_OPENMP": "-fopenmp", 
+          "CK_PLUGIN_FLAG": "-fplugin=", 
+          "CK_OPT_SPEED_SAFE": "-O2", 
+          "CK_DLL_EXT": ".so", 
+          "CK_CXX": "g++-5", 
+          "CK_ASM_EXT": ".s", 
+          "CK_FLAG_PREFIX_INCLUDE": "-I", 
+          "CK_LD_FLAGS_EXTRA": "", 
+          "CK_OBJDUMP": "objdump -d", 
+          "CK_EXE_EXT": ".out", 
+          "CK_PROFILER": "gprof", 
+          "CK_FLAGS_DLL": "-shared -fPIC", 
+          "CK_FLAGS_STATIC_BIN": "-static -fPIC", 
+          "CK_ENV_COMPILER_GCC": "/usr", 
+          "CK_EXTRA_LIB_DL": "-ldl", 
+          "CK_GPROF_OUT_FILE": "gmon.out", 
+          "CK_MAKE": "make", 
+          "CK_COMPILER_FLAG_CPP0X": "-std=c++0x", 
+          "CK_COMPILER_FLAG_PLUGIN": "-fplugin=", 
+          "CK_FLAGS_CREATE_ASM": "-S"
+        }, 
+        "soft_alias": "compiler.gcc"
+      }, 
+      "ver": "5.4.0", 
+      "local": "yes"
+    }, 
+    "lib-tensorrt": {
+      "sort": 25, 
+      "bat": ". /home/anton/CK_REPOS/local/env/eb8fd42c4b787884/env.sh\n", 
+      "ver": "trunk", 
+      "name": "TensorRT engine", 
+      "tags": "lib,tensorrt", 
+      "num_entries": 1, 
+      "choices": [
+        "eb8fd42c4b787884"
+      ], 
+      "uoa": "eb8fd42c4b787884", 
+      "dict": {
+        "data_name": "TensorRT engine", 
+        "deps": {}, 
+        "tags": [
+          "64bits", 
+          "host-os-linux-64", 
+          "inference", 
+          "lib", 
+          "target-os-linux-64", 
+          "tensorrt", 
+          "v0"
+        ], 
+        "customize": {
+          "dynamic_lib": "libnvinfer.so", 
+          "skip_path": "yes", 
+          "path_include": "/usr/include/aarch64-linux-gnu", 
+          "version": "trunk", 
+          "env_prefix": "CK_ENV_LIB_TENSORRT", 
+          "version_split": [
+            0
+          ], 
+          "limit_recursion_dir_search": {
+            "linux": 3
+          }, 
+          "check_that_exists": "yes", 
+          "soft_file": {
+            "linux": "libnvinfer.so"
+          }, 
+          "full_path": "/usr/lib/aarch64-linux-gnu/libnvinfer.so", 
+          "path_lib": "/usr/lib/aarch64-linux-gnu"
+        }, 
+        "setup": {
+          "version_split": [
+            0
+          ], 
+          "target_os_bits": "64", 
+          "version": "trunk", 
+          "host_os_uoa": "4258b5fe54828a50", 
+          "target_os_uoa": "4258b5fe54828a50"
+        }, 
+        "env_script": "env.sh", 
+        "soft_uoa": "63257b98ef23405c", 
+        "env": {
+          "CK_ENV_LIB_TENSORRT_DYNAMIC_NAME": "libnvinfer.so", 
+          "CK_ENV_LIB_TENSORRT": "/usr/lib/aarch64-linux-gnu"
+        }, 
+        "soft_alias": "lib.tensorrt"
+      }, 
+      "local": "yes"
+    }
+  }, 
+  "no_compiler_description": "yes", 
+  "choices_desc": {}, 
+  "speed": "no"
+}

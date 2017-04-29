@@ -1,0 +1,1572 @@
+{
+  "characteristics_list": [
+    {
+      "compile": {
+        "binary_size": 38728, 
+        "compilation_success": "yes", 
+        "compilation_success_bool": true, 
+        "compilation_time": 2.436880111694336, 
+        "compilation_time_with_module": 3.9629881381988525, 
+        "joined_compiler_flags": "-O3", 
+        "md5_sum": "40ba1311e755b9d13d5e0d2bc7af400e", 
+        "obj_size": 40832, 
+        "obj_sizes": {
+          "tensorrt-time.o": 40832
+        }, 
+        "program_git_hash": "244f0cbe092c7fe978e7d6a12c04fb287ce24f03"
+      }, 
+      "run": {
+        "REAL_ENV_CK_CAFFE_MODEL": "/home/anton/CK_REPOS/ck-tensorrt/program/tensorrt-time/tmp/tmp-vWi8bd.prototxt", 
+        "execution_time": 0.008265153, 
+        "execution_time_with_module": 13.710662126541138, 
+        "memory_bytes": 0, 
+        "memory_kbytes": 0.0, 
+        "memory_mbytes": 0.0, 
+        "per_layer_info": [
+          {
+            "direction": "forward", 
+            "index": 0, 
+            "label": "00: conv1 + relu_conv1", 
+            "name": "conv1 + relu_conv1", 
+            "time_ms": 0.697684, 
+            "time_s": 0.000697684, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 1, 
+            "label": "01: pool1", 
+            "name": "pool1", 
+            "time_ms": 0.749526, 
+            "time_s": 0.000749526, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 2, 
+            "label": "02: fire2/squeeze1x1 + fire2/relu_squeeze1x1", 
+            "name": "fire2/squeeze1x1 + fire2/relu_squeeze1x1", 
+            "time_ms": 0.161368, 
+            "time_s": 0.000161368, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 3, 
+            "label": "03: fire2/expand1x1 + fire2/relu_expand1x1", 
+            "name": "fire2/expand1x1 + fire2/relu_expand1x1", 
+            "time_ms": 0.147052, 
+            "time_s": 0.000147052, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 4, 
+            "label": "04: fire2/expand3x3 + fire2/relu_expand3x3", 
+            "name": "fire2/expand3x3 + fire2/relu_expand3x3", 
+            "time_ms": 0.440737, 
+            "time_s": 0.000440737, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 5, 
+            "label": "05: fire2/concat", 
+            "name": "fire2/concat", 
+            "time_ms": 0.000526, 
+            "time_s": 5.26e-07, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 6, 
+            "label": "06: fire3/squeeze1x1 + fire3/relu_squeeze1x1", 
+            "name": "fire3/squeeze1x1 + fire3/relu_squeeze1x1", 
+            "time_ms": 0.272263, 
+            "time_s": 0.00027226299999999996, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 7, 
+            "label": "07: fire3/expand1x1 + fire3/relu_expand1x1", 
+            "name": "fire3/expand1x1 + fire3/relu_expand1x1", 
+            "time_ms": 0.150369, 
+            "time_s": 0.000150369, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 8, 
+            "label": "08: fire3/expand3x3 + fire3/relu_expand3x3", 
+            "name": "fire3/expand3x3 + fire3/relu_expand3x3", 
+            "time_ms": 0.425736, 
+            "time_s": 0.000425736, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 9, 
+            "label": "09: fire3/concat", 
+            "name": "fire3/concat", 
+            "time_ms": 0.000527, 
+            "time_s": 5.27e-07, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 10, 
+            "label": "10: pool3", 
+            "name": "pool3", 
+            "time_ms": 0.375894, 
+            "time_s": 0.000375894, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 11, 
+            "label": "11: fire4/squeeze1x1 + fire4/relu_squeeze1x1", 
+            "name": "fire4/squeeze1x1 + fire4/relu_squeeze1x1", 
+            "time_ms": 0.093158, 
+            "time_s": 9.3158e-05, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 12, 
+            "label": "12: fire4/expand1x1 + fire4/relu_expand1x1", 
+            "name": "fire4/expand1x1 + fire4/relu_expand1x1", 
+            "time_ms": 0.107789, 
+            "time_s": 0.000107789, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 13, 
+            "label": "13: fire4/expand3x3 + fire4/relu_expand3x3", 
+            "name": "fire4/expand3x3 + fire4/relu_expand3x3", 
+            "time_ms": 0.426948, 
+            "time_s": 0.000426948, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 14, 
+            "label": "14: fire4/concat", 
+            "name": "fire4/concat", 
+            "time_ms": 0.000842, 
+            "time_s": 8.419999999999999e-07, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 15, 
+            "label": "15: fire5/squeeze1x1 + fire5/relu_squeeze1x1", 
+            "name": "fire5/squeeze1x1 + fire5/relu_squeeze1x1", 
+            "time_ms": 0.170105, 
+            "time_s": 0.000170105, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 16, 
+            "label": "16: fire5/expand1x1 + fire5/relu_expand1x1", 
+            "name": "fire5/expand1x1 + fire5/relu_expand1x1", 
+            "time_ms": 0.106368, 
+            "time_s": 0.00010636800000000001, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 17, 
+            "label": "17: fire5/expand3x3 + fire5/relu_expand3x3", 
+            "name": "fire5/expand3x3 + fire5/relu_expand3x3", 
+            "time_ms": 0.422316, 
+            "time_s": 0.00042231600000000005, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 18, 
+            "label": "18: fire5/concat", 
+            "name": "fire5/concat", 
+            "time_ms": 0.000895, 
+            "time_s": 8.95e-07, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 19, 
+            "label": "19: pool5", 
+            "name": "pool5", 
+            "time_ms": 0.132578, 
+            "time_s": 0.000132578, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 20, 
+            "label": "20: fire6/squeeze1x1 + fire6/relu_squeeze1x1", 
+            "name": "fire6/squeeze1x1 + fire6/relu_squeeze1x1", 
+            "time_ms": 0.09379, 
+            "time_s": 9.379e-05, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 21, 
+            "label": "21: fire6/expand1x1 + fire6/relu_expand1x1", 
+            "name": "fire6/expand1x1 + fire6/relu_expand1x1", 
+            "time_ms": 0.059474, 
+            "time_s": 5.9474e-05, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 22, 
+            "label": "22: fire6/expand3x3 + fire6/relu_expand3x3", 
+            "name": "fire6/expand3x3 + fire6/relu_expand3x3", 
+            "time_ms": 0.210526, 
+            "time_s": 0.000210526, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 23, 
+            "label": "23: fire6/concat", 
+            "name": "fire6/concat", 
+            "time_ms": 0.000894, 
+            "time_s": 8.94e-07, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 24, 
+            "label": "24: fire7/squeeze1x1 + fire7/relu_squeeze1x1", 
+            "name": "fire7/squeeze1x1 + fire7/relu_squeeze1x1", 
+            "time_ms": 0.124106, 
+            "time_s": 0.000124106, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 25, 
+            "label": "25: fire7/expand1x1 + fire7/relu_expand1x1", 
+            "name": "fire7/expand1x1 + fire7/relu_expand1x1", 
+            "time_ms": 0.058315, 
+            "time_s": 5.8315e-05, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 26, 
+            "label": "26: fire7/expand3x3 + fire7/relu_expand3x3", 
+            "name": "fire7/expand3x3 + fire7/relu_expand3x3", 
+            "time_ms": 0.209421, 
+            "time_s": 0.000209421, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 27, 
+            "label": "27: fire7/concat", 
+            "name": "fire7/concat", 
+            "time_ms": 0.000474, 
+            "time_s": 4.74e-07, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 28, 
+            "label": "28: fire8/squeeze1x1 + fire8/relu_squeeze1x1", 
+            "name": "fire8/squeeze1x1 + fire8/relu_squeeze1x1", 
+            "time_ms": 0.133579, 
+            "time_s": 0.00013357900000000002, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 29, 
+            "label": "29: fire8/expand1x1 + fire8/relu_expand1x1", 
+            "name": "fire8/expand1x1 + fire8/relu_expand1x1", 
+            "time_ms": 0.074474, 
+            "time_s": 7.4474e-05, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 30, 
+            "label": "30: fire8/expand3x3 + fire8/relu_expand3x3", 
+            "name": "fire8/expand3x3 + fire8/relu_expand3x3", 
+            "time_ms": 0.320631, 
+            "time_s": 0.000320631, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 31, 
+            "label": "31: fire8/concat", 
+            "name": "fire8/concat", 
+            "time_ms": 0.000895, 
+            "time_s": 8.95e-07, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 32, 
+            "label": "32: fire9/squeeze1x1 + fire9/relu_squeeze1x1", 
+            "name": "fire9/squeeze1x1 + fire9/relu_squeeze1x1", 
+            "time_ms": 0.164315, 
+            "time_s": 0.000164315, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 33, 
+            "label": "33: fire9/expand1x1 + fire9/relu_expand1x1", 
+            "name": "fire9/expand1x1 + fire9/relu_expand1x1", 
+            "time_ms": 0.074158, 
+            "time_s": 7.4158e-05, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 34, 
+            "label": "34: fire9/expand3x3 + fire9/relu_expand3x3", 
+            "name": "fire9/expand3x3 + fire9/relu_expand3x3", 
+            "time_ms": 0.319526, 
+            "time_s": 0.000319526, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 35, 
+            "label": "35: fire9/concat", 
+            "name": "fire9/concat", 
+            "time_ms": 0.000895, 
+            "time_s": 8.95e-07, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 36, 
+            "label": "36: conv10 + relu_conv10", 
+            "name": "conv10 + relu_conv10", 
+            "time_ms": 1.380368, 
+            "time_s": 0.001380368, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 37, 
+            "label": "37: pool10", 
+            "name": "pool10", 
+            "time_ms": 0.146, 
+            "time_s": 0.000146, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 38, 
+            "label": "38: prob", 
+            "name": "prob", 
+            "time_ms": 0.010631, 
+            "time_s": 1.0631e-05, 
+            "timestamp": "0101 00:00:00.000000"
+          }
+        ], 
+        "post_processed": "yes", 
+        "repeat": 1, 
+        "return_code": 0, 
+        "run_success": "yes", 
+        "run_success_bool": true, 
+        "time_bw_ms": 0.0, 
+        "time_bw_s": 0.0, 
+        "time_fw_ms": 8.265153, 
+        "time_fw_s": 0.008265153, 
+        "time_fwbw_ms": 8.265153, 
+        "time_fwbw_s": 0.008265153, 
+        "time_total_ms": 8.265153, 
+        "time_total_ms_kernel_0": 8.265153, 
+        "time_total_s": 0.008265153, 
+        "time_total_s_kernel_0": 0.008265153, 
+        "total_execution_time": 0.008265153
+      }
+    }, 
+    {
+      "run": {
+        "REAL_ENV_CK_CAFFE_MODEL": "/home/anton/CK_REPOS/ck-tensorrt/program/tensorrt-time/tmp/tmp-Y3DxEq.prototxt", 
+        "execution_time": 0.008238364, 
+        "execution_time_with_module": 2.27620005607605, 
+        "memory_bytes": 0, 
+        "memory_kbytes": 0.0, 
+        "memory_mbytes": 0.0, 
+        "per_layer_info": [
+          {
+            "direction": "forward", 
+            "index": 0, 
+            "label": "00: conv1 + relu_conv1", 
+            "name": "conv1 + relu_conv1", 
+            "time_ms": 0.675263, 
+            "time_s": 0.000675263, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 1, 
+            "label": "01: pool1", 
+            "name": "pool1", 
+            "time_ms": 0.748894, 
+            "time_s": 0.000748894, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 2, 
+            "label": "02: fire2/squeeze1x1 + fire2/relu_squeeze1x1", 
+            "name": "fire2/squeeze1x1 + fire2/relu_squeeze1x1", 
+            "time_ms": 0.164895, 
+            "time_s": 0.00016489500000000003, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 3, 
+            "label": "03: fire2/expand1x1 + fire2/relu_expand1x1", 
+            "name": "fire2/expand1x1 + fire2/relu_expand1x1", 
+            "time_ms": 0.149895, 
+            "time_s": 0.00014989500000000001, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 4, 
+            "label": "04: fire2/expand3x3 + fire2/relu_expand3x3", 
+            "name": "fire2/expand3x3 + fire2/relu_expand3x3", 
+            "time_ms": 0.45121, 
+            "time_s": 0.00045121, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 5, 
+            "label": "05: fire2/concat", 
+            "name": "fire2/concat", 
+            "time_ms": 0.000631, 
+            "time_s": 6.310000000000001e-07, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 6, 
+            "label": "06: fire3/squeeze1x1 + fire3/relu_squeeze1x1", 
+            "name": "fire3/squeeze1x1 + fire3/relu_squeeze1x1", 
+            "time_ms": 0.268632, 
+            "time_s": 0.000268632, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 7, 
+            "label": "07: fire3/expand1x1 + fire3/relu_expand1x1", 
+            "name": "fire3/expand1x1 + fire3/relu_expand1x1", 
+            "time_ms": 0.15121, 
+            "time_s": 0.00015121, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 8, 
+            "label": "08: fire3/expand3x3 + fire3/relu_expand3x3", 
+            "name": "fire3/expand3x3 + fire3/relu_expand3x3", 
+            "time_ms": 0.428263, 
+            "time_s": 0.000428263, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 9, 
+            "label": "09: fire3/concat", 
+            "name": "fire3/concat", 
+            "time_ms": 0.000527, 
+            "time_s": 5.27e-07, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 10, 
+            "label": "10: pool3", 
+            "name": "pool3", 
+            "time_ms": 0.377684, 
+            "time_s": 0.00037768400000000004, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 11, 
+            "label": "11: fire4/squeeze1x1 + fire4/relu_squeeze1x1", 
+            "name": "fire4/squeeze1x1 + fire4/relu_squeeze1x1", 
+            "time_ms": 0.098526, 
+            "time_s": 9.8526e-05, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 12, 
+            "label": "12: fire4/expand1x1 + fire4/relu_expand1x1", 
+            "name": "fire4/expand1x1 + fire4/relu_expand1x1", 
+            "time_ms": 0.099052, 
+            "time_s": 9.9052e-05, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 13, 
+            "label": "13: fire4/expand3x3 + fire4/relu_expand3x3", 
+            "name": "fire4/expand3x3 + fire4/relu_expand3x3", 
+            "time_ms": 0.426737, 
+            "time_s": 0.000426737, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 14, 
+            "label": "14: fire4/concat", 
+            "name": "fire4/concat", 
+            "time_ms": 0.000526, 
+            "time_s": 5.26e-07, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 15, 
+            "label": "15: fire5/squeeze1x1 + fire5/relu_squeeze1x1", 
+            "name": "fire5/squeeze1x1 + fire5/relu_squeeze1x1", 
+            "time_ms": 0.166369, 
+            "time_s": 0.000166369, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 16, 
+            "label": "16: fire5/expand1x1 + fire5/relu_expand1x1", 
+            "name": "fire5/expand1x1 + fire5/relu_expand1x1", 
+            "time_ms": 0.10621, 
+            "time_s": 0.00010621, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 17, 
+            "label": "17: fire5/expand3x3 + fire5/relu_expand3x3", 
+            "name": "fire5/expand3x3 + fire5/relu_expand3x3", 
+            "time_ms": 0.425263, 
+            "time_s": 0.000425263, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 18, 
+            "label": "18: fire5/concat", 
+            "name": "fire5/concat", 
+            "time_ms": 0.000474, 
+            "time_s": 4.74e-07, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 19, 
+            "label": "19: pool5", 
+            "name": "pool5", 
+            "time_ms": 0.125579, 
+            "time_s": 0.000125579, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 20, 
+            "label": "20: fire6/squeeze1x1 + fire6/relu_squeeze1x1", 
+            "name": "fire6/squeeze1x1 + fire6/relu_squeeze1x1", 
+            "time_ms": 0.094052, 
+            "time_s": 9.4052e-05, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 21, 
+            "label": "21: fire6/expand1x1 + fire6/relu_expand1x1", 
+            "name": "fire6/expand1x1 + fire6/relu_expand1x1", 
+            "time_ms": 0.058263, 
+            "time_s": 5.8263e-05, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 22, 
+            "label": "22: fire6/expand3x3 + fire6/relu_expand3x3", 
+            "name": "fire6/expand3x3 + fire6/relu_expand3x3", 
+            "time_ms": 0.207421, 
+            "time_s": 0.000207421, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 23, 
+            "label": "23: fire6/concat", 
+            "name": "fire6/concat", 
+            "time_ms": 0.000474, 
+            "time_s": 4.74e-07, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 24, 
+            "label": "24: fire7/squeeze1x1 + fire7/relu_squeeze1x1", 
+            "name": "fire7/squeeze1x1 + fire7/relu_squeeze1x1", 
+            "time_ms": 0.125842, 
+            "time_s": 0.000125842, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 25, 
+            "label": "25: fire7/expand1x1 + fire7/relu_expand1x1", 
+            "name": "fire7/expand1x1 + fire7/relu_expand1x1", 
+            "time_ms": 0.056737, 
+            "time_s": 5.6737e-05, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 26, 
+            "label": "26: fire7/expand3x3 + fire7/relu_expand3x3", 
+            "name": "fire7/expand3x3 + fire7/relu_expand3x3", 
+            "time_ms": 0.205947, 
+            "time_s": 0.000205947, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 27, 
+            "label": "27: fire7/concat", 
+            "name": "fire7/concat", 
+            "time_ms": 0.000474, 
+            "time_s": 4.74e-07, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 28, 
+            "label": "28: fire8/squeeze1x1 + fire8/relu_squeeze1x1", 
+            "name": "fire8/squeeze1x1 + fire8/relu_squeeze1x1", 
+            "time_ms": 0.132631, 
+            "time_s": 0.000132631, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 29, 
+            "label": "29: fire8/expand1x1 + fire8/relu_expand1x1", 
+            "name": "fire8/expand1x1 + fire8/relu_expand1x1", 
+            "time_ms": 0.075527, 
+            "time_s": 7.5527e-05, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 30, 
+            "label": "30: fire8/expand3x3 + fire8/relu_expand3x3", 
+            "name": "fire8/expand3x3 + fire8/relu_expand3x3", 
+            "time_ms": 0.323368, 
+            "time_s": 0.000323368, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 31, 
+            "label": "31: fire8/concat", 
+            "name": "fire8/concat", 
+            "time_ms": 0.000842, 
+            "time_s": 8.419999999999999e-07, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 32, 
+            "label": "32: fire9/squeeze1x1 + fire9/relu_squeeze1x1", 
+            "name": "fire9/squeeze1x1 + fire9/relu_squeeze1x1", 
+            "time_ms": 0.165895, 
+            "time_s": 0.000165895, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 33, 
+            "label": "33: fire9/expand1x1 + fire9/relu_expand1x1", 
+            "name": "fire9/expand1x1 + fire9/relu_expand1x1", 
+            "time_ms": 0.075947, 
+            "time_s": 7.5947e-05, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 34, 
+            "label": "34: fire9/expand3x3 + fire9/relu_expand3x3", 
+            "name": "fire9/expand3x3 + fire9/relu_expand3x3", 
+            "time_ms": 0.319105, 
+            "time_s": 0.00031910500000000003, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 35, 
+            "label": "35: fire9/concat", 
+            "name": "fire9/concat", 
+            "time_ms": 0.000526, 
+            "time_s": 5.26e-07, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 36, 
+            "label": "36: conv10 + relu_conv10", 
+            "name": "conv10 + relu_conv10", 
+            "time_ms": 1.374789, 
+            "time_s": 0.001374789, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 37, 
+            "label": "37: pool10", 
+            "name": "pool10", 
+            "time_ms": 0.143684, 
+            "time_s": 0.00014368400000000002, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 38, 
+            "label": "38: prob", 
+            "name": "prob", 
+            "time_ms": 0.011, 
+            "time_s": 1.1e-05, 
+            "timestamp": "0101 00:00:00.000000"
+          }
+        ], 
+        "post_processed": "yes", 
+        "repeat": 1, 
+        "return_code": 0, 
+        "run_success": "yes", 
+        "run_success_bool": true, 
+        "time_bw_ms": 0.0, 
+        "time_bw_s": 0.0, 
+        "time_fw_ms": 8.238363999999999, 
+        "time_fw_s": 0.008238364, 
+        "time_fwbw_ms": 8.238363999999999, 
+        "time_fwbw_s": 0.008238364, 
+        "time_total_ms": 8.238363999999999, 
+        "time_total_ms_kernel_0": 8.238363999999999, 
+        "time_total_s": 0.008238364, 
+        "time_total_s_kernel_0": 0.008238364, 
+        "total_execution_time": 0.008238364
+      }
+    }, 
+    {
+      "run": {
+        "REAL_ENV_CK_CAFFE_MODEL": "/home/anton/CK_REPOS/ck-tensorrt/program/tensorrt-time/tmp/tmp-PxfItT.prototxt", 
+        "execution_time": 0.008144258999999997, 
+        "execution_time_with_module": 2.1645898818969727, 
+        "memory_bytes": 0, 
+        "memory_kbytes": 0.0, 
+        "memory_mbytes": 0.0, 
+        "per_layer_info": [
+          {
+            "direction": "forward", 
+            "index": 0, 
+            "label": "00: conv1 + relu_conv1", 
+            "name": "conv1 + relu_conv1", 
+            "time_ms": 0.676158, 
+            "time_s": 0.000676158, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 1, 
+            "label": "01: pool1", 
+            "name": "pool1", 
+            "time_ms": 0.748104, 
+            "time_s": 0.000748104, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 2, 
+            "label": "02: fire2/squeeze1x1 + fire2/relu_squeeze1x1", 
+            "name": "fire2/squeeze1x1 + fire2/relu_squeeze1x1", 
+            "time_ms": 0.157579, 
+            "time_s": 0.000157579, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 3, 
+            "label": "03: fire2/expand1x1 + fire2/relu_expand1x1", 
+            "name": "fire2/expand1x1 + fire2/relu_expand1x1", 
+            "time_ms": 0.155579, 
+            "time_s": 0.000155579, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 4, 
+            "label": "04: fire2/expand3x3 + fire2/relu_expand3x3", 
+            "name": "fire2/expand3x3 + fire2/relu_expand3x3", 
+            "time_ms": 0.409632, 
+            "time_s": 0.000409632, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 5, 
+            "label": "05: fire2/concat", 
+            "name": "fire2/concat", 
+            "time_ms": 0.000526, 
+            "time_s": 5.26e-07, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 6, 
+            "label": "06: fire3/squeeze1x1 + fire3/relu_squeeze1x1", 
+            "name": "fire3/squeeze1x1 + fire3/relu_squeeze1x1", 
+            "time_ms": 0.265789, 
+            "time_s": 0.000265789, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 7, 
+            "label": "07: fire3/expand1x1 + fire3/relu_expand1x1", 
+            "name": "fire3/expand1x1 + fire3/relu_expand1x1", 
+            "time_ms": 0.151053, 
+            "time_s": 0.000151053, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 8, 
+            "label": "08: fire3/expand3x3 + fire3/relu_expand3x3", 
+            "name": "fire3/expand3x3 + fire3/relu_expand3x3", 
+            "time_ms": 0.395684, 
+            "time_s": 0.000395684, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 9, 
+            "label": "09: fire3/concat", 
+            "name": "fire3/concat", 
+            "time_ms": 0.000473, 
+            "time_s": 4.73e-07, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 10, 
+            "label": "10: pool3", 
+            "name": "pool3", 
+            "time_ms": 0.376369, 
+            "time_s": 0.00037636900000000004, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 11, 
+            "label": "11: fire4/squeeze1x1 + fire4/relu_squeeze1x1", 
+            "name": "fire4/squeeze1x1 + fire4/relu_squeeze1x1", 
+            "time_ms": 0.09521, 
+            "time_s": 9.521e-05, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 12, 
+            "label": "12: fire4/expand1x1 + fire4/relu_expand1x1", 
+            "name": "fire4/expand1x1 + fire4/relu_expand1x1", 
+            "time_ms": 0.102053, 
+            "time_s": 0.00010205300000000001, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 13, 
+            "label": "13: fire4/expand3x3 + fire4/relu_expand3x3", 
+            "name": "fire4/expand3x3 + fire4/relu_expand3x3", 
+            "time_ms": 0.427684, 
+            "time_s": 0.000427684, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 14, 
+            "label": "14: fire4/concat", 
+            "name": "fire4/concat", 
+            "time_ms": 0.000473, 
+            "time_s": 4.73e-07, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 15, 
+            "label": "15: fire5/squeeze1x1 + fire5/relu_squeeze1x1", 
+            "name": "fire5/squeeze1x1 + fire5/relu_squeeze1x1", 
+            "time_ms": 0.165, 
+            "time_s": 0.000165, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 16, 
+            "label": "16: fire5/expand1x1 + fire5/relu_expand1x1", 
+            "name": "fire5/expand1x1 + fire5/relu_expand1x1", 
+            "time_ms": 0.09379, 
+            "time_s": 9.379e-05, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 17, 
+            "label": "17: fire5/expand3x3 + fire5/relu_expand3x3", 
+            "name": "fire5/expand3x3 + fire5/relu_expand3x3", 
+            "time_ms": 0.423736, 
+            "time_s": 0.000423736, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 18, 
+            "label": "18: fire5/concat", 
+            "name": "fire5/concat", 
+            "time_ms": 0.000474, 
+            "time_s": 4.74e-07, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 19, 
+            "label": "19: pool5", 
+            "name": "pool5", 
+            "time_ms": 0.125316, 
+            "time_s": 0.00012531600000000002, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 20, 
+            "label": "20: fire6/squeeze1x1 + fire6/relu_squeeze1x1", 
+            "name": "fire6/squeeze1x1 + fire6/relu_squeeze1x1", 
+            "time_ms": 0.095421, 
+            "time_s": 9.542100000000001e-05, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 21, 
+            "label": "21: fire6/expand1x1 + fire6/relu_expand1x1", 
+            "name": "fire6/expand1x1 + fire6/relu_expand1x1", 
+            "time_ms": 0.057316, 
+            "time_s": 5.7316e-05, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 22, 
+            "label": "22: fire6/expand3x3 + fire6/relu_expand3x3", 
+            "name": "fire6/expand3x3 + fire6/relu_expand3x3", 
+            "time_ms": 0.207736, 
+            "time_s": 0.000207736, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 23, 
+            "label": "23: fire6/concat", 
+            "name": "fire6/concat", 
+            "time_ms": 0.000474, 
+            "time_s": 4.74e-07, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 24, 
+            "label": "24: fire7/squeeze1x1 + fire7/relu_squeeze1x1", 
+            "name": "fire7/squeeze1x1 + fire7/relu_squeeze1x1", 
+            "time_ms": 0.126526, 
+            "time_s": 0.00012652600000000001, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 25, 
+            "label": "25: fire7/expand1x1 + fire7/relu_expand1x1", 
+            "name": "fire7/expand1x1 + fire7/relu_expand1x1", 
+            "time_ms": 0.056421, 
+            "time_s": 5.6421e-05, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 26, 
+            "label": "26: fire7/expand3x3 + fire7/relu_expand3x3", 
+            "name": "fire7/expand3x3 + fire7/relu_expand3x3", 
+            "time_ms": 0.210316, 
+            "time_s": 0.000210316, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 27, 
+            "label": "27: fire7/concat", 
+            "name": "fire7/concat", 
+            "time_ms": 0.000526, 
+            "time_s": 5.26e-07, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 28, 
+            "label": "28: fire8/squeeze1x1 + fire8/relu_squeeze1x1", 
+            "name": "fire8/squeeze1x1 + fire8/relu_squeeze1x1", 
+            "time_ms": 0.131737, 
+            "time_s": 0.000131737, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 29, 
+            "label": "29: fire8/expand1x1 + fire8/relu_expand1x1", 
+            "name": "fire8/expand1x1 + fire8/relu_expand1x1", 
+            "time_ms": 0.074789, 
+            "time_s": 7.478899999999999e-05, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 30, 
+            "label": "30: fire8/expand3x3 + fire8/relu_expand3x3", 
+            "name": "fire8/expand3x3 + fire8/relu_expand3x3", 
+            "time_ms": 0.320895, 
+            "time_s": 0.00032089499999999997, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 31, 
+            "label": "31: fire8/concat", 
+            "name": "fire8/concat", 
+            "time_ms": 0.000474, 
+            "time_s": 4.74e-07, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 32, 
+            "label": "32: fire9/squeeze1x1 + fire9/relu_squeeze1x1", 
+            "name": "fire9/squeeze1x1 + fire9/relu_squeeze1x1", 
+            "time_ms": 0.165315, 
+            "time_s": 0.000165315, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 33, 
+            "label": "33: fire9/expand1x1 + fire9/relu_expand1x1", 
+            "name": "fire9/expand1x1 + fire9/relu_expand1x1", 
+            "time_ms": 0.074527, 
+            "time_s": 7.4527e-05, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 34, 
+            "label": "34: fire9/expand3x3 + fire9/relu_expand3x3", 
+            "name": "fire9/expand3x3 + fire9/relu_expand3x3", 
+            "time_ms": 0.319157, 
+            "time_s": 0.00031915700000000003, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 35, 
+            "label": "35: fire9/concat", 
+            "name": "fire9/concat", 
+            "time_ms": 0.000527, 
+            "time_s": 5.27e-07, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 36, 
+            "label": "36: conv10 + relu_conv10", 
+            "name": "conv10 + relu_conv10", 
+            "time_ms": 1.372999, 
+            "time_s": 0.0013729990000000002, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 37, 
+            "label": "37: pool10", 
+            "name": "pool10", 
+            "time_ms": 0.147316, 
+            "time_s": 0.000147316, 
+            "timestamp": "0101 00:00:00.000000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 38, 
+            "label": "38: prob", 
+            "name": "prob", 
+            "time_ms": 0.011105, 
+            "time_s": 1.1105000000000001e-05, 
+            "timestamp": "0101 00:00:00.000000"
+          }
+        ], 
+        "post_processed": "yes", 
+        "repeat": 1, 
+        "return_code": 0, 
+        "run_success": "yes", 
+        "run_success_bool": true, 
+        "time_bw_ms": 0.0, 
+        "time_bw_s": 0.0, 
+        "time_fw_ms": 8.144258999999998, 
+        "time_fw_s": 0.008144258999999997, 
+        "time_fwbw_ms": 8.144258999999998, 
+        "time_fwbw_s": 0.008144258999999997, 
+        "time_total_ms": 8.144258999999998, 
+        "time_total_ms_kernel_0": 8.144258999999998, 
+        "time_total_s": 0.008144258999999997, 
+        "time_total_s_kernel_0": 0.008144258999999997, 
+        "total_execution_time": 0.008144258999999997
+      }
+    }
+  ], 
+  "choices": {
+    "cmd_key": "default", 
+    "compile_only_once": "yes", 
+    "compile_type": "dynamic", 
+    "compiler_flags": {}, 
+    "cpu_freq": "max", 
+    "data_uoa": "tensorrt-time", 
+    "dataset_file": "", 
+    "device_cfg": {}, 
+    "device_id": "", 
+    "energy": "no", 
+    "env": {
+      "CK_CAFFE_BATCH_SIZE": 2, 
+      "CK_CAFFE_ITERATIONS": "", 
+      "CK_CAFFE_MODEL": "/home/anton/CK_REPOS/ck-tensorrt/program/tensorrt-time/tmp/tmp-vWi8bd.prototxt", 
+      "CK_CAFFE_MODEL_FILE": "tmp-vWi8bd.prototxt", 
+      "CK_CAFFE_MODEL_WEIGHTS": "/home/anton/CK_TOOLS/caffemodel-deepscale-squeezenet-1.1/squeezenet_v1.1.caffemodel", 
+      "CK_CPU_FREQUENCY": "max", 
+      "CK_ENV_MODEL_CAFFE_WEIGHTS": "/home/anton/CK_TOOLS/caffemodel-deepscale-squeezenet-1.1/squeezenet_v1.1.caffemodel", 
+      "CK_GPU_FREQUENCY": "max", 
+      "CK_TENSORRT_CJSON_PATH": "profiler.json", 
+      "CK_TENSORRT_ENABLE_FP16": 0
+    }, 
+    "flags": "-O3", 
+    "gpu_freq": "max", 
+    "host_os": "linux-64", 
+    "module_uoa": "b0ac08fe1d3c2615", 
+    "no_state_check": "yes", 
+    "repeat": 1, 
+    "skip_calibration": "yes", 
+    "skip_print_timers": "yes", 
+    "target": "", 
+    "target_os": "linux-64", 
+    "target_os_bits": "64"
+  }, 
+  "choices_order": [
+    "##choices#env#CK_TENSORRT_ENABLE_FP16", 
+    "##choices#env#CK_CAFFE_BATCH_SIZE"
+  ], 
+  "features": {
+    "compiler_version": {
+      "list": [
+        5, 
+        4, 
+        0
+      ], 
+      "raw": [
+        "gcc-5 (Ubuntu/Linaro 5.4.0-6ubuntu1~16.04.4) 5.4.0 20160609", 
+        "Copyright (C) 2015 Free Software Foundation, Inc.", 
+        "This is free software; see the source for copying conditions.  There is NO", 
+        "warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.", 
+        "", 
+        ""
+      ], 
+      "str": "5.4.0"
+    }, 
+    "number_of_selected_compiler_flags": 0, 
+    "platform": {
+      "cpu": {
+        "all_freqs": {
+          "0": [
+            102000, 
+            204000, 
+            307200, 
+            403200, 
+            518400, 
+            614400, 
+            710400, 
+            825600, 
+            921600, 
+            1036800, 
+            1132800, 
+            1224000, 
+            1326000, 
+            1428000, 
+            1555500, 
+            1632000, 
+            1734000
+          ], 
+          "1": [
+            102000, 
+            204000, 
+            307200, 
+            403200, 
+            518400, 
+            614400, 
+            710400, 
+            825600, 
+            921600, 
+            1036800, 
+            1132800, 
+            1224000, 
+            1326000, 
+            1428000, 
+            1555500, 
+            1632000, 
+            1734000
+          ], 
+          "2": [
+            102000, 
+            204000, 
+            307200, 
+            403200, 
+            518400, 
+            614400, 
+            710400, 
+            825600, 
+            921600, 
+            1036800, 
+            1132800, 
+            1224000, 
+            1326000, 
+            1428000, 
+            1555500, 
+            1632000, 
+            1734000
+          ], 
+          "3": [
+            102000, 
+            204000, 
+            307200, 
+            403200, 
+            518400, 
+            614400, 
+            710400, 
+            825600, 
+            921600, 
+            1036800, 
+            1132800, 
+            1224000, 
+            1326000, 
+            1428000, 
+            1555500, 
+            1632000, 
+            1734000
+          ]
+        }, 
+        "cpu_abi": "", 
+        "cpu_features": "fp asimd aes pmull sha1 sha2 crc32", 
+        "current_freq": {
+          "0": 1734.0, 
+          "1": 1734.0, 
+          "2": 1734.0, 
+          "3": 1734.0
+        }, 
+        "max_freq": {
+          "0": 1734.0, 
+          "1": 1734.0, 
+          "2": 1734.0, 
+          "3": 1734.0
+        }, 
+        "name": "jetson_tx1", 
+        "num_proc": "4", 
+        "sub_name": "ARMv8 Processor rev 1 (v8l)", 
+        "workload_automation": {
+          "device_config": {
+            "core_clusters": [
+              0, 
+              0, 
+              0, 
+              1
+            ], 
+            "core_names": [
+              "ARMv8 Processor rev 1 (v8l)", 
+              "ARMv8 Processor rev 1 (v8l)", 
+              "ARMv8 Processor rev 1 (v8l)", 
+              "jetson_tx1"
+            ]
+          }
+        }
+      }, 
+      "cpu_misc": {
+        "0": {
+          "BogoMIPS": "38.40", 
+          "CPU architecture": "8", 
+          "CPU implementer": "0x41", 
+          "CPU part": "0xd07", 
+          "CPU revision": "1", 
+          "CPU variant": "0x1", 
+          "Features": "fp asimd aes pmull sha1 sha2 crc32", 
+          "all_freqs": [
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0"
+          ], 
+          "ck_cpu_name": "ARMv8 Processor rev 1 (v8l)", 
+          "ck_cpu_subname": "ARMv8 Processor rev 1 (v8l)", 
+          "cpu_features": "fp asimd aes pmull sha1 sha2 crc32", 
+          "cur_freq": 1734.0, 
+          "max_freq": 1734.0, 
+          "model name": "ARMv8 Processor rev 1 (v8l)", 
+          "processor": "0"
+        }, 
+        "1": {
+          "BogoMIPS": "38.40", 
+          "CPU architecture": "8", 
+          "CPU implementer": "0x41", 
+          "CPU part": "0xd07", 
+          "CPU revision": "1", 
+          "CPU variant": "0x1", 
+          "Features": "fp asimd aes pmull sha1 sha2 crc32", 
+          "all_freqs": [
+            "1", 
+            "1", 
+            "1", 
+            "1", 
+            "1", 
+            "1", 
+            "1", 
+            "1", 
+            "1", 
+            "1", 
+            "1", 
+            "1", 
+            "1", 
+            "1", 
+            "1", 
+            "1", 
+            "1"
+          ], 
+          "ck_cpu_name": "ARMv8 Processor rev 1 (v8l)", 
+          "ck_cpu_subname": "ARMv8 Processor rev 1 (v8l)", 
+          "cpu_features": "fp asimd aes pmull sha1 sha2 crc32", 
+          "cur_freq": 1734.0, 
+          "max_freq": 1734.0, 
+          "model name": "ARMv8 Processor rev 1 (v8l)", 
+          "processor": "1"
+        }, 
+        "2": {
+          "BogoMIPS": "38.40", 
+          "CPU architecture": "8", 
+          "CPU implementer": "0x41", 
+          "CPU part": "0xd07", 
+          "CPU revision": "1", 
+          "CPU variant": "0x1", 
+          "Features": "fp asimd aes pmull sha1 sha2 crc32", 
+          "all_freqs": [
+            "2", 
+            "2", 
+            "2", 
+            "2", 
+            "2", 
+            "2", 
+            "2", 
+            "2", 
+            "2", 
+            "2", 
+            "2", 
+            "2", 
+            "2", 
+            "2", 
+            "2", 
+            "2", 
+            "2"
+          ], 
+          "ck_cpu_name": "ARMv8 Processor rev 1 (v8l)", 
+          "ck_cpu_subname": "ARMv8 Processor rev 1 (v8l)", 
+          "cpu_features": "fp asimd aes pmull sha1 sha2 crc32", 
+          "cur_freq": 1734.0, 
+          "max_freq": 1734.0, 
+          "model name": "ARMv8 Processor rev 1 (v8l)", 
+          "processor": "2"
+        }, 
+        "3": {
+          "BogoMIPS": "38.40", 
+          "CPU architecture": "8", 
+          "CPU implementer": "0x41", 
+          "CPU part": "0xd07", 
+          "CPU revision": "1", 
+          "CPU variant": "0x1", 
+          "Features": "fp asimd aes pmull sha1 sha2 crc32", 
+          "Hardware": "jetson_tx1", 
+          "Revision": "0000", 
+          "Serial": "088403e800000000", 
+          "all_freqs": [
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3"
+          ], 
+          "ck_cpu_name": "jetson_tx1", 
+          "ck_cpu_subname": "ARMv8 Processor rev 1 (v8l)", 
+          "cpu_features": "fp asimd aes pmull sha1 sha2 crc32", 
+          "cur_freq": 1734.0, 
+          "max_freq": 1734.0, 
+          "model name": "ARMv8 Processor rev 1 (v8l)", 
+          "processor": "3"
+        }
+      }, 
+      "cpu_new_format": "", 
+      "cpu_unique": [
+        {
+          "BogoMIPS": "38.40", 
+          "CPU architecture": "8", 
+          "CPU implementer": "0x41", 
+          "CPU part": "0xd07", 
+          "CPU revision": "1", 
+          "CPU variant": "0x1", 
+          "Features": "fp asimd aes pmull sha1 sha2 crc32", 
+          "all_freqs": [
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0"
+          ], 
+          "ck_cpu_name": "ARMv8 Processor rev 1 (v8l)", 
+          "ck_cpu_subname": "ARMv8 Processor rev 1 (v8l)", 
+          "cpu_features": "fp asimd aes pmull sha1 sha2 crc32", 
+          "cur_freq": 1734.0, 
+          "max_freq": 1734.0, 
+          "model name": "ARMv8 Processor rev 1 (v8l)", 
+          "processor": "0"
+        }, 
+        {
+          "BogoMIPS": "38.40", 
+          "CPU architecture": "8", 
+          "CPU implementer": "0x41", 
+          "CPU part": "0xd07", 
+          "CPU revision": "1", 
+          "CPU variant": "0x1", 
+          "Features": "fp asimd aes pmull sha1 sha2 crc32", 
+          "Hardware": "jetson_tx1", 
+          "Revision": "0000", 
+          "Serial": "088403e800000000", 
+          "all_freqs": [
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3"
+          ], 
+          "ck_cpu_name": "jetson_tx1", 
+          "ck_cpu_subname": "ARMv8 Processor rev 1 (v8l)", 
+          "cpu_features": "fp asimd aes pmull sha1 sha2 crc32", 
+          "cur_freq": 1734.0, 
+          "max_freq": 1734.0, 
+          "model name": "ARMv8 Processor rev 1 (v8l)", 
+          "processor": "3"
+        }
+      ], 
+      "gpu": {
+        "name": "", 
+        "vendor": ""
+      }, 
+      "gpu_misc": {}, 
+      "os": {
+        "abi": "aarch64", 
+        "bits": "64", 
+        "ck_os_base_uoa": "", 
+        "ck_os_uoa": "linux-64", 
+        "name": "Ubuntu 16.04.1 LTS", 
+        "name_long": "Linux-3.10.96-tegra-aarch64-with-Ubuntu-16.04-xenial", 
+        "name_short": "Linux 3.10.96", 
+        "serial_number": ""
+      }, 
+      "os_misc": {}, 
+      "platform": {
+        "model": "jetson_tx1\u0000", 
+        "name": "jetson_tx1\u0000 (jetson_tx1\u0000)", 
+        "vendor": "jetson_tx1\u0000"
+      }, 
+      "platform_misc": {}
+    }, 
+    "statistical_repetitions": 3
+  }
+}
