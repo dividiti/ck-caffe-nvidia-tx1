@@ -4,7 +4,7 @@
 
 **NB:** The Caffe experimental results are released with approval from General Motors. The TensorRT 1.0 EA experimental results are released with approval from NVIDIA.
 
-The Jupyter notebook ([view on github.com](https://github.com/dividiti/ck-caffe-nvidia-tx1/blob/master/script/caffe-tensorrt/ck-caffe-nvidia-tx1-with-tensorrt.20170429.ipynb); [view on nbiviewer.jupyter.org](https://nbviewer.jupyter.org/github/dividiti/ck-caffe-nvidia-tx1/blob/master/script/caffe-tensorrt/ck-caffe-nvidia-tx1-with-tensorrt.20170429.ipynb)) in this Collective Knowledge repository analyses the performance (execution time, memory consumption):
+The Jupyter notebook ([view on github.com](https://github.com/dividiti/ck-caffe-nvidia-tx1/blob/master/script/caffe-tensorrt/ck-caffe-nvidia-tx1-with-tensorrt.20170429.ipynb); [view on nbviewer.jupyter.org](https://nbviewer.jupyter.org/github/dividiti/ck-caffe-nvidia-tx1/blob/master/script/caffe-tensorrt/ck-caffe-nvidia-tx1-with-tensorrt.20170429.ipynb?raw)) in this Collective Knowledge repository analyses the performance (execution time, memory consumption):
 
 - on **[dividiti](http://dividiti.com)**'s Jetson TX1 board ([official page](http://www.nvidia.com/object/jetson-tx1-dev-kit.html), [Phoronix review](http://www.phoronix.com/scan.php?page=article&item=nvidia-jtx1-perf)):
   - CPU:
@@ -40,14 +40,14 @@ DISTRIB_DESCRIPTION="Ubuntu 16.04.1 LTS"
   - [`nvidia-fp16-cuda`] NVIDIA experimental/fp16 ([fca1cf4](https://github.com/NVIDIA/caffe/commit/fca1cf475d1d0a6d355f8b9877abcc4e13951c9c), 11/Jul/2016): with [cuBLAS](https://developer.nvidia.com/cublas) (part of CUDA Toolkit 8.0.33);
   - [`nvidia-fp16-cudnn`] NVIDIA experimental/fp16 ([fca1cf4](https://github.com/NVIDIA/caffe/commit/fca1cf475d1d0a6d355f8b9877abcc4e13951c9c), 11/Jul/2016): with [cuDNN 5.1](https://developer.nvidia.com/cudnn);
   - [`libdnn-cuda`] OpenCL ([b735c2d](https://github.com/BVLC/caffe/commit/b735c2dd4103ac963332b400168507dd7cefd204), 23/Nov/2016): with [libDNN](https://github.com/BVLC/caffe/issues/4155) and [cuBLAS](https://developer.nvidia.com/cublas) (part of CUDA Toolkit 8.0.33) for fully connected layers;
-  <br>
+
   **NB:** libDNN is not yet tuned for TX1 - it uses parameters that are optimal for GTX 1080.
 
 - using 2 configurations of the [NVIDIA TensorRT 1.0.0 EA engine](https://developer.nvidia.com/tensorrt):
   - [`tensorrt-fp16`] NVIDIA TensorRT 1.0.0 EA with fp16 enabled;
   - [`tensorrt-fp32`] NVIDIA TensorRT 1.0.0 EA with fp16 disabled;
-  <br>
-  **NB:** This EA ("early access") version is used in accordance with special licensing terms: the results are released with explicit written approval from NVIDIA. The results may not be representative of the GA ("general availability") version.
+
+  **NB:** This EA ("early access") version is used in accordance with its special licensing terms: the results are released with explicit written approval from NVIDIA. The results may not be representative of the GA ("general availability") version.
 
 - using 4 CNN **models**:
   - [GoogleNet](https://github.com/BVLC/caffe/tree/master/models/bvlc_googlenet);
