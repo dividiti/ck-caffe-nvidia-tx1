@@ -4,7 +4,7 @@
 
 **NB:** The Caffe experimental results are released with approval from General Motors. The TensorRT 1.0 EA experimental results are released with approval from NVIDIA.
 
-The Jupyter notebook ([view on github.com](https://github.com/dividiti/ck-caffe-nvidia-tx1/blob/master/script/caffe-tensorrt/ck-caffe-nvidia-tx1-with-tensorrt.20170429.ipynb); [view on nbviewer.jupyter.org](https://nbviewer.jupyter.org/github/dividiti/ck-caffe-nvidia-tx1/blob/master/script/caffe-tensorrt/ck-caffe-nvidia-tx1-with-tensorrt.20170429.ipynb?raw)) in this Collective Knowledge repository analyses the performance (execution time, memory consumption):
+The Jupyter notebook ([view on github.com](https://github.com/dividiti/ck-caffe-nvidia-tx1/blob/master/script/caffe-tensorrt/ck-caffe-nvidia-tx1-with-tensorrt.20170429.ipynb); [view on nbviewer.jupyter.org](https://nbviewer.jupyter.org/github/dividiti/ck-caffe-nvidia-tx1/blob/master/script/caffe-tensorrt/ck-caffe-nvidia-tx1-with-tensorrt.20170429.ipynb)) in this Collective Knowledge repository analyses the performance (execution time, memory consumption):
 
 - on **[dividiti](http://dividiti.com)**'s Jetson TX1 board ([official page](http://www.nvidia.com/object/jetson-tx1-dev-kit.html), [Phoronix review](http://www.phoronix.com/scan.php?page=article&item=nvidia-jtx1-perf)):
   - CPU:
